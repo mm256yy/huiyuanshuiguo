@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "aicon": "/components/aicon/aicon"
+  },
+  "component": true
+}

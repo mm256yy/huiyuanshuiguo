@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/login",
+    "pages/about"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "商务进度查询",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff"
+  },
+  "serviceProviderTicket": "ZDIlehugI5MdrqOnoTwoZa6xjnGQW4pAOPyqEUDAHTcwcBeZwZOEBQMqX7kIOALXfR4/+qigSZtkCzeOocfaKdhPKQRfz4jZuzQ=",
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

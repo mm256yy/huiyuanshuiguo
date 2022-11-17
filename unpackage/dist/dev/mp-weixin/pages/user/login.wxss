@@ -1,0 +1,53 @@
+page {
+  background-color: #fff;
+}
+.login {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login .logo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  border: 1px solid #efefef;
+}
+.login .title {
+  color: #46496e;
+  font-size: 38rpx;
+  padding-top: 20rpx;
+  font-weight: normal;
+}
+.login .text {
+  color: #46496e90;
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  padding-bottom: 60rpx;
+  font-weight: normal;
+}
+.login .userlogin {
+  background-color: #46496e;
+  width: 300rpx;
+  height: 80rpx;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #fff;
+  border-radius: 100rpx;
+  margin-bottom: 20rpx;
+  font-weight: normal;
+}
+.login .navigateBack {
+  background-color: #46496e20;
+  color: #46496e60;
+  margin-top: 10rpx;
+}
+.login button::after {
+  border: 0;
+}
+

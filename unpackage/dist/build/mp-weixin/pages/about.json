@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "",
+  "disableScroll": true,
+  "usingComponents": {
+    "icon": "/components/icon/icon"
+  }
+}

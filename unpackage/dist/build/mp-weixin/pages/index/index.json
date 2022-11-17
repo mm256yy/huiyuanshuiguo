@@ -1,0 +1,9 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#46496e",
+  "navigationBarTitleText": "商务进度查询",
+  "disableScroll": true,
+  "usingComponents": {
+    "about": "/components/about/about"
+  }
+}

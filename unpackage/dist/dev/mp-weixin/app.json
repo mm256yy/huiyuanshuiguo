@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/article/index",
+    "pages/order/index",
+    "pages/shop/index",
+    "pages/user/index",
+    "pages/user/login",
+    "pages/about"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "商务进度查询",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#898C9D",
+    "selectedColor": "#3CBDC5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/article/index",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "下单"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "serviceProviderTicket": "ZDIlehugI5MdrqOnoTwoZa6xjnGQW4pAOPyqEUDAHTcwcBeZwZOEBQMqX7kIOALXfR4/+qigSZtkCzeOocfaKdhPKQRfz4jZuzQ=",
+  "usingComponents": {}
+}
