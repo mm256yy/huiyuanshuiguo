@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+    "u-count-down": "/node-modules/uview-ui/components/u-count-down/u-count-down",
+    "aicon": "/components/aicon/aicon",
+    "u-parse": "/node-modules/uview-ui/components/u-parse/u-parse",
+    "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+    "share-cover-pic": "/components/shareCoverPic/shareCoverPic"
+  }
+}

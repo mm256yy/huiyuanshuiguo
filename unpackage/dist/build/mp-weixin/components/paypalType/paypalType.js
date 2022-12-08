@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/paypalType/paypalType"],{"080c":function(n,e,t){"use strict";t.r(e);var o=t("84fb"),u=t.n(o);for(var c in o)"default"!==c&&function(n){t.d(e,n,(function(){return o[n]}))}(c);e["default"]=u.a},"1d56":function(n,e,t){"use strict";t.r(e);var o=t("698c"),u=t("080c");for(var c in u)"default"!==c&&function(n){t.d(e,n,(function(){return u[n]}))}(c);t("b26c");var a,i=t("f0c5"),r=Object(i["a"])(u["default"],o["b"],o["c"],!1,null,null,null,!1,o["a"],a);e["default"]=r.exports},"698c":function(n,e,t){"use strict";t.d(e,"b",(function(){return u})),t.d(e,"c",(function(){return c})),t.d(e,"a",(function(){return o}));var o={uPopup:function(){return Promise.all([t.e("common/vendor"),t.e("node-modules/uview-ui/components/u-popup/u-popup")]).then(t.bind(null,"4556"))},uCountDown:function(){return Promise.all([t.e("common/vendor"),t.e("node-modules/uview-ui/components/u-count-down/u-count-down")]).then(t.bind(null,"a4f8"))},aicon:function(){return t.e("components/aicon/aicon").then(t.bind(null,"6387"))}},u=function(){var n=this,e=n.$createElement;n._self._c},c=[]},"84fb":function(n,e,t){"use strict";(function(n){Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;getApp();var t={name:"paypalType",props:{paypalShow:{type:Boolean,default:!1},countDownTime:{type:Number,default:0},money:{type:Number,default:0}},data:function(){return{shopData:n.getStorageSync("__ddminiShopInfo")}},methods:{close:function(){this.$emit("close",!1)},getPaypalOrder:function(n){this.$emit("paypal",n)}}};e.default=t}).call(this,t("543d")["default"])},b26c:function(n,e,t){"use strict";var o=t("c012"),u=t.n(o);u.a},c012:function(n,e,t){}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/paypalType/paypalType-create-component',
+    {
+        'components/paypalType/paypalType-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("1d56"))
+        })
+    },
+    [['components/paypalType/paypalType-create-component']]
+]);

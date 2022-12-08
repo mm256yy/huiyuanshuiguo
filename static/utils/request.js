@@ -1,4 +1,5 @@
-const templateKey = 'IE2207242058061967907';
+// const templateKey = 'RZ2209302026391794806';
+const templateKey = uni.getExtConfigSync().templateKey;
 const domainLinks = uni.getSystemInfoSync().platform==='devtools'?'https://push.yjyzj.cn':'https://sh.api.dccf.top';//API后台地址，这个不用修改
 // const domainLinks = 'https://push.yjyzj.cn';//API后台地址，这个不用修改
 

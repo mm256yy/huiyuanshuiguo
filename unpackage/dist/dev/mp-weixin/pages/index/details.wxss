@@ -1,0 +1,619 @@
+page {
+  background-color: #f2f2f2;
+}
+.child_pic_box {
+  width: 100%;
+  height: 600rpx;
+  position: relative;
+}
+.swiper_box {
+  width: 100%;
+  height: 600rpx;
+  position: relative;
+}
+.swiper_box swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper_box swiper image {
+  width: 100%;
+  height: 100%;
+}
+.swiper_box .swiper_dots {
+  position: absolute;
+  bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  z-index: 6;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.swiper_box .swiper_dots .dot {
+  margin: 0 4rpx;
+  width: 10rpx;
+  height: 10rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  transition: all 0.1s;
+  opacity: 0.5;
+}
+.swiper_box .swiper_dots .active {
+  opacity: 1;
+  background: #F54319;
+}
+.swiper_box .time_box {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 30rpx;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 80rpx;
+}
+.swiper_box .time_box .label {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.swiper_box .time_box .label .xianshi {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.swiper_box .time_box .label .time__item {
+  padding-right: 6rpx;
+}
+.swiper_box .time_box .label .tips {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.specs_list_box {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  height: 150rpx;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.specs_list_box .left {
+  width: 150rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #1c1c1c;
+  font-size: 28rpx;
+}
+.specs_list_box .left ._span {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.specs_list_box .right {
+  flex: 1;
+  height: 104rpx;
+  min-width: 0;
+  white-space: nowrap;
+}
+.specs_list_box .right .spec {
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  border: 1px solid #efefef;
+  margin-left: 20rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.specs_list_box .right .aspec {
+  border-color: #F54319;
+  color: #F54319;
+}
+.select_box {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+}
+.select_box .text {
+  width: 90%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.select_box .text .set {
+  color: #1c1c1c;
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75%;
+}
+.select_box .text .del {
+  color: #F54319;
+  border: 1px solid #F54319;
+  padding: 0 14rpx;
+  border-radius: 100rpx;
+  font-size: 24rpx;
+  height: 42rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goods_info_box {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  position: relative;
+}
+.goods_info_box .price_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40rpx 0 30rpx;
+  display: flex;
+  align-items: center;
+}
+.goods_info_box .price_box .price {
+  color: #F54319;
+  font-size: 42rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.goods_info_box .price_box .price ._span {
+  font-size: 30rpx;
+  padding-right: 4rpx;
+  margin-bottom: -6rpx;
+}
+.goods_info_box .price_box .price ._span.score {
+  font-size: 32rpx;
+  padding-right: 0;
+  margin-bottom: 0;
+  padding-left: 6rpx;
+}
+.goods_info_box .price_box .old {
+  margin-left: 20rpx;
+  color: #999;
+  font-size: 30rpx;
+  text-decoration: line-through;
+  margin-bottom: -4rpx;
+}
+.goods_info_box .price_box .button {
+  position: absolute;
+  right: 0;
+  background-color: #F54319;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 100rpx;
+  border-bottom-left-radius: 100rpx;
+  padding: 0 10rpx 0 30rpx;
+  height: 60rpx;
+}
+.goods_info_box .price_box .button aicon {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goods_info_box .pintuan_price_box {
+  background-color: #F54319;
+  color: #fff;
+  height: 120rpx;
+  margin-bottom: 30rpx;
+}
+.goods_info_box .pintuan_price_box .label {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  margin: 0 auto;
+}
+.goods_info_box .pintuan_price_box .label .price {
+  display: flex;
+  align-items: center;
+}
+.goods_info_box .pintuan_price_box .label .price .pt {
+  font-size: 52rpx;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.goods_info_box .pintuan_price_box .label .price .pt ._span {
+  background-color: #fff;
+  color: #F54319;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  height: 46rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10rpx;
+  font-weight: normal;
+  opacity: 0.6;
+}
+.goods_info_box .pintuan_price_box .label .price .old {
+  text-decoration: line-through;
+  font-size: 28rpx;
+  margin-top: 18rpx;
+  margin-left: 20rpx;
+  opacity: 0.8;
+}
+.goods_info_box .pintuan_price_box .label .txt {
+  border: 1px solid #fff;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+  border-radius: 10rpx;
+}
+.goods_info_box .title {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.goods_info_box .intro {
+  width: 90%;
+  margin: 0 auto;
+  color: #999;
+  font-size: 30rpx;
+  padding: 20rpx 0 30rpx;
+}
+.goods_info_box .box {
+  width: 100%;
+  border-top: 1px solid #efefef;
+}
+.goods_info_box .box .box_label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+}
+.goods_info_box .box .box_label .left .stock {
+  color: #07c160;
+  font-size: 28rpx;
+}
+.goods_info_box .box .box_label .right {
+  display: flex;
+  align-items: center;
+}
+.goods_info_box .box .box_label .right .label {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 70rpx;
+  position: relative;
+}
+.goods_info_box .box .box_label .right .label aicon {
+  width: 44rpx;
+  height: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goods_info_box .box .box_label .right .label ._span {
+  font-size: 26rpx;
+  color: #999;
+}
+.goods_info_box .box .box_label .right .label button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.pintuan_info_box {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.pintuan_info_box .head_box {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f2f2f2;
+}
+.pintuan_info_box .head_box .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+}
+.pintuan_info_box .head_box .head .left {
+  color: #1c1c1c;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.pintuan_info_box .head_box .head .right {
+  font-size: 26rpx;
+  color: #999;
+}
+.pintuan_info_box .user_box .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  padding: 30rpx 0;
+  border-bottom: 1px dashed #f2f2f2;
+}
+.pintuan_info_box .user_box .user .img {
+  width: 120rpx;
+}
+.pintuan_info_box .user_box .user .img image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+.pintuan_info_box .user_box .user .info {
+  flex: 1;
+  min-width: 0;
+  font-size: 24rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pintuan_info_box .user_box .user .info .name {
+  color: #1c1c1c;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pintuan_info_box .user_box .user .info .text {
+  display: flex;
+  align-items: center;
+  color: #F54319;
+  font-size: 26rpx;
+}
+.pintuan_info_box .user_box .user .info .text ._span {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  color: #999;
+}
+.pintuan_info_box .user_box .user .info .text ._span .u-count-down__text {
+  color: #999;
+  font-size: 26rpx;
+  padding-left: 4rpx;
+}
+.pintuan_info_box .user_box .user .btn_box {
+  width: 160rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.pintuan_info_box .user_box .user .btn_box .btn {
+  background-color: #F54319;
+  color: #fff;
+  font-size: 28rpx;
+  width: 150rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rpx;
+}
+.pintuan_info_box .intro_box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5431910;
+  padding: 30rpx 20rpx 50rpx;
+  align-items: center;
+}
+.pintuan_info_box .intro_box .line {
+  opacity: 0.3;
+}
+.pintuan_info_box .intro_box .label {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.pintuan_info_box .intro_box .label .text {
+  color: #F54319;
+  font-size: 28rpx;
+  padding-left: 10rpx;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.pintuan_info_box .intro_box .label .text .txt {
+  font-size: 24rpx;
+  color: #999;
+  padding-top: 2rpx;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -30rpx;
+}
+.goods_content_box {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.goods_content_box .head_tit {
+  width: 90%;
+  margin: 0 auto;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  color: #1c1c1c;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  padding-bottom: env(safe-area-inset-bottom);
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.footer .label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120rpx;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+.footer .label .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding-right: 20rpx;
+}
+.footer .label .left .lab {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 120rpx;
+  height: 100%;
+  position: relative;
+}
+.footer .label .left .lab ._span {
+  font-size: 24rpx;
+  color: #999;
+}
+.footer .label .left .lab .ico {
+  width: 44rpx;
+  height: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footer .label .left .lab .ico ._span {
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  background-color: #F54319;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  top: -10rpx;
+  right: -20rpx;
+}
+.footer .label .left .lab button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.footer .label .right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer .label .right .button {
+  flex: 1;
+  height: 66rpx;
+  border-radius: 100rpx;
+  color: #fff;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F54319;
+  border: 1px solid #F54319;
+}
+.footer .label .right .button:nth-child(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+  color: #F54319;
+}
+.footer .label .right .button:nth-child(2) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.footer .label .right .button.all {
+  background-color: #F54319;
+  color: #fff;
+  border-top-right-radius: 100rpx;
+  border-bottom-right-radius: 100rpx;
+}
+.share_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400rpx;
+}
+.share_box .label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 30rpx 0 0;
+  position: relative;
+}
+.share_box .label ._span {
+  color: #1c1c1c;
+  font-size: 30rpx;
+  padding-top: 6rpx;
+}
+.share_box .label button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+

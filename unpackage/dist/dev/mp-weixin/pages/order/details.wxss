@@ -1,0 +1,213 @@
+.details_box,
+.content {
+  min-height: 100vh;
+}
+.order_head_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40rpx 0;
+}
+.order_head_box .status {
+  display: flex;
+  align-items: center;
+  color: #1c1c1c;
+  font-size: 42rpx;
+  font-weight: bold;
+  line-height: 70rpx;
+}
+.order_head_box .status aicon {
+  width: 70rpx;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order_head_box .status ._span {
+  padding-left: 10rpx;
+}
+.order_head_box .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  color: #666;
+  padding-top: 20rpx;
+}
+.order_head_box .text .u-count-down__text {
+  font-size: 26rpx;
+  color: #666;
+  padding: 0 4rpx;
+}
+.menu_box {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.menu_box .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  width: 90%;
+  margin: 0 auto;
+}
+.menu_box .head .left {
+  color: #1c1c1c;
+  font-size: 30rpx;
+  font-weight: bold;
+  line-height: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.menu_box .head .right {
+  color: #999;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+.menu_box .goods_box {
+  padding-bottom: 30rpx;
+}
+.menu_box .goods_box .goods {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_box .goods_box .goods .left {
+  width: 180rpx;
+}
+.menu_box .goods_box .goods .left image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 20rpx;
+}
+.menu_box .goods_box .goods .right {
+  flex: 1;
+  min-width: 0;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu_box .goods_box .goods .right .title {
+  color: #1c1c1c;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_box .goods_box .goods .right .text {
+  color: #999;
+  font-size: 28rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_box .goods_box .goods .right .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_box .goods_box .goods .right .price .num {
+  color: #1c1c1c;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+}
+.menu_box .goods_box .goods .right .price .num ._span {
+  font-size: 28rpx;
+  padding-left: 2rpx;
+}
+.menu_box .goods_box .goods .right .price .buy {
+  color: #1c1c1c;
+  font-size: 28rpx;
+}
+.menu_box .info_box {
+  padding: 10rpx 0 20rpx;
+}
+.menu_box .info_box .label {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+  color: #666;
+}
+.menu_box .info_box .label .tit {
+  width: 130rpx;
+  color: #666;
+}
+.menu_box .info_box .label .txt {
+  flex: 1;
+  min-width: 0;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1c1c1c;
+}
+.menu_box .info_box .order_foot {
+  border-top: 1px solid #f5f5f5;
+}
+.menu_box .info_box .order_foot .label {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 100rpx;
+  font-weight: bold;
+  font-size: 30rpx;
+  margin-bottom: 0;
+}
+.menu_box .info_box .order_foot .label .tit {
+  color: #1c1c1c;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  padding-bottom: env(safe-area-inset-bottom);
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.footer .label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120rpx;
+  width: 100%;
+}
+.footer .label .button {
+  width: 92%;
+  margin: 0 auto;
+  height: 80rpx;
+  border-radius: 100rpx;
+  color: #fff;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footer .label .button button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+

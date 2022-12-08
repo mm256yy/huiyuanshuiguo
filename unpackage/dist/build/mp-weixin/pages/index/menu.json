@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "分类",
+  "disableScroll": true,
+  "usingComponents": {
+    "aicon": "/components/aicon/aicon",
+    "tabbar": "/components/tabbar/tabbar"
+  }
+}

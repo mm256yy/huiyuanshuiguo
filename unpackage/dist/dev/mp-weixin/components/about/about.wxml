@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['getAboutTap']]]]}}" class="power" bindtap="__e"><block wx:if="{{brandInfo.mini_status}}"><view class="logo"><image src="{{brandInfo.mini_logo}}"></image><text>{{brandInfo.mini_title}}</text></view></block><block wx:if="{{brandInfo.mini_status}}"><view class="text">提供技术与平台服务</view></block><view class="text">{{"v"+version}}</view></view>

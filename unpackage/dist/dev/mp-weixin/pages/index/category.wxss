@@ -1,0 +1,107 @@
+.goods_list {
+  width: 92%;
+  padding-top: 40rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.goods_list .goods {
+  flex-basis: 48%;
+  margin-bottom: 30rpx;
+}
+.goods_list .goods .image image {
+  width: 100%;
+  height: 280rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.goods_list .goods .info {
+  border: 1px solid #efefef;
+  border-top: none;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  padding: 20rpx 0;
+  min-width: 0;
+}
+.goods_list .goods .info .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1f1f1f;
+  font-size: 28rpx;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 300rpx;
+}
+.goods_list .goods .info .title ._span {
+  background-color: #F54319;
+  color: #fff;
+  padding: 0 6rpx;
+  border-radius: 6rpx;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}
+.goods_list .goods .info .box {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10rpx;
+}
+.goods_list .goods .info .box .left {
+  flex: 1;
+  min-width: 0;
+  min-height: 82rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.goods_list .goods .info .box .left .price {
+  color: #F54319;
+  font-size: 30rpx;
+}
+.goods_list .goods .info .box .left .price ._span {
+  color: #999;
+  font-size: 26rpx;
+  text-decoration: line-through;
+  margin-left: 10rpx;
+}
+.goods_list .goods .info .box .left .vip {
+  color: #1f1f1f;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  padding-top: 6rpx;
+}
+.goods_list .goods .info .box .left .vip ._span {
+  background-color: #1f1f1f;
+  color: gold;
+  font-size: 20rpx;
+  padding: 0 6rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  margin-left: 10rpx;
+}
+.goods_list .goods .info .box .left .tuan ._span {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 2rpx 10rpx;
+  border-radius: 6rpx;
+  background-color: gold;
+  color: #1f1f1f;
+}
+.goods_list .goods .info .box .right aicon {
+  width: 56rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #F54319;
+  border-radius: 100%;
+}
+

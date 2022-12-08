@@ -7,7 +7,8 @@
 			<view class="tabbar">
 				<view class="label" v-for="(item, index) in tabbarList" :key="index" @click.stop="selectTabbarTap(index)">
 					<view class="icons">
-						<aicon :type="current===index?item.icon_active:item.icon_smiles" :color="current===index?template.color.temp_color:template.color.none_color" size="30"></aicon>
+						<aicon :type="current===index?item.icon_active:item.icon_smiles" :color="current===index?template.color.temp_color:template.color.none_color" size="28"></aicon>
+						<view class="num" v-if="item.icon_smiles==='cart' && cart">{{cart}}</view>
 					</view>
 					<view class="name" :style="{color: current===index?template.color.temp_color:template.color.none_color}">{{item.name}}</view>
 				</view>
@@ -23,21 +24,34 @@
 			current: {
 				type: Number,
 				default: 0
-			}
-			
+			},
+			cart: {
+				type: Number,
+				default: 0
+			},
 		},
 		data() {
 			return {
 				template: uni.getStorageSync('__ddminiTemplateConfig'),
 				tabbarList: [{
 					name: '首页',
-					icon_active: 'home-smile-2-fill',
-					icon_smiles: 'home-smile-2-line',
+					icon_active: 'homefill',
+					icon_smiles: 'home',
 					path: '/pages/index/index'
-				}, {
+				},{
+					name: '分类',
+					icon_active: 'goodsnewfill',
+					icon_smiles: 'goodsnew',
+					path: '/pages/index/menu'
+				},{
+					name: '购物车',
+					icon_active: 'cartfill',
+					icon_smiles: 'cart',
+					path: '/pages/order/cart'
+				},{
 					name: '我的',
-					icon_active: 'bear-smile-fill',
-					icon_smiles: 'bear-smile-line',
+					icon_active: 'myfill',
+					icon_smiles: 'my',
 					path: '/pages/user/index'
 				}]
 			}
@@ -88,6 +102,21 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					position: relative;
+					.num{
+						position: absolute;
+						width: 34rpx;
+						height: 34rpx;
+						background-color: #F54319;
+						color: #fff;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						border-radius: 100%;
+						right: -14rpx;
+						top: -10rpx;
+						font-size: 24rpx;
+					}
 				}
 				.name{
 					font-size: 28rpx;

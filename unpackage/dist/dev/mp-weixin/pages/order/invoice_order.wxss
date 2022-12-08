@@ -1,0 +1,146 @@
+.order_list_box .headers {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  background-color: #f5f5f5;
+  border-top: 1px solid #efefef;
+}
+.order_list_box .order_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed #f2f2f2;
+  width: 95%;
+  margin: 0 auto;
+  padding: 30rpx 0;
+}
+.order_list_box .order_list .left {
+  flex: 0 0 13%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order_list_box .order_list .center {
+  flex: 0 0 62%;
+  min-width: 0;
+}
+.order_list_box .order_list .center .label {
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+}
+.order_list_box .order_list .center .label .title {
+  color: #999;
+  padding-right: 12rpx;
+}
+.order_list_box .order_list .right {
+  flex: 0 0 25%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order_list_box .order_list .right .money {
+  font-size: 34rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order_list_box .order_list .right .money ._span {
+  font-weight: normal;
+  font-size: 24rpx;
+  padding-left: 4rpx;
+}
+.order_list_box .order_list .right .text {
+  background-color: #07C16020;
+  color: #07C160;
+  font-size: 20rpx;
+  padding: 2rpx 8rpx;
+  border-radius: 100rpx;
+}
+.order_list_box .select_button {
+  position: fixed;
+  bottom: 50rpx;
+  width: 60%;
+  height: 70rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+  border-radius: 100rpx;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit_invoice_box .headers {
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  background-color: #f5f5f5;
+  border-top: 1px solid #efefef;
+}
+.edit_invoice_box .label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  border-bottom: 1px dashed #f2f2f2;
+}
+.edit_invoice_box .label .title {
+  flex: 0 0 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  position: relative;
+}
+.edit_invoice_box .label .title ._span {
+  color: #ed4014;
+  font-size: 26rpx;
+  position: absolute;
+  left: 0;
+}
+.edit_invoice_box .label .input {
+  flex: 0 0 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.edit_invoice_box .label .input input {
+  width: 100%;
+  height: 100%;
+  font-size: 28rpx;
+}
+.edit_invoice_box .edit_button {
+  width: 60%;
+  height: 70rpx;
+  border-radius: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.edit_invoice_box .edit_button_weixin {
+  color: #fff;
+}
+

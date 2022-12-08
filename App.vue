@@ -65,7 +65,6 @@
 					if (res.code === 0) {
 						self.globalData.user = true;
 					}else{
-						self.globalData.user = false;
 						uni.removeStorageSync('__ddminiUserInfo');
 						self.wechatLogin();
 					}
@@ -97,6 +96,7 @@
 				}
 				let tabbar = [
 					'pages/index/index',
+					'pages/order/cart',
 					'pages/user/index'
 				]
 				let test = tabbar.filter(itm => path.indexOf(itm)>=0);
@@ -117,7 +117,7 @@
 	@import "uview-ui/index.scss";
 	page {
 		font-size: 28rpx;
-		background-color: #f5f5f5;
+		background-color: #ffffff;
 		.content {
 			height: 100%;
 		}
@@ -133,6 +133,24 @@
 		width: 0;
 		height: 0;
 		color: transparent;
+	}
+	
+	.seat_box{
+		width: 100%;
+		padding-bottom: env(safe-area-inset-bottom);
+		.seat{
+			width: 100%;
+			height: 200rpx;
+		}
+	}
+	
+	.fixed_head_box{
+		width: 100%;
+		background-color: #fff;
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 100;
 	}
 	
 	.none_list_box{

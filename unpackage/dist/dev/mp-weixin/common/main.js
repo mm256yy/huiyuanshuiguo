@@ -1,7 +1,7 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["common/main"],[
 /* 0 */
 /*!***********************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/main.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/main.js ***!
   \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -32,7 +32,7 @@ createApp(app).$mount();
 /* 5 */,
 /* 6 */
 /*!***********************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/App.vue ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/App.vue ***!
   \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -71,7 +71,7 @@ component.options.__file = "App.vue"
 /***/ }),
 /* 7 */
 /*!************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/App.vue?vue&type=script&lang=js& ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/App.vue?vue&type=script&lang=js& ***!
   \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -86,7 +86,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 /* 8 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/App.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/App.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -183,7 +183,26 @@ var _request = _interopRequireDefault(__webpack_require__(/*! static/utils/reque
     }
   },
   globalData: {
-    user: false } };exports.default = _default;
+    user: false,
+    getPathTap: function getPathTap(path) {
+      if (!path) {
+        return uni.showToast({ title: '敬请关注', icon: 'none' });
+      }
+      var tabbar = [
+      'pages/index/index',
+      'pages/order/cart',
+      'pages/user/index'];
+
+      var test = tabbar.filter(function (itm) {return path.indexOf(itm) >= 0;});
+      if (test.length === 0) {
+        if (!getApp().globalData.user) {
+          return uni.navigateTo({ url: '/pages/user/login' });
+        }
+        uni.navigateTo({ url: path });
+      } else {
+        uni.switchTab({ url: path });
+      }
+    } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
@@ -191,7 +210,7 @@ var _request = _interopRequireDefault(__webpack_require__(/*! static/utils/reque
 /* 10 */,
 /* 11 */
 /*!*********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/App.vue?vue&type=style&index=0&lang=scss& ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/App.vue?vue&type=style&index=0&lang=scss& ***!
   \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -206,7 +225,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 /* 12 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/App.vue?vue&type=style&index=0&lang=scss& ***!
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/App.vue?vue&type=style&index=0&lang=scss& ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {

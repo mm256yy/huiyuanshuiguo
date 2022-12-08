@@ -1,0 +1,155 @@
+.coupons_box {
+  min-height: 100vh;
+}
+.head_box {
+  width: 100%;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.head_box .add_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+.head_box .add_box .input {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 70rpx;
+  border-radius: 100rpx;
+}
+.head_box .add_box .input input {
+  flex: 1;
+  height: 70rpx;
+  border: 1px solid #efefef;
+  border-right: none;
+  border-radius: 100rpx;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #1c1c1c;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+}
+.head_box .add_box .input .buttons {
+  width: 160rpx;
+  height: 70rpx;
+  border: 1px solid #e5e5e5;
+  border-left: none;
+  background-color: #e5e5e5;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rpx;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 30rpx;
+}
+.head_box .add_box .input .abutton {
+  background-color: #F54319;
+  border-color: #F54319;
+  color: #fff;
+}
+.head_box .menu_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.head_box .menu_box .label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+}
+.head_box .menu_box .label .tit {
+  color: #666;
+  transition: all 0.2s;
+  padding-top: 6rpx;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 12rpx;
+  font-size: 30rpx;
+}
+.head_box .menu_box .alabel .tit {
+  color: #1c1c1c;
+  font-weight: bold;
+  border-color: #F54319;
+}
+.coupons_list_box {
+  padding-top: 30rpx;
+}
+.coupons_list_box .label {
+  width: 90%;
+  height: 180rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+.coupons_list_box .label .price {
+  width: 180rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F54319;
+  font-size: 46rpx;
+  font-weight: bold;
+  line-height: 46rpx;
+}
+.coupons_list_box .label .price ._span {
+  font-size: 26rpx;
+  padding-left: 4rpx;
+  margin-bottom: -6rpx;
+}
+.coupons_list_box .label .info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.coupons_list_box .label .info .title {
+  color: #1c1c1c;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.coupons_list_box .label .info .text {
+  font-size: 28rpx;
+  color: #666;
+  padding-top: 6rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.coupons_list_box .label .info .time {
+  color: #999;
+  font-size: 26rpx;
+  padding-top: 10rpx;
+}
+.coupons_list_box .label .button {
+  width: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coupons_list_box .label .button .btn {
+  background-color: #f14b5b;
+  color: #fff;
+  padding: 6rpx 14rpx;
+  border-radius: 100rpx;
+  font-size: 26rpx;
+}
+

@@ -255,7 +255,7 @@
 }
 page {
   font-size: 28rpx;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 page .content {
   height: 100%;
@@ -270,46 +270,36 @@ image {
   height: 0;
   color: transparent;
 }
-.lineTop:after {
-  position: absolute;
-  content: '';
+.seat_box {
   width: 100%;
-  left: 0;
-  top: 0;
-  height: 1px;
-  background-color: #f5f5f5;
-  -webkit-transform: scale(1, 0.5);
-          transform: scale(1, 0.5);
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  padding-bottom: env(safe-area-inset-bottom);
 }
-.lineBottom:after {
-  position: absolute;
-  content: '';
+.seat_box .seat {
   width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 1px;
-  background-color: #f5f5f5;
-  -webkit-transform: scale(1, 0.5);
-          transform: scale(1, 0.5);
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  height: 200rpx;
 }
-.loadingBox {
-  position: fixed;
+.fixed_head_box {
   width: 100%;
-  height: 100%;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 100;
+}
+.none_list_box {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  flex-direction: column;
+  height: 70vh;
 }
-.loadingBox .loading {
-  width: 80rpx;
-  height: 80rpx;
+.none_list_box image {
+  height: 400rpx;
+  width: 400rpx;
+}
+.none_list_box ._span {
+  color: #999;
+  font-size: 28rpx;
 }
 

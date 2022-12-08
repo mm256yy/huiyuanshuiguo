@@ -126,4 +126,17 @@
   font-size: 24rpx;
   padding-top: 20rpx;
 }
+.button_box {
+  width: 60%;
+  height: 80rpx;
+  background-color: #009DFF;
+  color: #fff;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
 

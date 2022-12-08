@@ -1,9 +1,11 @@
 {
-  "navigationBarTextStyle": "white",
-  "navigationBarBackgroundColor": "#46496e",
-  "navigationBarTitleText": "商务进度查询",
-  "disableScroll": true,
+  "navigationBarTitleText": "首页",
+  "navigationStyle": "custom",
   "usingComponents": {
-    "about": "/components/about/about"
+    "nav-bar": "/components/navBar/navBar",
+    "aicon": "/components/aicon/aicon",
+    "u-count-down": "/node-modules/uview-ui/components/u-count-down/u-count-down",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+    "tabbar": "/components/tabbar/tabbar"
   }
 }

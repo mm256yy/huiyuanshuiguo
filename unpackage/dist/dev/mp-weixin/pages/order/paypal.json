@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "订单确认",
+  "usingComponents": {
+    "u-radio-group": "/node-modules/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/node-modules/uview-ui/components/u-radio/u-radio",
+    "aicon": "/components/aicon/aicon",
+    "paypal-type": "/components/paypalType/paypalType",
+    "u-count-down": "/node-modules/uview-ui/components/u-count-down/u-count-down"
+  }
+}

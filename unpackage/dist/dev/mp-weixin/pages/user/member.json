@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "会员中心",
+  "usingComponents": {
+    "u-line-progress": "/node-modules/uview-ui/components/u-line-progress/u-line-progress"
+  }
+}

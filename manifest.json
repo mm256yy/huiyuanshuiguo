@@ -1,5 +1,5 @@
 {
-    "name" : "演示模版",
+    "name" : "汇园水果",
     "appid" : "__UNI__7C6A530",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,14 +57,14 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxc796c8c929ef13ae",
+        "appid" : "wx06527af6f44079ce",
         "setting" : {
             "urlCheck" : false,
             "es6" : true
         },
         "usingComponents" : true,
-        "serviceProviderTicket" : "ZDIlehugI5MdrqOnoTwoZa6xjnGQW4pAOPyqEUDAHTcwcBeZwZOEBQMqX7kIOALXfR4/+qigSZtkCzeOocfaKdhPKQRfz4jZuzQ=",
-		"requiredPrivateInfos" : [ "chooseAddress" ],
+        "serviceProviderTicket" : "GW4NyRWccsEB+rICG8GOwTx326KBI44/rMGPzG5c3vDSQZTzJAHIp2PzwxpKWf83H+65+kWoyKBGH93Dkhw0rJKFKLgtZnKJRaY=",
+        "requiredPrivateInfos" : [ "chooseAddress", "getLocation" ],
         "permission" : {
             "scope.userLocation" : {
                 "desc" : "获取您的收货位置信息，用于快速填写地址"

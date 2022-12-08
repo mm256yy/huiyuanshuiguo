@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "推荐返现中心",
+  "usingComponents": {
+    "aicon": "/components/aicon/aicon"
+  }
+}

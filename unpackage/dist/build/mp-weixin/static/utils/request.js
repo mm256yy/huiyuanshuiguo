@@ -1,6 +1,7 @@
-const templateKey = 'FR2207131800442946472';
-const domainLinks = uni.getSystemInfoSync().platform==='devtools'?'https://open3.api.ddyy.top':'https://sh.api.ddyy.top';//API后台地址，这个不用修改
-// const domainLinks = 'https://open3.api.ddyy.top';//API后台地址，这个不用修改
+// const templateKey = 'RZ2209302026391794806';
+const templateKey = uni.getExtConfigSync().templateKey;
+const domainLinks = uni.getSystemInfoSync().platform==='devtools'?'https://push.yjyzj.cn':'https://sh.api.dccf.top';//API后台地址，这个不用修改
+// const domainLinks = 'https://push.yjyzj.cn';//API后台地址，这个不用修改
 
 function serverGet(url, data) {
     let promise = new Promise((resolve) => {

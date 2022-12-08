@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "选择商品",
+  "usingComponents": {
+    "aicon": "/components/aicon/aicon",
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup"
+  }
+}

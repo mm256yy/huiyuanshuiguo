@@ -5,7 +5,7 @@
 	        <view class="title">{{wxConfig.accountInfo.nickname}}</view>
 	        <view class="text">首次使用需要授权才能使用哦</view>
 	        <button class="userlogin" @click="getUserInfoTap" :style="{backgroundColor: template.color.temp_color}">授权登录</button>
-	        <button class="userlogin navigateBack" :style="{backgroundColor: template.color.temp_color+'20', color: template.color.temp_color}" @click="navigateBack()">暂不登陆</button>
+	        <button class="userlogin navigateBack" :style="{backgroundColor: template.color.temp_color+'20'}" @click="navigateBack()">暂不登陆</button>
 	    </view>
 		
 		<u-popup :safeAreaInsetBottom="false" :show="editInfoShow" :round="10" :closeOnClickOverlay="false" mode="center" @close="editInfoShow=false">
@@ -18,9 +18,9 @@
 					<form @submit="saveInfoFormTap">
 						<view class="avatar">
 							<image v-if="userInfoData.avatar_url" :src="userInfoData.avatar_url" mode="aspectFill"></image>
-							<image v-else src="https://app.daccf.com/cdn/01/5bce84e7b775b72994a012611b4b8b5e.jpeg" mode="aspectFill"></image>
+							<image v-else src="https://app.ddmini.com/cdn/01/5bce84e7b775b72994a012611b4b8b5e.jpeg" mode="aspectFill"></image>
 							<view class="edit" :style="{backgroundColor: template.color.temp_color}">
-								<image src="https://app.daccf.com/cdn/01/101b22b617899d24677cfa851c73fd70.png" mode="aspectFill"></image>
+								<image src="https://app.ddmini.com/cdn/01/101b22b617899d24677cfa851c73fd70.png" mode="aspectFill"></image>
 							</view>
 							<button open-type="chooseAvatar" @chooseavatar="chooseavatar"></button>
 							<input type="text" name="avatar_url" :value="userInfoData.avatar_url" style="display: none;"/>
@@ -87,11 +87,9 @@
 							if(wes.code === 0){
 								uni.hideLoading();
 								app.globalData.user = true;
-								uni.showToast({title: '授权登陆成功', duration: 800});
+								uni.showToast({title: '授权登陆成功'});
 								uni.setStorage({key: '__ddminiUserInfo',data: wes.data});
-								setTimeout(function(){
-									self.editInfoShow = true;
-								},800)
+								self.editInfoShow = true;
 								// setTimeout(function () {
 								// 	uni.navigateBack();
 								// }, 500);

@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/tabbar/tabbar"],{"220b":function(e,t,n){},"9e0b":function(e,t,n){"use strict";n.d(t,"b",(function(){return i})),n.d(t,"c",(function(){return c})),n.d(t,"a",(function(){return a}));var a={aicon:function(){return n.e("components/aicon/aicon").then(n.bind(null,"6387"))}},i=function(){var e=this,t=e.$createElement;e._self._c},c=[]},acbb:function(e,t,n){"use strict";(function(e){Object.defineProperty(t,"__esModule",{value:!0}),t.default=void 0;var n={name:"tabbar",props:{current:{type:Number,default:0},cart:{type:Number,default:0}},data:function(){return{template:e.getStorageSync("__ddminiTemplateConfig"),tabbarList:[{name:"首页",icon_active:"homefill",icon_smiles:"home",path:"/pages/index/index"},{name:"分类",icon_active:"goodsnewfill",icon_smiles:"goodsnew",path:"/pages/index/menu"},{name:"购物车",icon_active:"cartfill",icon_smiles:"cart",path:"/pages/order/cart"},{name:"我的",icon_active:"myfill",icon_smiles:"my",path:"/pages/user/index"}]}},methods:{selectTabbarTap:function(t){var n=this,a=n.tabbarList[t].path;e.switchTab({url:a})}}};t.default=n}).call(this,n("543d")["default"])},bab2:function(e,t,n){"use strict";n.r(t);var a=n("9e0b"),i=n("ee65");for(var c in i)"default"!==c&&function(e){n.d(t,e,(function(){return i[e]}))}(c);n("e174");var r,o=n("f0c5"),u=Object(o["a"])(i["default"],a["b"],a["c"],!1,null,null,null,!1,a["a"],r);t["default"]=u.exports},e174:function(e,t,n){"use strict";var a=n("220b"),i=n.n(a);i.a},ee65:function(e,t,n){"use strict";n.r(t);var a=n("acbb"),i=n.n(a);for(var c in a)"default"!==c&&function(e){n.d(t,e,(function(){return a[e]}))}(c);t["default"]=i.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/tabbar/tabbar-create-component',
+    {
+        'components/tabbar/tabbar-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("bab2"))
+        })
+    },
+    [['components/tabbar/tabbar-create-component']]
+]);

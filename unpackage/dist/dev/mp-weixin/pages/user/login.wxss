@@ -16,20 +16,20 @@ page {
   border: 1px solid #efefef;
 }
 .login .title {
-  color: #46496e;
+  color: #1f1f1f;
   font-size: 38rpx;
   padding-top: 20rpx;
   font-weight: normal;
 }
 .login .text {
-  color: #46496e90;
+  color: #666666;
   padding-top: 20rpx;
   font-size: 28rpx;
   padding-bottom: 60rpx;
   font-weight: normal;
 }
 .login .userlogin {
-  background-color: #46496e;
+  background-color: #FF633D;
   width: 300rpx;
   height: 80rpx;
   font-size: 30rpx;
@@ -43,11 +43,126 @@ page {
   font-weight: normal;
 }
 .login .navigateBack {
-  background-color: #46496e20;
-  color: #46496e60;
+  background-color: #FF633D20;
+  color: #FF633D;
   margin-top: 10rpx;
 }
 .login button::after {
   border: 0;
+}
+.edit_info_box {
+  width: 600rpx;
+  padding-bottom: 60rpx;
+}
+.edit_info_box .head {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50rpx 0;
+}
+.edit_info_box .head .title {
+  color: #1f1f1f;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.edit_info_box .head .text {
+  color: #1f1f1f;
+  font-size: 28rpx;
+  padding-top: 6rpx;
+}
+.edit_info_box .form_box {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20rpx;
+}
+.edit_info_box .form_box .avatar {
+  width: 160rpx;
+  height: 160rpx;
+  position: relative;
+  margin: 0 auto;
+}
+.edit_info_box .form_box .avatar image {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 1px solid #f2f2f2;
+}
+.edit_info_box .form_box .avatar button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.edit_info_box .form_box .avatar .edit {
+  background-color: #FF633D;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.edit_info_box .form_box .avatar .edit image {
+  width: 38rpx;
+  height: 38rpx;
+  border-radius: 0;
+  border: none;
+}
+.edit_info_box .form_box .label {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 60rpx;
+}
+.edit_info_box .form_box .label .input {
+  border: 1px solid #efefef;
+  height: 80rpx;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit_info_box .form_box .label .input input {
+  width: 90%;
+  height: 100%;
+  color: #1f1f1f;
+  font-size: 28rpx;
+  text-align: center;
+}
+.edit_info_box .form_box .button {
+  background-color: #FF633D;
+  width: 90%;
+  margin: 0 auto;
+  height: 80rpx;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.edit_info_box .form_box .button button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.edit_info_box .form_box .back {
+  color: #999;
+  width: 150rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 26rpx;
+  margin-top: 30rpx;
 }
 

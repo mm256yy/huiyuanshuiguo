@@ -198,8 +198,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-top: 60rpx;
-		padding-bottom: 30rpx;
+		padding-top: 80rpx;
 		.label{
 			width: 250rpx;
 			background-color: rgba(0,169,244,.1);

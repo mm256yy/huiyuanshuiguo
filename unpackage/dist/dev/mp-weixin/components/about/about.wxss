@@ -1,0 +1,27 @@
+.power {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40rpx;
+}
+.power .logo {
+  display: flex;
+  align-items: center;
+  color: #ccc;
+}
+.power .logo image {
+  width: 36rpx;
+  height: 36rpx;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  opacity: 0.5;
+}
+.power .logo text {
+  padding-left: 6rpx;
+}
+.power .text {
+  color: #ccc;
+  font-size: 24rpx;
+}
+

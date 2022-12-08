@@ -762,7 +762,7 @@ function populateParameters(result) {var _result$brand =
 
   var parameters = {
     appId: "__UNI__7C6A530",
-    appName: "回收环保在行动",
+    appName: "汇园水果",
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
@@ -871,7 +871,7 @@ var getAppBaseInfo = {
 
     result = sortObject(Object.assign(result, {
       appId: "__UNI__7C6A530",
-      appName: "回收环保在行动",
+      appName: "汇园水果",
       appVersion: "1.0.0",
       appVersionCode: "100",
       appLanguage: getAppLanguage(hostLanguage),
@@ -1400,7 +1400,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"回收环保在行动","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"汇园水果","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8479,7 +8479,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"回收环保在行动","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"汇园水果","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8500,14 +8500,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"回收环保在行动","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"汇园水果","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"回收环保在行动","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"汇园水果","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -8593,7 +8593,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"回收环保在行动","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"汇园水果","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9004,7 +9004,7 @@ internalMixin(Vue);
 /***/ }),
 /* 5 */
 /*!**************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/pages.json ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/pages.json ***!
   \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -9017,7 +9017,7 @@ internalMixin(Vue);
 /* 8 */,
 /* 9 */
 /*!*************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/static/utils/links.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/static/utils/links.js ***!
   \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
@@ -9034,8 +9034,58 @@ var links = {
   'wechatDetail': '/api/register/wechat/detail',
   'checkToken': '/api/check/token',
   'shopInfo': '/api/shop/info',
-  'agreementSearch': '/api/plugin/agreement/search',
-  'agreementMessage': '/api/plugin/agreement/message',
+  'userInfo': '/api/user/money',
+  'userEdit': '/api/user/edit/data',
+  'userLevelList': '/api/user/level/list',
+  'userLevelBuy': '/api/user/level/buy',
+  'userRecord': '/api/user/money/record',
+  'userScoreRecord': '/api/user/score/record',
+  'bannerList': '/api/plugin/banner/list',
+  'addressList': '/api/address/list',
+  'addressEdit': '/api/address/edit',
+  'addressDel': '/api/address/del',
+  'noticeList': '/api/plugin/notice/list',
+  'noticeDetail': '/api/plugin/notice/detail',
+  'goodsList': '/api/goods/list',
+  'goodsDetail': '/api/goods/detail',
+  'categoryList': '/api/category/list',
+  'cartAdd': '/api/plugin/cart/add',
+  'cartEdit': '/api/plugin/cart/edit',
+  'cartList': '/api/plugin/cart/list',
+  'cartTypeList': '/api/plugin/cart/type/list',
+  'cartTypeDel': '/api/plugin/cart/type/del',
+  'cartTypeDetails': '/api/plugin/cart/type/details',
+  'favoriteAdd': '/api/plugin/favorite/add',
+  'favoriteList': '/api/plugin/favorite/list',
+  'pintuanConfig': '/api/plugin/pintuan/config',
+  'pintuanCheck': '/api/plugin/pintuan/check',
+  'pintuanGoods': '/api/plugin/pintuan/goods',
+  'pintuanUser': '/api/plugin/pintuan/user',
+  'couponsGoods': '/api/plugin/coupons/goods/list',
+  'couponsUserList': '/api/plugin/coupons/user/list',
+  'couponsUserAdd': '/api/plugin/coupons/user/add',
+  'orderCreate': '/api/order/create',
+  'orderList': '/api/order/list',
+  'orderPaypal': '/api/order/paypal',
+  'orderDetail': '/api/order/detail',
+  'orderConfirm': '/api/order/delivery/confirm',
+  'orderDel': '/api/order/invalid/del',
+  'serviceForm': '/api/order/service',
+  'serviceList': '/api/order/service/list',
+  'serviceDel': '/api/order/service/del',
+  'storeList': '/api/plugin/stores/list',
+  'rechargeList': '/api/plugin/recharge/list',
+  'rechargeOrder': '/api/plugin/recharge/order',
+
+  'wxprofitsharingList': '/api/plugin/wxprofitsharing/list',
+  'wxprofitsharingUser': '/api/plugin/wxprofitsharing/user',
+  'rotarylotteryInfo': '/api/plugin/rotarylottery/info',
+  'rotarylotteryNumber': '/api/plugin/rotarylottery/number',
+  'rotarylotteryList': '/api/plugin/rotarylottery/user/list',
+  'rotarylotteryLucky': '/api/plugin/rotarylottery/lucky',
+  'invoiceassistantList': '/api/plugin/invoiceassistant/list',
+  'invoiceassistantOrderList': '/api/plugin/invoiceassistant/order/list',
+  'invoiceassistantOrderApply': '/api/plugin/invoiceassistant/apply',
 
   'uploadFile': '/api/overall/upload/file',
   'messageWechat': '/api/overall/message/wechat',
@@ -9049,14 +9099,15 @@ module.exports = {
 /***/ }),
 /* 10 */
 /*!***************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/static/utils/request.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/static/utils/request.js ***!
   \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(uni) {var templateKey = 'IE2207242058061967907';
-var domainLinks = uni.getSystemInfoSync().platform === 'devtools' ? 'https://open3.api.ddyy.top' : 'https://sh.api.ddyy.top'; //API后台地址，这个不用修改
-// const domainLinks = 'https://open3.api.ddyy.top';//API后台地址，这个不用修改
+/* WEBPACK VAR INJECTION */(function(uni) {var templateKey = 'RZ2209302026391794806';
+// const templateKey = uni.getExtConfigSync().templateKey;
+var domainLinks = uni.getSystemInfoSync().platform === 'devtools' ? 'https://push.yjyzj.cn' : 'https://sh.api.dccf.top'; //API后台地址，这个不用修改
+// const domainLinks = 'https://push.yjyzj.cn';//API后台地址，这个不用修改
 
 function serverGet(url, data) {
   var promise = new Promise(function (resolve) {
@@ -9285,7 +9336,7 @@ function normalizeComponent (
 /***/ }),
 /* 14 */
 /*!**********************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/index.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/index.js ***!
   \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9374,7 +9425,7 @@ var install = function install(Vue) {
 /***/ }),
 /* 15 */
 /*!*********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/mixin/mixin.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/mixin/mixin.js ***!
   \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9543,7 +9594,7 @@ var install = function install(Vue) {
 /***/ }),
 /* 16 */
 /*!***********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/mixin/mpMixin.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/mixin/mpMixin.js ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9558,7 +9609,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 17 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/index.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/index.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9571,7 +9622,7 @@ _Request.default;exports.default = _default;
 /***/ }),
 /* 18 */
 /*!***********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/core/Request.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/core/Request.js ***!
   \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9779,7 +9830,7 @@ Request = /*#__PURE__*/function () {
 /***/ }),
 /* 19 */
 /*!*******************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9792,7 +9843,7 @@ function _default(config) {return (0, _index.default)(config);};exports.default 
 /***/ }),
 /* 20 */
 /*!*************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/adapters/index.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/adapters/index.js ***!
   \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9900,7 +9951,7 @@ function _default(config) {return new Promise(function (resolve, reject) {
 /***/ }),
 /* 21 */
 /*!***************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
   \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -9979,7 +10030,7 @@ function buildURL(url, params) {
 /***/ }),
 /* 22 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/utils.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/utils.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10120,7 +10171,7 @@ function isUndefined(val) {
 /***/ }),
 /* 23 */
 /*!*****************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
   \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10150,7 +10201,7 @@ function buildFullPath(baseURL, requestedURL) {
 /***/ }),
 /* 24 */
 /*!********************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
   \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10174,7 +10225,7 @@ function isAbsoluteURL(url) {
 /***/ }),
 /* 25 */
 /*!******************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
   \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10198,7 +10249,7 @@ function combineURLs(baseURL, relativeURL) {
 /***/ }),
 /* 26 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/core/settle.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/core/settle.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10224,7 +10275,7 @@ function settle(resolve, reject, response) {var
 /***/ }),
 /* 27 */
 /*!**********************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
   \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10284,7 +10335,7 @@ InterceptorManager;exports.default = _default;
 /***/ }),
 /* 28 */
 /*!***************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
   \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10397,7 +10448,7 @@ function _default(globalsConfig) {var config2 = arguments.length > 1 && argument
 /***/ }),
 /* 29 */
 /*!************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/core/defaults.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/core/defaults.js ***!
   \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10435,7 +10486,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 30 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/luch-request/utils/clone.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/luch-request/utils/clone.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -12783,7 +12834,7 @@ module.exports = Array.isArray || function (arr) {
 /***/ }),
 /* 35 */
 /*!********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/util/route.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/util/route.js ***!
   \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -13706,7 +13757,7 @@ if (hadRuntime) {
 /***/ }),
 /* 39 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/function/colorGradient.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/function/colorGradient.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -13849,7 +13900,7 @@ function colorToRgba(color, alpha) {
 /***/ }),
 /* 40 */
 /*!***********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/function/test.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/function/test.js ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -14146,7 +14197,7 @@ function regExp(o) {
 /***/ }),
 /* 41 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/function/debounce.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/function/debounce.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -14185,7 +14236,7 @@ debounce;exports.default = _default;
 /***/ }),
 /* 42 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/function/throttle.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/function/throttle.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -14225,7 +14276,7 @@ throttle;exports.default = _default;
 /***/ }),
 /* 43 */
 /*!************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/function/index.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/function/index.js ***!
   \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -14940,7 +14991,7 @@ function setConfig(_ref3)
 /***/ }),
 /* 44 */
 /*!************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/function/digit.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/function/digit.js ***!
   \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15115,7 +15166,7 @@ function enableBoundaryChecking() {var flag = arguments.length > 0 && arguments[
 /***/ }),
 /* 45 */
 /*!***********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/config.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/config.js ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15158,7 +15209,7 @@ if (true) {
 /***/ }),
 /* 46 */
 /*!**********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props.js ***!
   \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15357,7 +15408,7 @@ _upload.default);exports.default = _default;
 /***/ }),
 /* 47 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/actionSheet.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/actionSheet.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15390,7 +15441,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 48 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/album.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/album.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15423,7 +15474,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 49 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/alert.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/alert.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15453,7 +15504,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 50 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/avatar.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/avatar.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15489,7 +15540,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 51 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/avatarGroup.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/avatarGroup.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15520,7 +15571,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 52 */
 /*!******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/backtop.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/backtop.js ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15554,7 +15605,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 53 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/badge.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/badge.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15589,7 +15640,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 54 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/button.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/button.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15639,7 +15690,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 55 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/calendar.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/calendar.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15689,7 +15740,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 56 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/carKeyboard.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/carKeyboard.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15712,7 +15763,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 57 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/cell.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/cell.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15755,7 +15806,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 58 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/cellGroup.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/cellGroup.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15780,7 +15831,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 59 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/checkbox.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/checkbox.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15815,7 +15866,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 60 */
 /*!************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
   \************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15852,7 +15903,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 61 */
 /*!*************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/circleProgress.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/circleProgress.js ***!
   \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15875,7 +15926,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 62 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/code.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/code.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15904,7 +15955,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 63 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/codeInput.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/codeInput.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15940,7 +15991,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 64 */
 /*!**************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/col.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/col.js ***!
   \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15967,7 +16018,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 65 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/collapse.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/collapse.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -15992,7 +16043,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 66 */
 /*!***********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/collapseItem.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/collapseItem.js ***!
   \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16025,7 +16076,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 67 */
 /*!***********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/columnNotice.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/columnNotice.js ***!
   \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16057,7 +16108,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 68 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/countDown.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/countDown.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16083,7 +16134,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 69 */
 /*!******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/countTo.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/countTo.js ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16116,7 +16167,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 70 */
 /*!*************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/datetimePicker.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/datetimePicker.js ***!
   \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16160,7 +16211,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 71 */
 /*!******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/divider.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/divider.js ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16190,7 +16241,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 72 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/empty.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/empty.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16223,7 +16274,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 73 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/form.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/form.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16253,7 +16304,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 74 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/formItem.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/formItem.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16283,7 +16334,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 75 */
 /*!**************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/gap.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/gap.js ***!
   \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16310,7 +16361,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 76 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/grid.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/grid.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16335,7 +16386,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 77 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/gridItem.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/gridItem.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16359,7 +16410,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 78 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/icon.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/icon.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16403,7 +16454,7 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 45));f
 /***/ }),
 /* 79 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/image.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/image.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16441,7 +16492,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 80 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/indexAnchor.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/indexAnchor.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16468,7 +16519,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 81 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/indexList.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/indexList.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16495,7 +16546,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 82 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/input.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/input.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16551,7 +16602,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 83 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/keyboard.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/keyboard.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16589,7 +16640,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 84 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/line.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/line.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16617,7 +16668,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 85 */
 /*!***********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/lineProgress.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/lineProgress.js ***!
   \***********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16644,7 +16695,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 86 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/link.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/link.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16678,7 +16729,7 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 45));f
 /***/ }),
 /* 87 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/list.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/list.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16714,7 +16765,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 88 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/listItem.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/listItem.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16737,7 +16788,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 89 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/loadingIcon.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/loadingIcon.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16775,7 +16826,7 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 45));f
 /***/ }),
 /* 90 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/loadingPage.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/loadingPage.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16805,7 +16856,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 91 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/loadmore.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/loadmore.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16842,7 +16893,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 92 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/modal.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/modal.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16880,7 +16931,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 93 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/navbar.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/navbar.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16919,7 +16970,7 @@ var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 94));fun
 /***/ }),
 /* 94 */
 /*!**********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/color.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/color.js ***!
   \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16946,7 +16997,7 @@ color;exports.default = _default;
 /***/ }),
 /* 95 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/noNetwork.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/noNetwork.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -16971,7 +17022,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 96 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/noticeBar.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/noticeBar.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17006,7 +17057,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 97 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/notify.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/notify.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17036,7 +17087,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 98 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/numberBox.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/numberBox.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17079,7 +17130,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 99 */
 /*!*************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
   \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17104,7 +17155,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 100 */
 /*!******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/overlay.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/overlay.js ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17130,7 +17181,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 101 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/parse.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/parse.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17160,7 +17211,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 102 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/picker.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/picker.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17198,7 +17249,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 103 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/popup.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/popup.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17235,7 +17286,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 104 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/radio.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/radio.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17270,7 +17321,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 105 */
 /*!*********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/radioGroup.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/radioGroup.js ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17308,7 +17359,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 106 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/rate.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/rate.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17342,7 +17393,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 107 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/readMore.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/readMore.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17372,7 +17423,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 108 */
 /*!**************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/row.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/row.js ***!
   \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17397,7 +17448,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 109 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/rowNotice.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/rowNotice.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17426,7 +17477,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 110 */
 /*!*********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/scrollList.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/scrollList.js ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17454,7 +17505,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 111 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/search.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/search.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17499,7 +17550,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 112 */
 /*!******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/section.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/section.js ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17531,7 +17582,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 113 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/skeleton.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/skeleton.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17564,7 +17615,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 114 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/slider.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/slider.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17597,7 +17648,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 115 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/statusBar.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/statusBar.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17620,7 +17671,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 116 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/steps.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/steps.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17649,7 +17700,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 117 */
 /*!********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/stepsItem.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/stepsItem.js ***!
   \********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17675,7 +17726,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 118 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/sticky.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/sticky.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17703,7 +17754,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 119 */
 /*!*********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/subsection.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/subsection.js ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17734,7 +17785,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 120 */
 /*!**********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/swipeAction.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/swipeAction.js ***!
   \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17757,7 +17808,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 121 */
 /*!**************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
   \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17786,7 +17837,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 122 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/swiper.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/swiper.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17832,7 +17883,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 123 */
 /*!***************************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
   \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17859,7 +17910,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 124 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/switch.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/switch.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17891,7 +17942,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 125 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/tabbar.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/tabbar.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17921,7 +17972,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 126 */
 /*!*********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/tabbarItem.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/tabbarItem.js ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17949,7 +18000,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 127 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/tabs.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/tabs.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17989,7 +18040,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 128 */
 /*!**************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/tag.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/tag.js ***!
   \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18026,7 +18077,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 129 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/text.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/text.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18071,7 +18122,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 130 */
 /*!*******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/textarea.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/textarea.js ***!
   \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18115,7 +18166,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 131 */
 /*!****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/toast.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/toast.js ***!
   \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18152,7 +18203,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 132 */
 /*!******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/toolbar.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/toolbar.js ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18180,7 +18231,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 133 */
 /*!******************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/tooltip.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/tooltip.js ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18213,7 +18264,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 134 */
 /*!*********************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/transition.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/transition.js ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18239,7 +18290,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 135 */
 /*!*****************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/props/upload.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/props/upload.js ***!
   \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18283,7 +18334,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 136 */
 /*!***********************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/config/zIndex.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/config/zIndex.js ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18312,7 +18363,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 /* 137 */
 /*!***************************************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/node_modules/uview-ui/libs/function/platform.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/function/platform.js ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18397,7 +18448,7 @@ platform;exports.default = _default;
 /***/ }),
 /* 138 */
 /*!*************************************************************************!*\
-  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/回收环保在行动/static/utils/utils.js ***!
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/static/utils/utils.js ***!
   \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -18441,6 +18492,4331 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.diaplayTim
   }
   return result;
 }
+
+/***/ }),
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-count-down/props.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 倒计时时长，单位ms
+    time: {
+      type: [String, Number],
+      default: uni.$u.props.countDown.time },
+
+    // 时间格式，DD-日，HH-时，mm-分，ss-秒，SSS-毫秒
+    format: {
+      type: String,
+      default: uni.$u.props.countDown.format },
+
+    // 是否自动开始倒计时
+    autoStart: {
+      type: Boolean,
+      default: uni.$u.props.countDown.autoStart },
+
+    // 是否展示毫秒倒计时
+    millisecond: {
+      type: Boolean,
+      default: uni.$u.props.countDown.millisecond } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 423 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-count-down/utils.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.parseTimeData = parseTimeData;exports.parseFormat = parseFormat;exports.isSameSecond = isSameSecond; // 补0，如1 -> 01
+function padZero(num) {var targetLength = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
+  var str = "".concat(num);
+  while (str.length < targetLength) {
+    str = "0".concat(str);
+  }
+  return str;
+}
+var SECOND = 1000;
+var MINUTE = 60 * SECOND;
+var HOUR = 60 * MINUTE;
+var DAY = 24 * HOUR;
+function parseTimeData(time) {
+  var days = Math.floor(time / DAY);
+  var hours = Math.floor(time % DAY / HOUR);
+  var minutes = Math.floor(time % HOUR / MINUTE);
+  var seconds = Math.floor(time % MINUTE / SECOND);
+  var milliseconds = Math.floor(time % SECOND);
+  return {
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds,
+    milliseconds: milliseconds };
+
+}
+function parseFormat(format, timeData) {var
+
+  days =
+
+
+
+
+  timeData.days,hours = timeData.hours,minutes = timeData.minutes,seconds = timeData.seconds,milliseconds = timeData.milliseconds;
+  // 如果格式化字符串中不存在DD(天)，则将天的时间转为小时中去
+  if (format.indexOf('DD') === -1) {
+    hours += days * 24;
+  } else {
+    // 对天补0
+    format = format.replace('DD', padZero(days));
+  }
+  // 其他同理于DD的格式化处理方式
+  if (format.indexOf('HH') === -1) {
+    minutes += hours * 60;
+  } else {
+    format = format.replace('HH', padZero(hours));
+  }
+  if (format.indexOf('mm') === -1) {
+    seconds += minutes * 60;
+  } else {
+    format = format.replace('mm', padZero(minutes));
+  }
+  if (format.indexOf('ss') === -1) {
+    milliseconds += seconds * 1000;
+  } else {
+    format = format.replace('ss', padZero(seconds));
+  }
+  return format.replace('SSS', padZero(milliseconds, 3));
+}
+function isSameSecond(time1, time2) {
+  return Math.floor(time1 / 1000) === Math.floor(time2 / 1000);
+}
+
+/***/ }),
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */
+/*!*****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-popup/props.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否展示弹窗
+    show: {
+      type: Boolean,
+      default: uni.$u.props.popup.show },
+
+    // 是否显示遮罩
+    overlay: {
+      type: Boolean,
+      default: uni.$u.props.popup.overlay },
+
+    // 弹出的方向，可选值为 top bottom right left center
+    mode: {
+      type: String,
+      default: uni.$u.props.popup.mode },
+
+    // 动画时长，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.popup.duration },
+
+    // 是否显示关闭图标
+    closeable: {
+      type: Boolean,
+      default: uni.$u.props.popup.closeable },
+
+    // 自定义遮罩的样式
+    overlayStyle: {
+      type: [Object, String],
+      default: uni.$u.props.popup.overlayStyle },
+
+    // 点击遮罩是否关闭弹窗
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.popup.closeOnClickOverlay },
+
+    // 层级
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.popup.zIndex },
+
+    // 是否为iPhoneX留出底部安全距离
+    safeAreaInsetBottom: {
+      type: Boolean,
+      default: uni.$u.props.popup.safeAreaInsetBottom },
+
+    // 是否留出顶部安全距离（状态栏高度）
+    safeAreaInsetTop: {
+      type: Boolean,
+      default: uni.$u.props.popup.safeAreaInsetTop },
+
+    // 自定义关闭图标位置，top-left为左上角，top-right为右上角，bottom-left为左下角，bottom-right为右下角
+    closeIconPos: {
+      type: String,
+      default: uni.$u.props.popup.closeIconPos },
+
+    // 是否显示圆角
+    round: {
+      type: [Boolean, String, Number],
+      default: uni.$u.props.popup.round },
+
+    // mode=center，也即中部弹出时，是否使用缩放模式
+    zoom: {
+      type: Boolean,
+      default: uni.$u.props.popup.zoom },
+
+    // 弹窗背景色，设置为transparent可去除白色背景
+    bgColor: {
+      type: String,
+      default: uni.$u.props.popup.bgColor },
+
+    // 遮罩的透明度，0-1之间
+    overlayOpacity: {
+      type: [Number, String],
+      default: uni.$u.props.popup.overlayOpacity } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */
+/*!*****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-parse/props.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+
+
+
+    content: String,
+    copyLink: {
+      type: Boolean,
+      default: uni.$u.props.parse.copyLink },
+
+    domain: String,
+    errorImg: {
+      type: String,
+      default: uni.$u.props.parse.errorImg },
+
+    lazyLoad: {
+      type: Boolean,
+      default: uni.$u.props.parse.lazyLoad },
+
+    loadingImg: {
+      type: String,
+      default: uni.$u.props.parse.loadingImg },
+
+    pauseVideo: {
+      type: Boolean,
+      default: uni.$u.props.parse.pauseVideo },
+
+    previewImg: {
+      type: Boolean,
+      default: uni.$u.props.parse.previewImg },
+
+    scrollTable: Boolean,
+    selectable: Boolean,
+    setTitle: {
+      type: Boolean,
+      default: uni.$u.props.parse.setTitle },
+
+    showImgMenu: {
+      type: Boolean,
+      default: uni.$u.props.parse.showImgMenu },
+
+    tagStyle: Object,
+    useAnchor: null } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 447 */
+/*!******************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-parse/parser.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+/**
+               * @fileoverview html 解析器
+               */
+// 配置
+function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var config = {
+  // 信任的标签（保持标签名不变）
+  trustTags: makeMap('a,abbr,ad,audio,b,blockquote,br,code,col,colgroup,dd,del,dl,dt,div,em,fieldset,h1,h2,h3,h4,h5,h6,hr,i,img,ins,label,legend,li,ol,p,q,ruby,rt,source,span,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,title,ul,video'),
+  // 块级标签（转为 div，其他的非信任标签转为 span）
+  blockTags: makeMap('address,article,aside,body,caption,center,cite,footer,header,html,nav,pre,section'),
+  // 要移除的标签
+  ignoreTags: makeMap('area,base,canvas,embed,frame,head,iframe,input,link,map,meta,param,rp,script,source,style,textarea,title,track,wbr'),
+  // 自闭合的标签
+  voidTags: makeMap('area,base,br,col,circle,ellipse,embed,frame,hr,img,input,line,link,meta,param,path,polygon,rect,source,track,use,wbr'),
+  // html 实体
+  entities: {
+    lt: '<',
+    gt: '>',
+    quot: '"',
+    apos: "'",
+    ensp: "\u2002",
+    emsp: "\u2003",
+    nbsp: '\xA0',
+    semi: ';',
+    ndash: '–',
+    mdash: '—',
+    middot: '·',
+    lsquo: '‘',
+    rsquo: '’',
+    ldquo: '“',
+    rdquo: '”',
+    bull: '•',
+    hellip: '…' },
+
+  // 默认的标签样式
+  tagStyle: {
+
+    address: 'font-style:italic',
+    big: 'display:inline;font-size:1.2em',
+    caption: 'display:table-caption;text-align:center',
+    center: 'text-align:center',
+    cite: 'font-style:italic',
+    dd: 'margin-left:40px',
+    mark: 'background-color:yellow',
+    pre: 'font-family:monospace;white-space:pre',
+    s: 'text-decoration:line-through',
+    small: 'display:inline;font-size:0.8em',
+    u: 'text-decoration:underline' } };var _uni$getSystemInfoSyn =
+
+
+
+uni.getSystemInfoSync(),windowWidth = _uni$getSystemInfoSyn.windowWidth;
+var blankChar = makeMap(' ,\r,\n,\t,\f');
+var idIndex = 0;
+
+
+
+
+
+
+
+
+
+
+/**
+                  * @description 创建 map
+                  * @param {String} str 逗号分隔
+                  */
+
+function makeMap(str) {
+  var map = Object.create(null);
+  var list = str.split(',');
+
+  for (var i = list.length; i--;) {
+    map[list[i]] = true;
+  }
+
+  return map;
+}
+/**
+   * @description 解码 html 实体
+   * @param {String} str 要解码的字符串
+   * @param {Boolean} amp 要不要解码 &amp;
+   * @returns {String} 解码后的字符串
+   */
+
+function decodeEntity(str, amp) {
+  var i = str.indexOf('&');
+
+  while (i != -1) {
+    var j = str.indexOf(';', i + 3);
+    var code = void 0;
+    if (j == -1) break;
+
+    if (str[i + 1] == '#') {
+      // &#123; 形式的实体
+      code = parseInt((str[i + 2] == 'x' ? '0' : '') + str.substring(i + 2, j));
+      if (!isNaN(code)) str = str.substr(0, i) + String.fromCharCode(code) + str.substr(j + 1);
+    } else {
+      // &nbsp; 形式的实体
+      code = str.substring(i + 1, j);
+      if (config.entities[code] || code == 'amp' && amp) str = str.substr(0, i) + (config.entities[code] || '&') + str.substr(j + 1);
+    }
+
+    i = str.indexOf('&', i + 1);
+  }
+
+  return str;
+}
+/**
+   * @description html 解析器
+   * @param {Object} vm 组件实例
+   */
+
+function parser(vm) {
+  this.options = vm || {};
+  this.tagStyle = Object.assign(config.tagStyle, this.options.tagStyle);
+  this.imgList = vm.imgList || [];
+  this.plugins = vm.plugins || [];
+  this.attrs = Object.create(null);
+  this.stack = [];
+  this.nodes = [];
+}
+/**
+   * @description 执行解析
+   * @param {String} content 要解析的文本
+   */
+
+parser.prototype.parse = function (content) {
+  // 插件处理
+  for (var i = this.plugins.length; i--;) {
+    if (this.plugins[i].onUpdate) content = this.plugins[i].onUpdate(content, config) || content;
+  }
+
+  new lexer(this).parse(content); // 出栈未闭合的标签
+
+  while (this.stack.length) {
+    this.popNode();
+  }
+
+  return this.nodes;
+};
+/**
+    * @description 将标签暴露出来（不被 rich-text 包含）
+    */
+
+parser.prototype.expose = function () {
+
+  for (var i = this.stack.length; i--;) {
+    var item = this.stack[i];
+    if (item.name == 'a' || item.c) return;
+    item.c = 1;
+  }
+};
+/**
+    * @description 处理插件
+    * @param {Object} node 要处理的标签
+    * @returns {Boolean} 是否要移除此标签
+    */
+
+parser.prototype.hook = function (node) {
+  for (var i = this.plugins.length; i--;) {
+    if (this.plugins[i].onParse && this.plugins[i].onParse(node, this) == false) return false;
+  }
+
+  return true;
+};
+/**
+    * @description 将链接拼接上主域名
+    * @param {String} url 需要拼接的链接
+    * @returns {String} 拼接后的链接
+    */
+
+parser.prototype.getUrl = function (url) {var
+  domain = this.options.domain;
+
+  if (url[0] == '/') {
+    // // 开头的补充协议名
+    if (url[1] == '/') url = "".concat(domain ? domain.split('://')[0] : 'http', ":").concat(url); // 否则补充整个域名
+    else if (domain) url = domain + url;
+  } else if (domain && !url.includes('data:') && !url.includes('://')) url = "".concat(domain, "/").concat(url);
+
+  return url;
+};
+/**
+    * @description 解析样式表
+    * @param {Object} node 标签
+    * @returns {Object}
+    */
+
+parser.prototype.parseStyle = function (node) {var
+  attrs = node.attrs;
+  var list = (this.tagStyle[node.name] || '').split(';').concat((attrs.style || '').split(';'));
+  var styleObj = {};
+  var tmp = '';
+
+  if (attrs.id) {
+    // 暴露锚点
+    if (this.options.useAnchor) this.expose();else if (node.name != 'img' && node.name != 'a' && node.name != 'video' && node.name != 'audio') attrs.id = void 0;
+  } // 转换 width 和 height 属性
+
+  if (attrs.width) {
+    styleObj.width = parseFloat(attrs.width) + (attrs.width.includes('%') ? '%' : 'px');
+    attrs.width = void 0;
+  }
+
+  if (attrs.height) {
+    styleObj.height = parseFloat(attrs.height) + (attrs.height.includes('%') ? '%' : 'px');
+    attrs.height = void 0;
+  }
+
+  for (var i = 0, len = list.length; i < len; i++) {
+    var info = list[i].split(':');
+    if (info.length < 2) continue;
+    var key = info.shift().trim().toLowerCase();
+    var value = info.join(':').trim(); // 兼容性的 css 不压缩
+
+    if (value[0] == '-' && value.lastIndexOf('-') > 0 || value.includes('safe')) tmp += ';'.concat(key, ':').concat(value); // 重复的样式进行覆盖
+    else if (!styleObj[key] || value.includes('import') || !styleObj[key].includes('import')) {
+        // 填充链接
+        if (value.includes('url')) {
+          var j = value.indexOf('(') + 1;
+
+          if (j) {
+            while (value[j] == '"' || value[j] == "'" || blankChar[value[j]]) {
+              j++;
+            }
+
+            value = value.substr(0, j) + this.getUrl(value.substr(j));
+          }
+        } // 转换 rpx（rich-text 内部不支持 rpx）
+        else if (value.includes('rpx')) {
+            value = value.replace(/[0-9.]+\s*rpx/g, function ($) {return "".concat(parseFloat($) * windowWidth / 750, "px");});
+          }
+
+        styleObj[key] = value;
+      }
+  }
+
+  node.attrs.style = tmp;
+  return styleObj;
+};
+/**
+    * @description 解析到标签名
+    * @param {String} name 标签名
+    * @private
+    */
+
+parser.prototype.onTagName = function (name) {
+  this.tagName = this.xml ? name : name.toLowerCase();
+  if (this.tagName == 'svg') this.xml = true; // svg 标签内大小写敏感
+};
+/**
+    * @description 解析到属性名
+    * @param {String} name 属性名
+    * @private
+    */
+
+parser.prototype.onAttrName = function (name) {
+  name = this.xml ? name : name.toLowerCase();
+
+  if (name.substr(0, 5) == 'data-') {
+    // data-src 自动转为 src
+    if (name == 'data-src' && !this.attrs.src) this.attrName = 'src'; // a 和 img 标签保留 data- 的属性，可以在 imgtap 和 linktap 事件中使用
+    else if (this.tagName == 'img' || this.tagName == 'a') this.attrName = name; // 剩余的移除以减小大小
+      else this.attrName = void 0;
+  } else {
+    this.attrName = name;
+    this.attrs[name] = 'T'; // boolean 型属性缺省设置
+  }
+};
+/**
+    * @description 解析到属性值
+    * @param {String} val 属性值
+    * @private
+    */
+
+parser.prototype.onAttrVal = function (val) {
+  var name = this.attrName || ''; // 部分属性进行实体解码
+
+  if (name == 'style' || name == 'href') this.attrs[name] = decodeEntity(val, true); // 拼接主域名
+  else if (name.includes('src')) this.attrs[name] = this.getUrl(decodeEntity(val, true));else if (name) this.attrs[name] = val;
+};
+/**
+    * @description 解析到标签开始
+    * @param {Boolean} selfClose 是否有自闭合标识 />
+    * @private
+    */
+
+parser.prototype.onOpenTag = function (selfClose) {
+  // 拼装 node
+  var node = Object.create(null);
+  node.name = this.tagName;
+  node.attrs = this.attrs;
+  this.attrs = Object.create(null);var
+  attrs = node.attrs;
+  var parent = this.stack[this.stack.length - 1];
+  var siblings = parent ? parent.children : this.nodes;
+  var close = this.xml ? selfClose : config.voidTags[node.name]; // 转换 embed 标签
+
+  if (node.name == 'embed') {
+
+    var src = attrs.src || ''; // 按照后缀名和 type 将 embed 转为 video 或 audio
+
+    if (src.includes('.mp4') || src.includes('.3gp') || src.includes('.m3u8') || (attrs.type || '').includes('video')) node.name = 'video';else if (src.includes('.mp3') || src.includes('.wav') || src.includes('.aac') || src.includes('.m4a') || (attrs.type || '').includes('audio')) node.name = 'audio';
+    if (attrs.autostart) attrs.autoplay = 'T';
+    attrs.controls = 'T';
+
+
+
+  }
+  // 处理音视频
+
+  if (node.name == 'video' || node.name == 'audio') {
+    // 设置 id 以便获取 context
+    if (node.name == 'video' && !attrs.id) attrs.id = "v".concat(idIndex++); // 没有设置 controls 也没有设置 autoplay 的自动设置 controls
+
+    if (!attrs.controls && !attrs.autoplay) attrs.controls = 'T'; // 用数组存储所有可用的 source
+
+    node.src = [];
+
+    if (attrs.src) {
+      node.src.push(attrs.src);
+      attrs.src = void 0;
+    }
+
+    this.expose();
+  }
+  // 处理自闭合标签
+
+  if (close) {
+    if (!this.hook(node) || config.ignoreTags[node.name]) {
+      // 通过 base 标签设置主域名
+      if (node.name == 'base' && !this.options.domain) this.options.domain = attrs.href;
+      // 设置 source 标签（仅父节点为 video 或 audio 时有效）
+      else if (node.name == 'source' && parent && (parent.name == 'video' || parent.name == 'audio') && attrs.src) parent.src.push(attrs.src);
+
+      return;
+    } // 解析 style
+
+    var styleObj = this.parseStyle(node); // 处理图片
+
+    if (node.name == 'img') {
+      if (attrs.src) {
+        // 标记 webp
+        if (attrs.src.includes('webp')) node.webp = 'T'; // data url 图片如果没有设置 original-src 默认为不可预览的小图片
+
+        if (attrs.src.includes('data:') && !attrs['original-src']) attrs.ignore = 'T';
+
+        if (!attrs.ignore || node.webp || attrs.src.includes('cloud://')) {
+          for (var i = this.stack.length; i--;) {
+            var item = this.stack[i];
+
+            if (item.name == 'a') {
+              node.a = item.attrs;
+              break;
+            }
+
+            var style = item.attrs.style || '';
+
+            if (style.includes('flex:') && !style.includes('flex:0') && !style.includes('flex: 0') && (!styleObj.width || !styleObj.width.includes('%'))) {
+              styleObj.width = '100% !important';
+              styleObj.height = '';
+
+              for (var j = i + 1; j < this.stack.length; j++) {
+                this.stack[j].attrs.style = (this.stack[j].attrs.style || '').replace('inline-', '');
+              }
+            } else if (style.includes('flex') && styleObj.width == '100%') {
+              for (var _j = i + 1; _j < this.stack.length; _j++) {
+                var _style = this.stack[_j].attrs.style || '';
+
+                if (!_style.includes(';width') && !_style.includes(' width') && _style.indexOf('width') != 0) {
+                  styleObj.width = '';
+                  break;
+                }
+              }
+            } else if (style.includes('inline-block')) {
+              if (styleObj.width && styleObj.width[styleObj.width.length - 1] == '%') {
+                item.attrs.style += ";max-width:".concat(styleObj.width);
+                styleObj.width = '';
+              } else item.attrs.style += ';max-width:100%';
+            }
+
+            item.c = 1;
+          }
+
+          attrs.i = this.imgList.length.toString();
+
+          var _src = attrs['original-src'] || attrs.src;
+
+          if (this.imgList.includes(_src)) {
+            // 如果有重复的链接则对域名进行随机大小写变换避免预览时错位
+            var _i = _src.indexOf('://');
+
+            if (_i != -1) {
+              _i += 3;
+
+              var newSrc = _src.substr(0, _i);
+
+              for (; _i < _src.length; _i++) {
+                if (_src[_i] == '/') break;
+                newSrc += Math.random() > 0.5 ? _src[_i].toUpperCase() : _src[_i];
+              }
+
+              newSrc += _src.substr(_i);
+              _src = newSrc;
+            }
+          }
+
+          this.imgList.push(_src);
+
+
+
+
+
+        }
+      }
+
+      if (styleObj.display == 'inline') styleObj.display = '';
+
+      if (attrs.ignore) {
+        styleObj['max-width'] = styleObj['max-width'] || '100%';
+        attrs.style += ';-webkit-touch-callout:none';
+      }
+      // 设置的宽度超出屏幕，为避免变形，高度转为自动
+
+      if (parseInt(styleObj.width) > windowWidth) styleObj.height = void 0; // 记录是否设置了宽高
+
+      if (styleObj.width) {
+        if (styleObj.width.includes('auto')) styleObj.width = '';else {
+          node.w = 'T';
+          if (styleObj.height && !styleObj.height.includes('auto')) node.h = 'T';
+        }
+      }
+    } else if (node.name == 'svg') {
+      siblings.push(node);
+      this.stack.push(node);
+      this.popNode();
+      return;
+    }
+
+    for (var key in styleObj) {
+      if (styleObj[key]) attrs.style += ';'.concat(key, ':').concat(styleObj[key].replace(' !important', ''));
+    }
+
+    attrs.style = attrs.style.substr(1) || void 0;
+  } else {
+    if (node.name == 'pre' || (attrs.style || '').includes('white-space') && attrs.style.includes('pre')) this.pre = node.pre = true;
+    node.children = [];
+    this.stack.push(node);
+  } // 加入节点树
+
+  siblings.push(node);
+};
+/**
+    * @description 解析到标签结束
+    * @param {String} name 标签名
+    * @private
+    */
+
+parser.prototype.onCloseTag = function (name) {
+  // 依次出栈到匹配为止
+  name = this.xml ? name : name.toLowerCase();
+  var i;
+
+  for (i = this.stack.length; i--;) {
+    if (this.stack[i].name == name) break;
+  }
+
+  if (i != -1) {
+    while (this.stack.length > i) {
+      this.popNode();
+    }
+  } else if (name == 'p' || name == 'br') {
+    var siblings = this.stack.length ? this.stack[this.stack.length - 1].children : this.nodes;
+    siblings.push({
+      name: name,
+      attrs: {} });
+
+  }
+};
+/**
+    * @description 处理标签出栈
+    * @private
+    */
+
+parser.prototype.popNode = function () {
+  var node = this.stack.pop();var
+  attrs = node.attrs;var
+  children = node.children;
+  var parent = this.stack[this.stack.length - 1];
+  var siblings = parent ? parent.children : this.nodes;
+
+  if (!this.hook(node) || config.ignoreTags[node.name]) {
+    // 获取标题
+    if (node.name == 'title' && children.length && children[0].type == 'text' && this.options.setTitle) {
+      uni.setNavigationBarTitle({
+        title: children[0].text });
+
+    }
+    siblings.pop();
+    return;
+  }
+
+  if (node.pre) {
+    // 是否合并空白符标识
+    node.pre = this.pre = void 0;
+
+    for (var i = this.stack.length; i--;) {
+      if (this.stack[i].pre) this.pre = true;
+    }
+  }
+
+  var styleObj = {}; // 转换 svg
+
+  if (node.name == 'svg') {
+
+    var src = '';var _attrs =
+    attrs,style = _attrs.style;
+    attrs.style = '';
+    attrs.xmlns = 'http://www.w3.org/2000/svg';
+
+    (function traversal(node) {
+      src += "<".concat(node.name);
+
+      for (var item in node.attrs) {
+        var val = node.attrs[item];
+
+        if (val) {
+          if (item == 'viewbox') item = 'viewBox';
+          src += ' '.concat(item, '="').concat(val, '"');
+        }
+      }
+
+      if (!node.children) src += '/>';else {
+        src += '>';
+
+        for (var _i2 = 0; _i2 < node.children.length; _i2++) {
+          traversal(node.children[_i2]);
+        }
+
+        src += "</".concat(node.name, ">");
+      }
+    })(node);
+
+    node.name = 'img';
+    node.attrs = {
+      src: "data:image/svg+xml;utf8,".concat(src.replace(/#/g, '%23')),
+      style: style,
+      ignore: 'T' };
+
+    node.children = void 0;
+
+    this.xml = false;
+    return;
+  }
+  // 转换 align 属性
+
+  if (attrs.align) {
+    if (node.name == 'table') {
+      if (attrs.align == 'center') styleObj['margin-inline-start'] = styleObj['margin-inline-end'] = 'auto';else styleObj.float = attrs.align;
+    } else styleObj['text-align'] = attrs.align;
+
+    attrs.align = void 0;
+  } // 转换 font 标签的属性
+
+  if (node.name == 'font') {
+    if (attrs.color) {
+      styleObj.color = attrs.color;
+      attrs.color = void 0;
+    }
+
+    if (attrs.face) {
+      styleObj['font-family'] = attrs.face;
+      attrs.face = void 0;
+    }
+
+    if (attrs.size) {
+      var size = parseInt(attrs.size);
+
+      if (!isNaN(size)) {
+        if (size < 1) size = 1;else if (size > 7) size = 7;
+        styleObj['font-size'] = ['xx-small', 'x-small', 'small', 'medium', 'large', 'x-large', 'xx-large'][size - 1];
+      }
+
+      attrs.size = void 0;
+    }
+  }
+  // 一些编辑器的自带 class
+
+  if ((attrs.class || '').includes('align-center')) styleObj['text-align'] = 'center';
+  Object.assign(styleObj, this.parseStyle(node));
+
+  if (parseInt(styleObj.width) > windowWidth) {
+    styleObj['max-width'] = '100%';
+    styleObj['box-sizing'] = 'border-box';
+  }
+
+  if (config.blockTags[node.name]) node.name = 'div'; // 未知标签转为 span，避免无法显示
+  else if (!config.trustTags[node.name] && !this.xml) node.name = 'span';
+  if (node.name == 'a' || node.name == 'ad')
+
+  this.expose();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // 列表处理
+  else if ((node.name == 'ul' || node.name == 'ol') && node.c) {
+      var types = {
+        a: 'lower-alpha',
+        A: 'upper-alpha',
+        i: 'lower-roman',
+        I: 'upper-roman' };
+
+
+      if (types[attrs.type]) {
+        attrs.style += ";list-style-type:".concat(types[attrs.type]);
+        attrs.type = void 0;
+      }
+
+      for (var _i4 = children.length; _i4--;) {
+        if (children[_i4].name == 'li') children[_i4].c = 1;
+      }
+    } // 表格处理
+    else if (node.name == 'table') {
+        // cellpadding、cellspacing、border 这几个常用表格属性需要通过转换实现
+        var padding = parseFloat(attrs.cellpadding);
+        var spacing = parseFloat(attrs.cellspacing);
+        var border = parseFloat(attrs.border);
+
+        if (node.c) {
+          // padding 和 spacing 默认 2
+          if (isNaN(padding)) padding = 2;
+          if (isNaN(spacing)) spacing = 2;
+        }
+
+        if (border) attrs.style += ";border:".concat(border, "px solid gray");
+
+        if (node.flag && node.c) {
+          // 有 colspan 或 rowspan 且含有链接的表格通过 grid 布局实现
+          styleObj.display = 'grid';
+
+          if (spacing) {
+            styleObj['grid-gap'] = "".concat(spacing, "px");
+            styleObj.padding = "".concat(spacing, "px");
+          } // 无间隔的情况下避免边框重叠
+          else if (border) attrs.style += ';border-left:0;border-top:0';
+
+          var width = [];
+          // 表格的列宽
+          var trList = [];
+          // tr 列表
+          var cells = [];
+          // 保存新的单元格
+          var map = {}; // 被合并单元格占用的格子
+
+          (function traversal(nodes) {
+            for (var _i5 = 0; _i5 < nodes.length; _i5++) {
+              if (nodes[_i5].name == 'tr') trList.push(nodes[_i5]);else traversal(nodes[_i5].children || []);
+            }
+          })(children);
+
+          for (var row = 1; row <= trList.length; row++) {
+            var col = 1;
+
+            for (var j = 0; j < trList[row - 1].children.length; j++, col++) {
+              var td = trList[row - 1].children[j];
+
+              if (td.name == 'td' || td.name == 'th') {
+                // 这个格子被上面的单元格占用，则列号++
+                while (map["".concat(row, ".").concat(col)]) {
+                  col++;
+                }
+
+                var _style2 = td.attrs.style || '';
+                var start = _style2.indexOf('width') ? _style2.indexOf(';width') : 0; // 提取出 td 的宽度
+
+                if (start != -1) {
+                  var end = _style2.indexOf(';', start + 6);
+
+                  if (end == -1) end = _style2.length;
+                  if (!td.attrs.colspan) width[col] = _style2.substring(start ? start + 7 : 6, end);
+                  _style2 = _style2.substr(0, start) + _style2.substr(end);
+                }
+
+                _style2 += (border ? ';border:'.concat(border, 'px solid gray') + (spacing ? '' : ';border-right:0;border-bottom:0') : '') + (padding ? ';padding:'.concat(padding, 'px') : ''); // 处理列合并
+
+                if (td.attrs.colspan) {
+                  _style2 += ';grid-column-start:'.concat(col, ';grid-column-end:').concat(col + parseInt(td.attrs.colspan));
+                  if (!td.attrs.rowspan) _style2 += ';grid-row-start:'.concat(row, ';grid-row-end:').concat(row + 1);
+                  col += parseInt(td.attrs.colspan) - 1;
+                } // 处理行合并
+
+                if (td.attrs.rowspan) {
+                  _style2 += ';grid-row-start:'.concat(row, ';grid-row-end:').concat(row + parseInt(td.attrs.rowspan));
+                  if (!td.attrs.colspan) _style2 += ';grid-column-start:'.concat(col, ';grid-column-end:').concat(col + 1); // 记录下方单元格被占用
+
+                  for (var k = 1; k < td.attrs.rowspan; k++) {
+                    map["".concat(row + k, ".").concat(col)] = 1;
+                  }
+                }
+
+                if (_style2) td.attrs.style = _style2;
+                cells.push(td);
+              }
+            }
+
+            if (row == 1) {
+              var temp = '';
+
+              for (var _i6 = 1; _i6 < col; _i6++) {
+                temp += "".concat(width[_i6] ? width[_i6] : 'auto', " ");
+              }
+
+              styleObj['grid-template-columns'] = temp;
+            }
+          }
+
+          node.children = cells;
+        } else {
+          // 没有使用合并单元格的表格通过 table 布局实现
+          if (node.c) styleObj.display = 'table';
+          if (!isNaN(spacing)) styleObj['border-spacing'] = "".concat(spacing, "px");
+
+          if (border || padding) {
+            // 遍历
+            (function traversal(nodes) {
+              for (var _i7 = 0; _i7 < nodes.length; _i7++) {
+                var _td = nodes[_i7];
+
+                if (_td.name == 'th' || _td.name == 'td') {
+                  if (border) _td.attrs.style = 'border:'.concat(border, 'px solid gray;').concat(_td.attrs.style || '');
+                  if (padding) _td.attrs.style = 'padding:'.concat(padding, 'px;').concat(_td.attrs.style || '');
+                } else if (_td.children) traversal(_td.children);
+              }
+            })(children);
+          }
+        } // 给表格添加一个单独的横向滚动层
+
+        if (this.options.scrollTable && !(attrs.style || '').includes('inline')) {
+          var table = _objectSpread({}, node);
+          node.name = 'div';
+          node.attrs = {
+            style: 'overflow:auto' };
+
+          node.children = [table];
+          attrs = table.attrs;
+        }
+      } else if ((node.name == 'td' || node.name == 'th') && (attrs.colspan || attrs.rowspan)) {
+        for (var _i8 = this.stack.length; _i8--;) {
+          if (this.stack[_i8].name == 'table') {
+            this.stack[_i8].flag = 1; // 指示含有合并单元格
+
+            break;
+          }
+        }
+      } // 转换 ruby
+      else if (node.name == 'ruby') {
+          node.name = 'span';
+
+          for (var _i9 = 0; _i9 < children.length - 1; _i9++) {
+            if (children[_i9].type == 'text' && children[_i9 + 1].name == 'rt') {
+              children[_i9] = {
+                name: 'div',
+                attrs: {
+                  style: 'display:inline-block' },
+
+                children: [{
+                  name: 'div',
+                  attrs: {
+                    style: 'font-size:50%;text-align:start' },
+
+                  children: children[_i9 + 1].children },
+                children[_i9]] };
+
+              children.splice(_i9 + 1, 1);
+            }
+          }
+        } else if (node.c) {
+          node.c = 2;
+
+          for (var _i10 = node.children.length; _i10--;) {
+            if (!node.children[_i10].c || node.children[_i10].name == 'table') node.c = 1;
+          }
+        }
+  if ((styleObj.display || '').includes('flex') && !node.c) {
+    for (var _i11 = children.length; _i11--;) {
+      var _item = children[_i11];
+
+      if (_item.f) {
+        _item.attrs.style = (_item.attrs.style || '') + _item.f;
+        _item.f = void 0;
+      }
+    }
+  } // flex 布局时部分样式需要提取到 rich-text 外层
+
+  var flex = parent && (parent.attrs.style || '').includes('flex')
+  // 检查基础库版本 virtualHost 是否可用
+  && !(node.c && wx.getNFCAdapter);
+
+
+
+  if (flex) node.f = ';max-width:100%';
+
+  for (var key in styleObj) {
+    if (styleObj[key]) {
+      var val = ';'.concat(key, ':').concat(styleObj[key].replace(' !important', ''));
+
+      if (flex && (key.includes('flex') && key != 'flex-direction' || key == 'align-self' || styleObj[key][0] == '-' || key == 'width' && val.includes('%'))) {
+        node.f += val;
+        if (key == 'width') attrs.style += ';width:100%';
+      } else
+      {attrs.style += val;}
+    }
+  }
+
+  attrs.style = attrs.style.substr(1) || void 0;
+};
+/**
+    * @description 解析到文本
+    * @param {String} text 文本内容
+    */
+
+parser.prototype.onText = function (text) {
+  if (!this.pre) {
+    // 合并空白符
+    var trim = '';
+    var flag;
+
+    for (var i = 0, len = text.length; i < len; i++) {
+      if (!blankChar[text[i]]) trim += text[i];else {
+        if (trim[trim.length - 1] != ' ') trim += ' ';
+        if (text[i] == '\n' && !flag) flag = true;
+      }
+    } // 去除含有换行符的空串
+
+    if (trim == ' ' && flag) return;
+    text = trim;
+  }
+
+  var node = Object.create(null);
+  node.type = 'text';
+  node.text = decodeEntity(text);
+
+  if (this.hook(node)) {
+    var siblings = this.stack.length ? this.stack[this.stack.length - 1].children : this.nodes;
+    siblings.push(node);
+  }
+};
+/**
+    * @description html 词法分析器
+    * @param {Object} handler 高层处理器
+    */
+
+function lexer(handler) {
+  this.handler = handler;
+}
+/**
+   * @description 执行解析
+   * @param {String} content 要解析的文本
+   */
+
+lexer.prototype.parse = function (content) {
+  this.content = content || '';
+  this.i = 0; // 标记解析位置
+
+  this.start = 0; // 标记一个单词的开始位置
+
+  this.state = this.text; // 当前状态
+
+  for (var len = this.content.length; this.i != -1 && this.i < len;) {
+    this.state();
+  }
+};
+/**
+    * @description 检查标签是否闭合
+    * @param {String} method 如果闭合要进行的操作
+    * @returns {Boolean} 是否闭合
+    * @private
+    */
+
+lexer.prototype.checkClose = function (method) {
+  var selfClose = this.content[this.i] == '/';
+
+  if (this.content[this.i] == '>' || selfClose && this.content[this.i + 1] == '>') {
+    if (method) this.handler[method](this.content.substring(this.start, this.i));
+    this.i += selfClose ? 2 : 1;
+    this.start = this.i;
+    this.handler.onOpenTag(selfClose);
+
+    if (this.handler.tagName == 'script') {
+      this.i = this.content.indexOf('</', this.i);
+
+      if (this.i != -1) {
+        this.i += 2;
+        this.start = this.i;
+      }
+
+      this.state = this.endTag;
+    } else this.state = this.text;
+
+    return true;
+  }
+
+  return false;
+};
+/**
+    * @description 文本状态
+    * @private
+    */
+
+lexer.prototype.text = function () {
+  this.i = this.content.indexOf('<', this.i); // 查找最近的标签
+
+  if (this.i == -1) {
+    // 没有标签了
+    if (this.start < this.content.length) this.handler.onText(this.content.substring(this.start, this.content.length));
+    return;
+  }
+
+  var c = this.content[this.i + 1];
+
+  if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
+    // 标签开头
+    if (this.start != this.i) this.handler.onText(this.content.substring(this.start, this.i));
+    this.start = ++this.i;
+    this.state = this.tagName;
+  } else if (c == '/' || c == '!' || c == '?') {
+    if (this.start != this.i) this.handler.onText(this.content.substring(this.start, this.i));
+    var next = this.content[this.i + 2];
+
+    if (c == '/' && (next >= 'a' && next <= 'z' || next >= 'A' && next <= 'Z')) {
+      // 标签结尾
+      this.i += 2;
+      this.start = this.i;
+      return this.state = this.endTag;
+    } // 处理注释
+
+    var end = '-->';
+    if (c != '!' || this.content[this.i + 2] != '-' || this.content[this.i + 3] != '-') end = '>';
+    this.i = this.content.indexOf(end, this.i);
+
+    if (this.i != -1) {
+      this.i += end.length;
+      this.start = this.i;
+    }
+  } else this.i++;
+};
+/**
+    * @description 标签名状态
+    * @private
+    */
+
+lexer.prototype.tagName = function () {
+  if (blankChar[this.content[this.i]]) {
+    // 解析到标签名
+    this.handler.onTagName(this.content.substring(this.start, this.i));
+
+    while (blankChar[this.content[++this.i]]) {
+
+    }
+
+    if (this.i < this.content.length && !this.checkClose()) {
+      this.start = this.i;
+      this.state = this.attrName;
+    }
+  } else if (!this.checkClose('onTagName')) this.i++;
+};
+/**
+    * @description 属性名状态
+    * @private
+    */
+
+lexer.prototype.attrName = function () {
+  var c = this.content[this.i];
+
+  if (blankChar[c] || c == '=') {
+    // 解析到属性名
+    this.handler.onAttrName(this.content.substring(this.start, this.i));
+    var needVal = c == '=';
+    var len = this.content.length;
+
+    while (++this.i < len) {
+      c = this.content[this.i];
+
+      if (!blankChar[c]) {
+        if (this.checkClose()) return;
+
+        if (needVal) {
+          // 等号后遇到第一个非空字符
+          this.start = this.i;
+          return this.state = this.attrVal;
+        }
+
+        if (this.content[this.i] == '=') needVal = true;else {
+          this.start = this.i;
+          return this.state = this.attrName;
+        }
+      }
+    }
+  } else if (!this.checkClose('onAttrName')) this.i++;
+};
+/**
+    * @description 属性值状态
+    * @private
+    */
+
+lexer.prototype.attrVal = function () {
+  var c = this.content[this.i];
+  var len = this.content.length; // 有冒号的属性
+
+  if (c == '"' || c == "'") {
+    this.start = ++this.i;
+    this.i = this.content.indexOf(c, this.i);
+    if (this.i == -1) return;
+    this.handler.onAttrVal(this.content.substring(this.start, this.i));
+  } // 没有冒号的属性
+  else {
+      for (; this.i < len; this.i++) {
+        if (blankChar[this.content[this.i]]) {
+          this.handler.onAttrVal(this.content.substring(this.start, this.i));
+          break;
+        } else if (this.checkClose('onAttrVal')) return;
+      }
+    }
+
+  while (blankChar[this.content[++this.i]]) {
+
+  }
+
+  if (this.i < len && !this.checkClose()) {
+    this.start = this.i;
+    this.state = this.attrName;
+  }
+};
+/**
+    * @description 结束标签状态
+    * @returns {String} 结束的标签名
+    * @private
+    */
+
+lexer.prototype.endTag = function () {
+  var c = this.content[this.i];
+
+  if (blankChar[c] || c == '>' || c == '/') {
+    this.handler.onCloseTag(this.content.substring(this.start, this.i));
+
+    if (c != '>') {
+      this.i = this.content.indexOf('>', this.i);
+      if (this.i == -1) return;
+    }
+
+    this.start = ++this.i;
+    this.state = this.text;
+  } else this.i++;
+};
+
+module.exports = parser;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */
+/*!*****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-modal/props.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否展示modal
+    show: {
+      type: Boolean,
+      default: uni.$u.props.modal.show },
+
+    // 标题
+    title: {
+      type: [String],
+      default: uni.$u.props.modal.title },
+
+    // 弹窗内容
+    content: {
+      type: String,
+      default: uni.$u.props.modal.content },
+
+    // 确认文案
+    confirmText: {
+      type: String,
+      default: uni.$u.props.modal.confirmText },
+
+    // 取消文案
+    cancelText: {
+      type: String,
+      default: uni.$u.props.modal.cancelText },
+
+    // 是否显示确认按钮
+    showConfirmButton: {
+      type: Boolean,
+      default: uni.$u.props.modal.showConfirmButton },
+
+    // 是否显示取消按钮
+    showCancelButton: {
+      type: Boolean,
+      default: uni.$u.props.modal.showCancelButton },
+
+    // 确认按钮颜色
+    confirmColor: {
+      type: String,
+      default: uni.$u.props.modal.confirmColor },
+
+    // 取消文字颜色
+    cancelColor: {
+      type: String,
+      default: uni.$u.props.modal.cancelColor },
+
+    // 对调确认和取消的位置
+    buttonReverse: {
+      type: Boolean,
+      default: uni.$u.props.modal.buttonReverse },
+
+    // 是否开启缩放效果
+    zoom: {
+      type: Boolean,
+      default: uni.$u.props.modal.zoom },
+
+    // 是否异步关闭，只对确定按钮有效
+    asyncClose: {
+      type: Boolean,
+      default: uni.$u.props.modal.asyncClose },
+
+    // 是否允许点击遮罩关闭modal
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.modal.closeOnClickOverlay },
+
+    // 给一个负的margin-top，往上偏移，避免和键盘重合的情况
+    negativeTop: {
+      type: [String, Number],
+      default: uni.$u.props.modal.negativeTop },
+
+    // modal宽度，不支持百分比，可以数值，px，rpx单位
+    width: {
+      type: [String, Number],
+      default: uni.$u.props.modal.width },
+
+    // 确认按钮的样式，circle-圆形，square-方形，如设置，将不会显示取消按钮
+    confirmButtonShape: {
+      type: String,
+      default: uni.$u.props.modal.confirmButtonShape } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */
+/*!************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-avatar-group/props.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 头像图片组
+    urls: {
+      type: Array,
+      default: uni.$u.props.avatarGroup.urls },
+
+    // 最多展示的头像数量
+    maxCount: {
+      type: [String, Number],
+      default: uni.$u.props.avatarGroup.maxCount },
+
+    // 头像形状
+    shape: {
+      type: String,
+      default: uni.$u.props.avatarGroup.shape },
+
+    // 图片裁剪模式
+    mode: {
+      type: String,
+      default: uni.$u.props.avatarGroup.mode },
+
+    // 超出maxCount时是否显示查看更多的提示
+    showMore: {
+      type: Boolean,
+      default: uni.$u.props.avatarGroup.showMore },
+
+    // 头像大小
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.avatarGroup.size },
+
+    // 指定从数组的对象元素中读取哪个属性作为图片地址
+    keyName: {
+      type: String,
+      default: uni.$u.props.avatarGroup.keyName },
+
+    // 头像之间的遮挡比例
+    gap: {
+      type: [String, Number],
+      validator: function validator(value) {
+        return value >= 0 && value <= 1;
+      },
+      default: uni.$u.props.avatarGroup.gap },
+
+    // 需额外显示的值
+    extraValue: {
+      type: [Number, String],
+      default: uni.$u.props.avatarGroup.extraValue } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */
+/*!*******************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-divider/props.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否虚线
+    dashed: {
+      type: Boolean,
+      default: uni.$u.props.divider.dashed },
+
+    // 是否细线
+    hairline: {
+      type: Boolean,
+      default: uni.$u.props.divider.hairline },
+
+    // 是否以点替代文字，优先于text字段起作用
+    dot: {
+      type: Boolean,
+      default: uni.$u.props.divider.dot },
+
+    // 内容文本的位置，left-左边，center-中间，right-右边
+    textPosition: {
+      type: String,
+      default: uni.$u.props.divider.textPosition },
+
+    // 文本内容
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.divider.text },
+
+    // 文本大小
+    textSize: {
+      type: [String, Number],
+      default: uni.$u.props.divider.textSize },
+
+    // 文本颜色
+    textColor: {
+      type: String,
+      default: uni.$u.props.divider.textColor },
+
+    // 线条颜色
+    lineColor: {
+      type: String,
+      default: uni.$u.props.divider.lineColor } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */
+/*!************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-swipe-action/props.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否自动关闭其他swipe按钮组
+    autoClose: {
+      type: Boolean,
+      default: uni.$u.props.swipeAction.autoClose } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */
+/*!*********************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/mixin/touch.js ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var MIN_DISTANCE = 10;
+
+function getDirection(x, y) {
+  if (x > y && x > MIN_DISTANCE) {
+    return 'horizontal';
+  }
+  if (y > x && y > MIN_DISTANCE) {
+    return 'vertical';
+  }
+  return '';
+}var _default =
+
+{
+  methods: {
+    getTouchPoint: function getTouchPoint(e) {
+      if (!e) {
+        return {
+          x: 0,
+          y: 0 };
+
+      }if (e.touches && e.touches[0]) {
+        return {
+          x: e.touches[0].pageX,
+          y: e.touches[0].pageY };
+
+      }if (e.changedTouches && e.changedTouches[0]) {
+        return {
+          x: e.changedTouches[0].pageX,
+          y: e.changedTouches[0].pageY };
+
+      }
+      return {
+        x: e.clientX || 0,
+        y: e.clientY || 0 };
+
+    },
+    resetTouchStatus: function resetTouchStatus() {
+      this.direction = '';
+      this.deltaX = 0;
+      this.deltaY = 0;
+      this.offsetX = 0;
+      this.offsetY = 0;
+    },
+    touchStart: function touchStart(event) {
+      this.resetTouchStatus();
+      var touch = this.getTouchPoint(event);
+      this.startX = touch.x;
+      this.startY = touch.y;
+    },
+    touchMove: function touchMove(event) {
+      var touch = this.getTouchPoint(event);
+      this.deltaX = touch.x - this.startX;
+      this.deltaY = touch.y - this.startY;
+      this.offsetX = Math.abs(this.deltaX);
+      this.offsetY = Math.abs(this.deltaY);
+      this.direction = this.direction || getDirection(this.offsetX, this.offsetY);
+    } } };exports.default = _default;
+
+/***/ }),
+/* 500 */
+/*!*****************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-swipe-action-item/props.js ***!
+  \*****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default2 = {
+  props: {
+    // 控制打开或者关闭
+    show: {
+      type: Boolean,
+      default: uni.$u.props.swipeActionItem.show },
+
+    // 标识符，如果是v-for，可用index索引值
+    name: {
+      type: [String, Number],
+      default: uni.$u.props.swipeActionItem.name },
+
+    // 是否禁用
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.swipeActionItem.disabled },
+
+    // 是否自动关闭其他swipe按钮组
+    autoClose: {
+      type: Boolean,
+      default: uni.$u.props.swipeActionItem.autoClose },
+
+    // 滑动距离阈值，只有大于此值，才被认为是要打开菜单
+    threshold: {
+      type: Number,
+      default: uni.$u.props.swipeActionItem.threshold },
+
+    // 右侧按钮内容
+    options: {
+      type: Array,
+      default: function _default() {
+        return uni.$u.props.swipeActionItem.rightOptions;
+      } },
+
+    // 动画过渡时间，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.swipeActionItem.duration } } };exports.default = _default2;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 501 */
+/*!***************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-swipe-action-item/wxs.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  methods: {
+    // 关闭时执行
+    closeHandler: function closeHandler() {
+      this.status = 'close';
+    },
+    setState: function setState(status) {
+      this.status = status;
+    },
+    closeOther: function closeOther() {
+      // 尝试关闭其他打开的单元格
+      this.parent && this.parent.closeOther(this);
+    } } };exports.default = _default;
+
+/***/ }),
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */
+/*!***********************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-radio-group/props.js ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 绑定的值
+    value: {
+      type: [String, Number, Boolean],
+      default: uni.$u.props.radioGroup.value },
+
+
+    // 是否禁用全部radio
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.radioGroup.disabled },
+
+    // 形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.radioGroup.shape },
+
+    // 选中状态下的颜色，如设置此值，将会覆盖parent的activeColor值
+    activeColor: {
+      type: String,
+      default: uni.$u.props.radioGroup.activeColor },
+
+    // 未选中的颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.radioGroup.inactiveColor },
+
+    // 标识符
+    name: {
+      type: String,
+      default: uni.$u.props.radioGroup.name },
+
+    // 整个组件的尺寸，默认px
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.radioGroup.size },
+
+    // 布局方式，row-横向，column-纵向
+    placement: {
+      type: String,
+      default: uni.$u.props.radioGroup.placement },
+
+    // label的文本
+    label: {
+      type: [String],
+      default: uni.$u.props.radioGroup.label },
+
+    // label的颜色 （默认 '#303133' ）
+    labelColor: {
+      type: [String],
+      default: uni.$u.props.radioGroup.labelColor },
+
+    // label的字体大小，px单位
+    labelSize: {
+      type: [String, Number],
+      default: uni.$u.props.radioGroup.labelSize },
+
+    // 是否禁止点击文本操作checkbox(默认 false )
+    labelDisabled: {
+      type: Boolean,
+      default: uni.$u.props.radioGroup.labelDisabled },
+
+    // 图标颜色
+    iconColor: {
+      type: String,
+      default: uni.$u.props.radioGroup.iconColor },
+
+    // 图标的大小，单位px
+    iconSize: {
+      type: [String, Number],
+      default: uni.$u.props.radioGroup.iconSize },
+
+    // 竖向配列时，是否显示下划线
+    borderBottom: {
+      type: Boolean,
+      default: uni.$u.props.radioGroup.borderBottom },
+
+    // 图标与文字的对齐方式
+    iconPlacement: {
+      type: String,
+      default: uni.$u.props.radio.iconPlacement } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */
+/*!*****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-radio/props.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // radio的名称
+    name: {
+      type: [String, Number, Boolean],
+      default: uni.$u.props.radio.name },
+
+    // 形状，square为方形，circle为圆型
+    shape: {
+      type: String,
+      default: uni.$u.props.radio.shape },
+
+    // 是否禁用
+    disabled: {
+      type: [String, Boolean],
+      default: uni.$u.props.radio.disabled },
+
+    // 是否禁止点击提示语选中单选框
+    labelDisabled: {
+      type: [String, Boolean],
+      default: uni.$u.props.radio.labelDisabled },
+
+    // 选中状态下的颜色，如设置此值，将会覆盖parent的activeColor值
+    activeColor: {
+      type: String,
+      default: uni.$u.props.radio.activeColor },
+
+    // 未选中的颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.radio.inactiveColor },
+
+    // 图标的大小，单位px
+    iconSize: {
+      type: [String, Number],
+      default: uni.$u.props.radio.iconSize },
+
+    // label的字体大小，px单位
+    labelSize: {
+      type: [String, Number],
+      default: uni.$u.props.radio.labelSize },
+
+    // label提示文字，因为nvue下，直接slot进来的文字，由于特殊的结构，无法修改样式
+    label: {
+      type: [String, Number],
+      default: uni.$u.props.radio.label },
+
+    // 整体的大小
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.radio.size },
+
+    // 图标颜色
+    color: {
+      type: String,
+      default: uni.$u.props.radio.color },
+
+    // label的颜色
+    labelColor: {
+      type: String,
+      default: uni.$u.props.radio.labelColor } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */
+/*!******************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-switch/props.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否为加载中状态
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.switch.loading },
+
+    // 是否为禁用装填
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.switch.disabled },
+
+    // 开关尺寸，单位px
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.switch.size },
+
+    // 打开时的背景颜色
+    activeColor: {
+      type: String,
+      default: uni.$u.props.switch.activeColor },
+
+    // 关闭时的背景颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.switch.inactiveColor },
+
+    // 通过v-model双向绑定的值
+    value: {
+      type: [Boolean, String, Number],
+      default: uni.$u.props.switch.value },
+
+    // switch打开时的值
+    activeValue: {
+      type: [String, Number, Boolean],
+      default: uni.$u.props.switch.activeValue },
+
+    // switch关闭时的值
+    inactiveValue: {
+      type: [String, Number, Boolean],
+      default: uni.$u.props.switch.inactiveValue },
+
+    // 是否开启异步变更，开启后需要手动控制输入值
+    asyncChange: {
+      type: Boolean,
+      default: uni.$u.props.switch.asyncChange },
+
+    // 圆点与外边框的距离
+    space: {
+      type: [String, Number],
+      default: uni.$u.props.switch.space } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 535 */,
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */
+/*!*************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-line-progress/props.js ***!
+  \*************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 激活部分的颜色
+    activeColor: {
+      type: String,
+      default: uni.$u.props.lineProgress.activeColor },
+
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.lineProgress.color },
+
+    // 进度百分比，数值
+    percentage: {
+      type: [String, Number],
+      default: uni.$u.props.lineProgress.inactiveColor },
+
+    // 是否在进度条内部显示百分比的值
+    showText: {
+      type: Boolean,
+      default: uni.$u.props.lineProgress.showText },
+
+    // 进度条的高度，单位px
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.lineProgress.height } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */
+/*!*******************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-overlay/props.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否显示遮罩
+    show: {
+      type: Boolean,
+      default: uni.$u.props.overlay.show },
+
+    // 层级z-index
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.zIndex },
+
+    // 遮罩的过渡时间，单位为ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.duration },
+
+    // 不透明度值，当做rgba的第四个参数
+    opacity: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.opacity } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 551 */,
+/* 552 */,
+/* 553 */,
+/* 554 */,
+/* 555 */,
+/* 556 */,
+/* 557 */,
+/* 558 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-transition/props.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否展示组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.transition.show },
+
+    // 使用的动画模式
+    mode: {
+      type: String,
+      default: uni.$u.props.transition.mode },
+
+    // 动画的执行时间，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.transition.duration },
+
+    // 使用的动画过渡函数
+    timingFunction: {
+      type: String,
+      default: uni.$u.props.transition.timingFunction } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 559 */
+/*!***************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-transition/transition.js ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 36));
+
+
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 560));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
+var nextTick = function nextTick() {return new Promise(function (resolve) {return setTimeout(resolve, 1000 / 50);});}; // nvue动画模块实现细节抽离在外部文件
+
+// 定义类名，通过给元素动态切换类名，赋予元素一定的css动画样式
+var getClassNames = function getClassNames(name) {return {
+    enter: "u-".concat(name, "-enter u-").concat(name, "-enter-active"),
+    'enter-to': "u-".concat(name, "-enter-to u-").concat(name, "-enter-active"),
+    leave: "u-".concat(name, "-leave u-").concat(name, "-leave-active"),
+    'leave-to': "u-".concat(name, "-leave-to u-").concat(name, "-leave-active") };};var _default =
+
+
+
+
+
+
+
+
+
+
+{
+  methods: {
+    // 组件被点击发出事件
+    clickHandler: function clickHandler() {
+      this.$emit('click');
+    },
+
+    // vue版本的组件进场处理
+    vueEnter: function vueEnter() {var _this = this;
+      // 动画进入时的类名
+      var classNames = getClassNames(this.mode);
+      // 定义状态和发出动画进入前事件
+      this.status = 'enter';
+      this.$emit('beforeEnter');
+      this.inited = true;
+      this.display = true;
+      this.classes = classNames.enter;
+      this.$nextTick( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+
+
+
+                // 标识动画尚未结束
+                _this.$emit('enter');
+                _this.transitionEnded = false;
+                // 组件动画进入后触发的事件
+                _this.$emit('afterEnter');
+                // 赋予组件enter-to类名
+                _this.classes = classNames['enter-to'];case 4:case "end":return _context.stop();}}}, _callee);})));
+
+    },
+    // 动画离场处理
+    vueLeave: function vueLeave() {var _this2 = this;
+      // 如果不是展示状态，无需执行逻辑
+      if (!this.display) return;
+      var classNames = getClassNames(this.mode);
+      // 标记离开状态和发出事件
+      this.status = 'leave';
+      this.$emit('beforeLeave');
+      // 获得类名
+      this.classes = classNames.leave;
+
+      this.$nextTick(function () {
+        // 动画正在离场的状态
+        _this2.transitionEnded = false;
+        _this2.$emit('leave');
+        // 组件执行动画，到了执行的执行时间后，执行一些额外处理
+        setTimeout(_this2.onTransitionEnd, _this2.duration);
+        _this2.classes = classNames['leave-to'];
+      });
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // 完成过渡后触发
+    onTransitionEnd: function onTransitionEnd() {
+      // 如果已经是结束的状态，无需再处理
+      if (this.transitionEnded) return;
+      this.transitionEnded = true;
+      // 发出组件动画执行后的事件
+      this.$emit(this.status === 'leave' ? 'afterLeave' : 'afterEnter');
+      if (!this.show && this.display) {
+        this.display = false;
+        this.inited = false;
+      }
+    } } };exports.default = _default;
+
+/***/ }),
+/* 560 */
+/*!*****************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
+  \*****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  fade: {
+    enter: { opacity: 0 },
+    'enter-to': { opacity: 1 },
+    leave: { opacity: 1 },
+    'leave-to': { opacity: 0 } },
+
+  'fade-up': {
+    enter: { opacity: 0, transform: 'translateY(100%)' },
+    'enter-to': { opacity: 1, transform: 'translateY(0)' },
+    leave: { opacity: 1, transform: 'translateY(0)' },
+    'leave-to': { opacity: 0, transform: 'translateY(100%)' } },
+
+  'fade-down': {
+    enter: { opacity: 0, transform: 'translateY(-100%)' },
+    'enter-to': { opacity: 1, transform: 'translateY(0)' },
+    leave: { opacity: 1, transform: 'translateY(0)' },
+    'leave-to': { opacity: 0, transform: 'translateY(-100%)' } },
+
+  'fade-left': {
+    enter: { opacity: 0, transform: 'translateX(-100%)' },
+    'enter-to': { opacity: 1, transform: 'translateY(0)' },
+    leave: { opacity: 1, transform: 'translateY(0)' },
+    'leave-to': { opacity: 0, transform: 'translateX(-100%)' } },
+
+  'fade-right': {
+    enter: { opacity: 0, transform: 'translateX(100%)' },
+    'enter-to': { opacity: 1, transform: 'translateY(0)' },
+    leave: { opacity: 1, transform: 'translateY(0)' },
+    'leave-to': { opacity: 0, transform: 'translateX(100%)' } },
+
+  'slide-up': {
+    enter: { transform: 'translateY(100%)' },
+    'enter-to': { transform: 'translateY(0)' },
+    leave: { transform: 'translateY(0)' },
+    'leave-to': { transform: 'translateY(100%)' } },
+
+  'slide-down': {
+    enter: { transform: 'translateY(-100%)' },
+    'enter-to': { transform: 'translateY(0)' },
+    leave: { transform: 'translateY(0)' },
+    'leave-to': { transform: 'translateY(-100%)' } },
+
+  'slide-left': {
+    enter: { transform: 'translateX(-100%)' },
+    'enter-to': { transform: 'translateY(0)' },
+    leave: { transform: 'translateY(0)' },
+    'leave-to': { transform: 'translateX(-100%)' } },
+
+  'slide-right': {
+    enter: { transform: 'translateX(100%)' },
+    'enter-to': { transform: 'translateY(0)' },
+    leave: { transform: 'translateY(0)' },
+    'leave-to': { transform: 'translateX(100%)' } },
+
+  zoom: {
+    enter: { transform: 'scale(0.95)' },
+    'enter-to': { transform: 'scale(1)' },
+    leave: { transform: 'scale(1)' },
+    'leave-to': { transform: 'scale(0.95)' } },
+
+  'fade-zoom': {
+    enter: { opacity: 0, transform: 'scale(0.95)' },
+    'enter-to': { opacity: 1, transform: 'scale(1)' },
+    leave: { opacity: 1, transform: 'scale(1)' },
+    'leave-to': { opacity: 0, transform: 'scale(0.95)' } } };exports.default = _default;
+
+/***/ }),
+/* 561 */,
+/* 562 */,
+/* 563 */,
+/* 564 */,
+/* 565 */,
+/* 566 */,
+/* 567 */,
+/* 568 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-status-bar/props.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    bgColor: {
+      type: String,
+      default: uni.$u.props.statusBar.bgColor } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 569 */,
+/* 570 */,
+/* 571 */,
+/* 572 */,
+/* 573 */,
+/* 574 */,
+/* 575 */,
+/* 576 */
+/*!****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-icon/icons.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  'uicon-level': "\uE693",
+  'uicon-column-line': "\uE68E",
+  'uicon-checkbox-mark': "\uE807",
+  'uicon-folder': "\uE7F5",
+  'uicon-movie': "\uE7F6",
+  'uicon-star-fill': "\uE669",
+  'uicon-star': "\uE65F",
+  'uicon-phone-fill': "\uE64F",
+  'uicon-phone': "\uE622",
+  'uicon-apple-fill': "\uE881",
+  'uicon-chrome-circle-fill': "\uE885",
+  'uicon-backspace': "\uE67B",
+  'uicon-attach': "\uE632",
+  'uicon-cut': "\uE948",
+  'uicon-empty-car': "\uE602",
+  'uicon-empty-coupon': "\uE682",
+  'uicon-empty-address': "\uE646",
+  'uicon-empty-favor': "\uE67C",
+  'uicon-empty-permission': "\uE686",
+  'uicon-empty-news': "\uE687",
+  'uicon-empty-search': "\uE664",
+  'uicon-github-circle-fill': "\uE887",
+  'uicon-rmb': "\uE608",
+  'uicon-person-delete-fill': "\uE66A",
+  'uicon-reload': "\uE788",
+  'uicon-order': "\uE68F",
+  'uicon-server-man': "\uE6BC",
+  'uicon-search': "\uE62A",
+  'uicon-fingerprint': "\uE955",
+  'uicon-more-dot-fill': "\uE630",
+  'uicon-scan': "\uE662",
+  'uicon-share-square': "\uE60B",
+  'uicon-map': "\uE61D",
+  'uicon-map-fill': "\uE64E",
+  'uicon-tags': "\uE629",
+  'uicon-tags-fill': "\uE651",
+  'uicon-bookmark-fill': "\uE63B",
+  'uicon-bookmark': "\uE60A",
+  'uicon-eye': "\uE613",
+  'uicon-eye-fill': "\uE641",
+  'uicon-mic': "\uE64A",
+  'uicon-mic-off': "\uE649",
+  'uicon-calendar': "\uE66E",
+  'uicon-calendar-fill': "\uE634",
+  'uicon-trash': "\uE623",
+  'uicon-trash-fill': "\uE658",
+  'uicon-play-left': "\uE66D",
+  'uicon-play-right': "\uE610",
+  'uicon-minus': "\uE618",
+  'uicon-plus': "\uE62D",
+  'uicon-info': "\uE653",
+  'uicon-info-circle': "\uE7D2",
+  'uicon-info-circle-fill': "\uE64B",
+  'uicon-question': "\uE715",
+  'uicon-error': "\uE6D3",
+  'uicon-close': "\uE685",
+  'uicon-checkmark': "\uE6A8",
+  'uicon-android-circle-fill': "\uE67E",
+  'uicon-android-fill': "\uE67D",
+  'uicon-ie': "\uE87B",
+  'uicon-IE-circle-fill': "\uE889",
+  'uicon-google': "\uE87A",
+  'uicon-google-circle-fill': "\uE88A",
+  'uicon-setting-fill': "\uE872",
+  'uicon-setting': "\uE61F",
+  'uicon-minus-square-fill': "\uE855",
+  'uicon-plus-square-fill': "\uE856",
+  'uicon-heart': "\uE7DF",
+  'uicon-heart-fill': "\uE851",
+  'uicon-camera': "\uE7D7",
+  'uicon-camera-fill': "\uE870",
+  'uicon-more-circle': "\uE63E",
+  'uicon-more-circle-fill': "\uE645",
+  'uicon-chat': "\uE620",
+  'uicon-chat-fill': "\uE61E",
+  'uicon-bag-fill': "\uE617",
+  'uicon-bag': "\uE619",
+  'uicon-error-circle-fill': "\uE62C",
+  'uicon-error-circle': "\uE624",
+  'uicon-close-circle': "\uE63F",
+  'uicon-close-circle-fill': "\uE637",
+  'uicon-checkmark-circle': "\uE63D",
+  'uicon-checkmark-circle-fill': "\uE635",
+  'uicon-question-circle-fill': "\uE666",
+  'uicon-question-circle': "\uE625",
+  'uicon-share': "\uE631",
+  'uicon-share-fill': "\uE65E",
+  'uicon-shopping-cart': "\uE621",
+  'uicon-shopping-cart-fill': "\uE65D",
+  'uicon-bell': "\uE609",
+  'uicon-bell-fill': "\uE640",
+  'uicon-list': "\uE650",
+  'uicon-list-dot': "\uE616",
+  'uicon-zhihu': "\uE6BA",
+  'uicon-zhihu-circle-fill': "\uE709",
+  'uicon-zhifubao': "\uE6B9",
+  'uicon-zhifubao-circle-fill': "\uE6B8",
+  'uicon-weixin-circle-fill': "\uE6B1",
+  'uicon-weixin-fill': "\uE6B2",
+  'uicon-twitter-circle-fill': "\uE6AB",
+  'uicon-twitter': "\uE6AA",
+  'uicon-taobao-circle-fill': "\uE6A7",
+  'uicon-taobao': "\uE6A6",
+  'uicon-weibo-circle-fill': "\uE6A5",
+  'uicon-weibo': "\uE6A4",
+  'uicon-qq-fill': "\uE6A1",
+  'uicon-qq-circle-fill': "\uE6A0",
+  'uicon-moments-circel-fill': "\uE69A",
+  'uicon-moments': "\uE69B",
+  'uicon-qzone': "\uE695",
+  'uicon-qzone-circle-fill': "\uE696",
+  'uicon-baidu-circle-fill': "\uE680",
+  'uicon-baidu': "\uE681",
+  'uicon-facebook-circle-fill': "\uE68A",
+  'uicon-facebook': "\uE689",
+  'uicon-car': "\uE60C",
+  'uicon-car-fill': "\uE636",
+  'uicon-warning-fill': "\uE64D",
+  'uicon-warning': "\uE694",
+  'uicon-clock-fill': "\uE638",
+  'uicon-clock': "\uE60F",
+  'uicon-edit-pen': "\uE612",
+  'uicon-edit-pen-fill': "\uE66B",
+  'uicon-email': "\uE611",
+  'uicon-email-fill': "\uE642",
+  'uicon-minus-circle': "\uE61B",
+  'uicon-minus-circle-fill': "\uE652",
+  'uicon-plus-circle': "\uE62E",
+  'uicon-plus-circle-fill': "\uE661",
+  'uicon-file-text': "\uE663",
+  'uicon-file-text-fill': "\uE665",
+  'uicon-pushpin': "\uE7E3",
+  'uicon-pushpin-fill': "\uE86E",
+  'uicon-grid': "\uE673",
+  'uicon-grid-fill': "\uE678",
+  'uicon-play-circle': "\uE647",
+  'uicon-play-circle-fill': "\uE655",
+  'uicon-pause-circle-fill': "\uE654",
+  'uicon-pause': "\uE8FA",
+  'uicon-pause-circle': "\uE643",
+  'uicon-eye-off': "\uE648",
+  'uicon-eye-off-outline': "\uE62B",
+  'uicon-gift-fill': "\uE65C",
+  'uicon-gift': "\uE65B",
+  'uicon-rmb-circle-fill': "\uE657",
+  'uicon-rmb-circle': "\uE677",
+  'uicon-kefu-ermai': "\uE656",
+  'uicon-server-fill': "\uE751",
+  'uicon-coupon-fill': "\uE8C4",
+  'uicon-coupon': "\uE8AE",
+  'uicon-integral': "\uE704",
+  'uicon-integral-fill': "\uE703",
+  'uicon-home-fill': "\uE964",
+  'uicon-home': "\uE965",
+  'uicon-hourglass-half-fill': "\uE966",
+  'uicon-hourglass': "\uE967",
+  'uicon-account': "\uE628",
+  'uicon-plus-people-fill': "\uE626",
+  'uicon-minus-people-fill': "\uE615",
+  'uicon-account-fill': "\uE614",
+  'uicon-thumb-down-fill': "\uE726",
+  'uicon-thumb-down': "\uE727",
+  'uicon-thumb-up': "\uE733",
+  'uicon-thumb-up-fill': "\uE72F",
+  'uicon-lock-fill': "\uE979",
+  'uicon-lock-open': "\uE973",
+  'uicon-lock-opened-fill': "\uE974",
+  'uicon-lock': "\uE97A",
+  'uicon-red-packet-fill': "\uE690",
+  'uicon-photo-fill': "\uE98B",
+  'uicon-photo': "\uE98D",
+  'uicon-volume-off-fill': "\uE659",
+  'uicon-volume-off': "\uE644",
+  'uicon-volume-fill': "\uE670",
+  'uicon-volume': "\uE633",
+  'uicon-red-packet': "\uE691",
+  'uicon-download': "\uE63C",
+  'uicon-arrow-up-fill': "\uE6B0",
+  'uicon-arrow-down-fill': "\uE600",
+  'uicon-play-left-fill': "\uE675",
+  'uicon-play-right-fill': "\uE676",
+  'uicon-rewind-left-fill': "\uE679",
+  'uicon-rewind-right-fill': "\uE67A",
+  'uicon-arrow-downward': "\uE604",
+  'uicon-arrow-leftward': "\uE601",
+  'uicon-arrow-rightward': "\uE603",
+  'uicon-arrow-upward': "\uE607",
+  'uicon-arrow-down': "\uE60D",
+  'uicon-arrow-right': "\uE605",
+  'uicon-arrow-left': "\uE60E",
+  'uicon-arrow-up': "\uE606",
+  'uicon-skip-back-left': "\uE674",
+  'uicon-skip-forward-right': "\uE672",
+  'uicon-rewind-right': "\uE66F",
+  'uicon-rewind-left': "\uE671",
+  'uicon-arrow-right-double': "\uE68D",
+  'uicon-arrow-left-double': "\uE68C",
+  'uicon-wifi-off': "\uE668",
+  'uicon-wifi': "\uE667",
+  'uicon-empty-data': "\uE62F",
+  'uicon-empty-history': "\uE684",
+  'uicon-empty-list': "\uE68B",
+  'uicon-empty-page': "\uE627",
+  'uicon-empty-order': "\uE639",
+  'uicon-man': "\uE697",
+  'uicon-woman': "\uE69C",
+  'uicon-man-add': "\uE61C",
+  'uicon-man-add-fill': "\uE64C",
+  'uicon-man-delete': "\uE61A",
+  'uicon-man-delete-fill': "\uE66A",
+  'uicon-zh': "\uE70A",
+  'uicon-en': "\uE692" };exports.default = _default;
+
+/***/ }),
+/* 577 */
+/*!****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-icon/props.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 图标类名
+    name: {
+      type: String,
+      default: uni.$u.props.icon.name },
+
+    // 图标颜色，可接受主题色
+    color: {
+      type: String,
+      default: uni.$u.props.icon.color },
+
+    // 字体大小，单位px
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.icon.size },
+
+    // 是否显示粗体
+    bold: {
+      type: Boolean,
+      default: uni.$u.props.icon.bold },
+
+    // 点击图标的时候传递事件出去的index（用于区分点击了哪一个）
+    index: {
+      type: [String, Number],
+      default: uni.$u.props.icon.index },
+
+    // 触摸图标时的类名
+    hoverClass: {
+      type: String,
+      default: uni.$u.props.icon.hoverClass },
+
+    // 自定义扩展前缀，方便用户扩展自己的图标库
+    customPrefix: {
+      type: String,
+      default: uni.$u.props.icon.customPrefix },
+
+    // 图标右边或者下面的文字
+    label: {
+      type: [String, Number],
+      default: uni.$u.props.icon.label },
+
+    // label的位置，只能右边或者下边
+    labelPos: {
+      type: String,
+      default: uni.$u.props.icon.labelPos },
+
+    // label的大小
+    labelSize: {
+      type: [String, Number],
+      default: uni.$u.props.icon.labelSize },
+
+    // label的颜色
+    labelColor: {
+      type: String,
+      default: uni.$u.props.icon.labelColor },
+
+    // label与图标的距离
+    space: {
+      type: [String, Number],
+      default: uni.$u.props.icon.space },
+
+    // 图片的mode
+    imgMode: {
+      type: String,
+      default: uni.$u.props.icon.imgMode },
+
+    // 用于显示图片小图标时，图片的宽度
+    width: {
+      type: [String, Number],
+      default: uni.$u.props.icon.width },
+
+    // 用于显示图片小图标时，图片的高度
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.icon.height },
+
+    // 用于解决某些情况下，让图标垂直居中的用途
+    top: {
+      type: [String, Number],
+      default: uni.$u.props.icon.top },
+
+    // 是否阻止事件传播
+    stop: {
+      type: Boolean,
+      default: uni.$u.props.icon.stop } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 578 */,
+/* 579 */,
+/* 580 */,
+/* 581 */,
+/* 582 */,
+/* 583 */,
+/* 584 */,
+/* 585 */
+/*!***********************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {} };exports.default = _default;
+
+/***/ }),
+/* 586 */,
+/* 587 */,
+/* 588 */,
+/* 589 */,
+/* 590 */,
+/* 591 */,
+/* 592 */,
+/* 593 */,
+/* 594 */,
+/* 595 */,
+/* 596 */,
+/* 597 */,
+/* 598 */,
+/* 599 */,
+/* 600 */,
+/* 601 */,
+/* 602 */
+/*!****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-line/props.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    color: {
+      type: String,
+      default: uni.$u.props.line.color },
+
+    // 长度，竖向时表现为高度，横向时表现为长度，可以为百分比，带px单位的值等
+    length: {
+      type: [String, Number],
+      default: uni.$u.props.line.length },
+
+    // 线条方向，col-竖向，row-横向
+    direction: {
+      type: String,
+      default: uni.$u.props.line.direction },
+
+    // 是否显示细边框
+    hairline: {
+      type: Boolean,
+      default: uni.$u.props.line.hairline },
+
+    // 线条与上下左右元素的间距，字符串形式，如"30px"、"20px 30px"
+    margin: {
+      type: [String, Number],
+      default: uni.$u.props.line.margin },
+
+    // 是否虚线，true-实线，false-虚线
+    dashed: {
+      type: Boolean,
+      default: uni.$u.props.line.dashed } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 603 */,
+/* 604 */,
+/* 605 */,
+/* 606 */,
+/* 607 */,
+/* 608 */,
+/* 609 */,
+/* 610 */
+/*!************************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-loading-icon/props.js ***!
+  \************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否显示组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.loadingIcon.show },
+
+    // 颜色
+    color: {
+      type: String,
+      default: uni.$u.props.loadingIcon.color },
+
+    // 提示文字颜色
+    textColor: {
+      type: String,
+      default: uni.$u.props.loadingIcon.textColor },
+
+    // 文字和图标是否垂直排列
+    vertical: {
+      type: Boolean,
+      default: uni.$u.props.loadingIcon.vertical },
+
+    // 模式选择，circle-圆形，spinner-花朵形，semicircle-半圆形
+    mode: {
+      type: String,
+      default: uni.$u.props.loadingIcon.mode },
+
+    // 图标大小，单位默认px
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.size },
+
+    // 文字大小
+    textSize: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.textSize },
+
+    // 文字内容
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.text },
+
+    // 动画模式
+    timingFunction: {
+      type: String,
+      default: uni.$u.props.loadingIcon.timingFunction },
+
+    // 动画执行周期时间
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.duration },
+
+    // mode=circle时的暗边颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.loadingIcon.inactiveColor } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 611 */,
+/* 612 */,
+/* 613 */,
+/* 614 */,
+/* 615 */,
+/* 616 */,
+/* 617 */,
+/* 618 */
+/*!*********************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/components/l-painter/utils.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.sleep = sleep;exports.isNumber = isNumber;exports.toPx = toPx;exports.compareVersion = compareVersion;exports.base64ToPath = base64ToPath;exports.pathToBase64 = pathToBase64;exports.getImageInfo = getImageInfo;exports.prefix = exports.isBase64 = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 36));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}var networkReg = /^(http|\/\/)/;
+var isBase64 = function isBase64(path) {return /^data:image\/(\w+);base64/.test(path);};exports.isBase64 = isBase64;
+function sleep(delay) {
+  return new Promise(function (resolve) {return setTimeout(resolve, delay);});
+}
+var isDev = ['devtools'].includes(uni.getSystemInfoSync().platform);
+// 缓存图片
+var cache = {};
+function isNumber(value) {
+  return /^-?\d+(\.\d+)?$/.test(value);
+}
+function toPx(value, baseSize) {var isDecimal = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+  // 如果是数字
+  if (typeof value === 'number') {
+    return value;
+  }
+  // 如果是字符串数字
+  if (isNumber(value)) {
+    return value * 1;
+  }
+  // 如果有单位
+  if (typeof value === 'string') {
+    var reg = /^-?([0-9]+)?([.]{1}[0-9]+){0,1}(em|rpx|px|%)$/g;
+    var results = reg.exec(value);
+    if (!value || !results) {
+      return 0;
+    }
+    var unit = results[3];
+    value = parseFloat(value);
+    var res = 0;
+    if (unit === 'rpx') {
+      res = uni.upx2px(value);
+    } else if (unit === 'px') {
+      res = value * 1;
+    } else if (unit === '%') {
+      res = value * toPx(baseSize) / 100;
+    } else if (unit === 'em') {
+      res = value * toPx(baseSize || 14);
+    }
+    return isDecimal ? res.toFixed(2) * 1 : Math.round(res);
+  }
+  return 0;
+}
+
+// 计算版本
+function compareVersion(v1, v2) {
+  v1 = v1.split('.');
+  v2 = v2.split('.');
+  var len = Math.max(v1.length, v2.length);
+  while (v1.length < len) {
+    v1.push('0');
+  }
+  while (v2.length < len) {
+    v2.push('0');
+  }
+  for (var i = 0; i < len; i++) {
+    var num1 = parseInt(v1[i], 10);
+    var num2 = parseInt(v2[i], 10);
+
+    if (num1 > num2) {
+      return 1;
+    } else if (num1 < num2) {
+      return -1;
+    }
+  }
+  return 0;
+}
+
+var prefix = function prefix() {
+
+
+
+
+  return wx;
+
+
+
+
+
+
+
+
+
+
+
+
+
+};exports.prefix = prefix;
+
+
+var base64ToArrayBuffer = function base64ToArrayBuffer(data) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  return uni.base64ToArrayBuffer(data);
+
+};
+
+
+/**
+    * base64转路径
+    * @param {Object} base64
+    */
+function base64ToPath(base64) {var _ref =
+  /data:image\/(\w+);base64,(.*)/.exec(base64) || [],_ref2 = _slicedToArray(_ref, 3),format = _ref2[1],bodyData = _ref2[2];
+
+  return new Promise(function (resolve, reject) {
+
+    var fs = uni.getFileSystemManager();
+    //自定义文件名
+    if (!format) {
+      console.error('ERROR_BASE64SRC_PARSE');
+      reject(new Error('ERROR_BASE64SRC_PARSE'));
+    }
+    var time = new Date().getTime();
+    var pre = prefix();
+    var filePath = "".concat(pre.env.USER_DATA_PATH, "/").concat(time, ".").concat(format);
+    //let buffer = base64ToArrayBuffer(bodyData)
+    fs.writeFile({
+      filePath: filePath,
+      data: base64.replace(/^data:\S+\/\S+;base64,/, ''),
+      encoding: 'base64',
+      // data: buffer,
+      // encoding: 'binary',
+      success: function success() {
+        resolve(filePath);
+      },
+      fail: function fail(err) {
+        console.error('获取base64图片失败', JSON.stringify(err));
+        reject(err);
+      } });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  });
+}
+
+/**
+   * 路径转base64
+   * @param {Object} string
+   */
+function pathToBase64(path) {
+  if (/^data:/.test(path)) return path;
+  return new Promise(function (resolve, reject) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    if (uni.canIUse('getFileSystemManager')) {
+      uni.getFileSystemManager().readFile({
+        filePath: path,
+        encoding: 'base64',
+        success: function success(res) {
+          resolve('data:image/png;base64,' + res.data);
+        },
+        fail: function fail(error) {
+          console.error('urlToBase64 error:', JSON.stringify(error));
+          reject(error);
+        } });
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getImageInfo(img) {var isH5PathToBase64 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  return new Promise( /*#__PURE__*/function () {var _ref3 = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(resolve, reject) {var localReg, imgName;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:
+              // const base64Reg = /^data:image\/(\w+);base64/
+              localReg = /^\.|^\/(?=[^\/])/;if (!
+
+
+
+
+
+
+              isBase64(img)) {_context.next = 11;break;}if (!(
+              isDev || !cache[img])) {_context.next = 10;break;}
+              imgName = img;_context.next = 6;return (
+                base64ToPath(img));case 6:img = _context.sent;
+              cache[imgName] = img;_context.next = 11;break;case 10:
+
+              img = cache[img];case 11:
+
+
+
+              if (cache[img] && cache[img].errMsg) {
+                resolve(cache[img]);
+              } else {
+                uni.getImageInfo({
+                  src: img,
+                  success: function success(image) {
+
+                    image.path = localReg.test(img) ? "/".concat(image.path) : image.path;
+
+
+
+
+                    image.naturalSrc = img;
+                    if (isDev) {
+                      resolve(image);
+                    } else {
+                      cache[img] = image;
+                      resolve(cache[img]);
+                    }
+                  },
+                  fail: function fail(err) {
+                    resolve({ path: img });
+                    console.error("getImageInfo:fail ".concat(img, " failed ").concat(JSON.stringify(err)));
+                  } });
+
+              }case 12:case "end":return _context.stop();}}}, _callee);}));return function (_x, _x2) {return _ref3.apply(this, arguments);};}());
+
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 619 */
+/*!****************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/static/utils/relation.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.parent = parent;exports.children = children;function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var styles = function styles() {var v = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';return v.split(';').filter(function (v) {return v && !/^[\n\s]+$/.test(v);}).map(function (v) {var _item$, _item$$replace;
+    var item = v.split(':');
+    return _defineProperty({},
+    item[0].
+    replace(/-([a-z])/g, function () {
+      return arguments[1].toUpperCase();
+    }).
+    replace(/\s+/g, ''),
+    (item === null || item === void 0 ? void 0 : (_item$ = item[1]) === null || _item$ === void 0 ? void 0 : (_item$$replace = _item$.replace(/^\s+/, '')) === null || _item$$replace === void 0 ? void 0 : _item$$replace.replace(/\s+$/, '')) || '');
+
+  });};
+function parent(parent) {
+  return {
+    provide: function provide() {
+      return _defineProperty({},
+      parent, this);
+
+    },
+    data: function data() {
+      return {
+        el: {
+          css: {},
+          views: [] } };
+
+
+    },
+    watch: {
+      css: {
+        handler: function handler(v) {
+          if (this.canvasId) {var _this$el$css, _this$el$css2;
+            this.el.css = typeof v == 'object' ? v : v && Object.assign.apply(Object, _toConsumableArray(styles(v))) || {};
+            this.canvasWidth = ((_this$el$css = this.el.css) === null || _this$el$css === void 0 ? void 0 : _this$el$css.width) || this.canvasWidth;
+            this.canvasHeight = ((_this$el$css2 = this.el.css) === null || _this$el$css2 === void 0 ? void 0 : _this$el$css2.height) || this.canvasHeight;
+          }
+        },
+        immediate: true } } };
+
+
+
+}
+function children(parent) {var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var indexKey = options.indexKey || 'index';
+  return {
+    inject: _defineProperty({},
+    parent, {
+      default: null }),
+
+
+    watch: {
+      el: {
+        handler: function handler(v, o) {
+          if (JSON.stringify(v) != JSON.stringify(o))
+          this.bindRelation();
+        },
+        deep: true,
+        immediate: true },
+
+      src: {
+        handler: function handler(v, o) {
+          if (v != o)
+          this.bindRelation();
+        },
+        immediate: true },
+
+      text: {
+        handler: function handler(v, o) {
+          if (v != o) this.bindRelation();
+        },
+        immediate: true },
+
+      css: {
+        handler: function handler(v, o) {
+          if (v != o)
+          this.el.css = typeof v == 'object' ? v : v && Object.assign.apply(Object, _toConsumableArray(styles(v))) || {};
+        },
+        immediate: true },
+
+      replace: {
+        handler: function handler(v, o) {
+          if (JSON.stringify(v) != JSON.stringify(o))
+          this.bindRelation();
+        },
+        deep: true,
+        immediate: true } },
+
+
+    created: function created() {var _this = this;
+      Object.defineProperty(this, 'parent', {
+        get: function get() {return _this[parent] || [];} });
+
+      Object.defineProperty(this, 'index', {
+        get: function get() {var _this$parent, _this$parent$el$views;
+          _this.bindRelation();
+          return (_this$parent = _this.parent) === null || _this$parent === void 0 ? void 0 : (_this$parent$el$views = _this$parent.el.views) === null || _this$parent$el$views === void 0 ? void 0 : _this$parent$el$views.indexOf(_this.el);
+        } });
+
+      this.el.type = this.type;
+    },
+    beforeDestroy: function beforeDestroy() {var _this2 = this;
+      if (this.parent) {
+        this.parent.el.views = this.parent.el.views.filter(
+        function (item) {return item._uid !== _this2._uid;});
+
+      }
+    },
+    methods: {
+      bindRelation: function bindRelation() {var _this3 = this;
+        if (!this.el._uid) {
+          this.el._uid = this._uid;
+        }
+        if (['text', 'qrcode'].includes(this.type)) {var _this$$slots, _this$$slots$default, _this$$slots$default$, _ref3;
+          this.el.text = ((_this$$slots = this.$slots) === null || _this$$slots === void 0 ? void 0 : (_this$$slots$default = _this$$slots.default) === null || _this$$slots$default === void 0 ? void 0 : (_this$$slots$default$ = _this$$slots$default[0]) === null || _this$$slots$default$ === void 0 ? void 0 : _this$$slots$default$.text) || ((_ref3 = "".concat(this.text)) === null || _ref3 === void 0 ? void 0 : _ref3.replace(/\\n/g, '\n')) || '';
+        }
+        if (this.type == 'text' && this.replace) {
+          this.el.replace = this.replace;
+        }
+        if (this.type == 'image') {
+          this.el.src = this.src;
+        }
+        //  || this.parent.el.views.indexOf(this.el) !== -1
+        if (!this.parent) {
+          return;
+        }
+        var views = this.parent.el.views || [];
+        if (views.indexOf(this.el) !== -1) {
+          this.parent.el.views = views.map(function (v) {return v._uid == _this3._uid ? _this3.el : v;});
+        } else {
+          this.parent.el.views = [].concat(_toConsumableArray(views), [this.el]);
+        }
+      } },
+
+    mounted: function mounted() {
+      this.bindRelation();
+    } };
+
+}
+
+/***/ }),
+/* 620 */
+/*!***************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/components/l-painter/painter-min.js ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.Painter = void 0; /*! *****************************************************************************
+                                                                                                     Copyright (c) Microsoft Corporation.
+                                                                                                     
+                                                                                                     Permission to use, copy, modify, and/or distribute this software for any
+                                                                                                     purpose with or without fee is hereby granted.
+                                                                                                     
+                                                                                                     THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+                                                                                                     REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+                                                                                                     AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+                                                                                                     INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+                                                                                                     LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+                                                                                                     OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+                                                                                                     PERFORMANCE OF THIS SOFTWARE.
+                                                                                                     ***************************************************************************** */
+var t,_e = function e() {return (_e = Object.assign || function (t) {for (var e, i = 1, o = arguments.length; i < o; i++) {for (var r in e = arguments[i]) {Object.prototype.hasOwnProperty.call(e, r) && (t[r] = e[r]);}}return t;}).apply(this, arguments);};function i(t, e, i, o) {return new (i || (i = Promise))(function (r, n) {function s(t) {try {h(o.next(t));} catch (t) {n(t);}}function a(t) {try {h(o.throw(t));} catch (t) {n(t);}}function h(t) {var e;t.done ? r(t.value) : (e = t.value, e instanceof i ? e : new i(function (t) {t(e);})).then(s, a);}h((o = o.apply(t, e || [])).next());});}function o(t, e) {var i,o,r,n,s = { label: 0, sent: function sent() {if (1 & r[0]) throw r[1];return r[1];}, trys: [], ops: [] };return n = { next: a(0), throw: a(1), return: a(2) }, "function" == typeof Symbol && (n[Symbol.iterator] = function () {return this;}), n;function a(n) {return function (a) {return function (n) {if (i) throw new TypeError("Generator is already executing.");for (; s;) {try {if (i = 1, o && (r = 2 & n[0] ? o.return : n[0] ? o.throw || ((r = o.return) && r.call(o), 0) : o.next) && !(r = r.call(o, n[1])).done) return r;switch (o = 0, r && (n = [2 & n[0], r.value]), n[0]) {case 0:case 1:r = n;break;case 4:return s.label++, { value: n[1], done: !1 };case 5:s.label++, o = n[1], n = [0];continue;case 7:n = s.ops.pop(), s.trys.pop();continue;default:if (!(r = s.trys, (r = r.length > 0 && r[r.length - 1]) || 6 !== n[0] && 2 !== n[0])) {s = 0;continue;}if (3 === n[0] && (!r || n[1] > r[0] && n[1] < r[3])) {s.label = n[1];break;}if (6 === n[0] && s.label < r[1]) {s.label = r[1], r = n;break;}if (r && s.label < r[2]) {s.label = r[2], s.ops.push(n);break;}r[2] && s.ops.pop(), s.trys.pop();continue;}n = e.call(t, s);} catch (t) {n = [6, t], o = 0;} finally {i = r = 0;}}if (5 & n[0]) throw n[1];return { value: n[0] ? n[1] : void 0, done: !0 };}([n, a]);};}}var r = { upx2px: function upx2px(t) {return window.innerWidth / 750 * t;}, getSystemInfoSync: function getSystemInfoSync() {return { screenWidth: window.innerWidth };}, getImageInfo: function getImageInfo(t) {var e = t.src,i = t.success,o = t.fail,r = new Image();r.onload = function () {i({ width: this.naturalWidth, height: this.naturalHeight, path: this.src, src: e });}, r.onerror = o, r.src = e;} },n = "object" == typeof swan ? "mp-baidu" : "object" == typeof tt ? "mp-toutao" : "object" == typeof plus ? "plus" : "object" == typeof window ? "undefined" == typeof uni || "undefined" != typeof uni && !(null === uni || void 0 === uni ? void 0 : uni.addInterceptor) ? "web" : "h5" : "mp-weixin",s = "mp-weixin" == n ? wx : "mp-toutao" == n ? tt : "undefined" != typeof uni ? uni.upx2px ? uni : Object.assign(uni, r) : "undefined" != typeof window ? r : uni;if (!s.upx2px) {var a = (null !== (t = s.getSystemInfoSync().screenWidth) && void 0 !== t ? t : 375) / 750;s.upx2px = function (t) {return a * t;};}function h(t) {return /^-?\d+(\.\d+)?$/.test(t);}function d(t, e, i) {if ("number" == typeof t) return t;if (h(t)) return 1 * t;if ("string" == typeof t) {var o = /^-?([0-9]+)?([.]{1}[0-9]+){0,1}(em|rpx|px|%)$/g.exec(t);if (!t || !o) return 0;var r = o[3];t = parseFloat(t);var n = 0;return "rpx" === r ? n = s.upx2px(t) : "px" === r ? n = 1 * t : "%" === r && e ? n = t * d(e) / 100 : "em" === r && e && (n = t * d(e || 14)), i ? 1 * n.toFixed(2) : Math.round(n);}return 0;}function l(t) {var e = this;return new Promise(function (r, a) {return i(e, void 0, void 0, function () {var e, i;return o(this, function (o) {switch (o.label) {case 0:if (e = t, "plus" != n && !/^mp/.test(n) || !/data:image\/(\w+);base64,(.*)/.test(t)) return [3, 4];o.label = 1;case 1:return o.trys.push([1, 3,, 4]), [4, (a = t, new Promise(function (t, e) {var i = /data:image\/(\w+);base64,(.*)/.exec(a) || [],o = i[1];if (i[2], /^mp/.test(n)) {var r = s.getFileSystemManager();o || (console.error("ERROR_BASE64SRC_PARSE"), e(new Error("ERROR_BASE64SRC_PARSE")));var h = new Date().getTime(),d = s.env.USER_DATA_PATH + "/" + h + "." + o;r.writeFile({ filePath: d, data: a.replace(/^data:\S+\/\S+;base64,/, ""), encoding: "base64", success: function success() {t(d);}, fail: function fail(t) {console.error("获取base64图片失败", JSON.stringify(t)), e(t);} });} else if ("plus" != n) e(new Error("not support"));else {var l = a.split(",")[0].match(/data\:\S+\/(\S+);/);l ? l = l[1] : e(new Error("base64 error"));var u = Date.now() + "." + l,c = "_doc",f = "uniapp_temp",g = "_doc/uniapp_temp/" + u;if (!function (t, e) {for (var i = t.split("."), o = e.split("."), r = !1, n = 0; n < o.length; n++) {var s = i[n] - o[n];if (0 !== s) {r = s > 0;break;}}return r;}("Android" === plus.os.name ? "1.9.9.80627" : "1.9.9.80472", plus.runtime.innerVersion)) return void plus.io.resolveLocalFileSystemURL(c, function (i) {i.getDirectory(f, { create: !0, exclusive: !1 }, function (i) {i.getFile(u, { create: !0, exclusive: !1 }, function (i) {i.createWriter(function (i) {var o;i.onwrite = function () {t(g);}, i.onerror = e, i.seek(0), i.writeAsBinary((o = a.split(","))[o.length - 1]);}, e);}, e);}, e);}, e);var v = new plus.nativeObj.Bitmap(u);v.loadBase64Data(a, function () {v.save(g, {}, function () {v.clear(), t(g);}, function (t) {v.clear(), e(t);});}, function (t) {v.clear(), e(t);});}}))];case 2:return e = o.sent(), [3, 4];case 3:return i = o.sent(), console.log(i), [3, 4];case 4:return s.getImageInfo({ src: e, success: function success(t) {if (["right", "left"].includes(t.orientation)) {var e = t.width,i = t.height;t.width = i, t.height = e;}r(t);}, fail: function fail(t) {console.error("获取图片失败:" + e), r({});} }), [2];}var a;});});});}var u = function u(t) {return !(!t || !t.startsWith("linear") && !t.startsWith("radial"));},c = function c(t, e, i, o, r, n) {t.startsWith("linear") ? function (t, e, i, o, r, n) {for (var s = function (t, e, i, o, r) {void 0 === o && (o = 0);void 0 === r && (r = 0);var n = t.match(/([-]?\d{1,3})deg/),s = n && n[1] ? parseFloat(n[1]) : 0;s >= 360 && (s -= 360);s < 0 && (s += 360);if (0 === (s = Math.round(s))) return { x0: Math.round(e / 2) + o, y0: i + r, x1: Math.round(e / 2) + o, y1: r };if (180 === s) return { x0: Math.round(e / 2) + o, y0: r, x1: Math.round(e / 2) + o, y1: i + r };if (90 === s) return { x0: o, y0: Math.round(i / 2) + r, x1: e + o, y1: Math.round(i / 2) + r };if (270 === s) return { x0: e + o, y0: Math.round(i / 2) + r, x1: o, y1: Math.round(i / 2) + r };var a = Math.round(180 * Math.asin(e / Math.sqrt(Math.pow(e, 2) + Math.pow(i, 2))) / Math.PI);if (s === a) return { x0: o, y0: i + r, x1: e + o, y1: r };if (s === 180 - a) return { x0: o, y0: r, x1: e + o, y1: i + r };if (s === 180 + a) return { x0: e + o, y0: r, x1: o, y1: i + r };if (s === 360 - a) return { x0: e + o, y0: i + r, x1: o, y1: r };var h = 0,d = 0,l = 0,u = 0;if (s < a || s > 180 - a && s < 180 || s > 180 && s < 180 + a || s > 360 - a) {var c = s * Math.PI / 180,f = s < a || s > 360 - a ? i / 2 : -i / 2,g = Math.tan(c) * f,v = s < a || s > 180 - a && s < 180 ? e / 2 - g : -e / 2 - g;h = -(l = g + (p = Math.pow(Math.sin(c), 2) * v)), d = -(u = f + p / Math.tan(c));}if (s > a && s < 90 || s > 90 && s < 90 + a || s > 180 + a && s < 270 || s > 270 && s < 360 - a) {var p;c = (90 - s) * Math.PI / 180, g = s > a && s < 90 || s > 90 && s < 90 + a ? e / 2 : -e / 2, f = Math.tan(c) * g, v = s > a && s < 90 || s > 270 && s < 360 - a ? i / 2 - f : -i / 2 - f;h = -(l = g + (p = Math.pow(Math.sin(c), 2) * v) / Math.tan(c)), d = -(u = f + p);}return h = Math.round(h + e / 2) + o, d = Math.round(i / 2 - d) + r, l = Math.round(l + e / 2) + o, u = Math.round(i / 2 - u) + r, { x0: h, y0: d, x1: l, y1: u };}(r, t, e, i, o), a = s.x0, h = s.y0, d = s.x1, l = s.y1, u = n.createLinearGradient(a, h, d, l), c = r.match(/linear-gradient\((.+)\)/)[1], g = f(c.substring(c.indexOf(",") + 1)), v = 0; v < g.colors.length; v++) {u.addColorStop(g.percents[v], g.colors[v]);}n.setFillStyle(u);}(e, i, o, r, t, n) : t.startsWith("radial") && function (t, e, i, o, r, n) {for (var s = f(r.match(/radial-gradient\((.+)\)/)[1]), a = Math.round(t / 2) + i, h = Math.round(e / 2) + o, d = n.createRadialGradient(a, h, 0, a, h, Math.max(t, e) / 2), l = 0; l < s.colors.length; l++) {d.addColorStop(s.percents[l], s.colors[l]);}n.setFillStyle(d);}(e, i, o, r, t, n);};function f(t) {for (var e = [], i = [], o = 0, r = t.substring(0, t.length - 1).split("%,"); o < r.length; o++) {var n = r[o];e.push(n.substring(0, n.lastIndexOf(" ")).trim()), i.push(n.substring(n.lastIndexOf(" "), n.length) / 100);}return { colors: e, percents: i };}function g(t, e, i) {return e in t ? Object.defineProperty(t, e, { value: i, enumerable: !0, configurable: !0, writable: !0 }) : t[e] = i, t;}function v() {return (v = Object.assign || function (t) {for (var e = 1; e < arguments.length; e++) {var i = arguments[e];for (var o in i) {Object.prototype.hasOwnProperty.call(i, o) && (t[o] = i[o]);}}return t;}).apply(this, arguments);}var p = 0,b = { left: null, top: null, width: null, height: null },m = function () {function t(t, e, i, o) {var r = this;g(this, "id", p++), g(this, "style", { left: null, top: null, width: null, height: null }), g(this, "computedStyle", {}), g(this, "children", {}), g(this, "layoutBox", v({}, b)), g(this, "contentSize", v({}, b, { maxLineHeight: 0 })), g(this, "clientSize", v({}, b)), g(this, "borderSize", v({}, b)), g(this, "offsetSize", v({}, b)), this.ctx = o, this.root = i, e && (this.parent = e), this.name = t.name || t.type, this.attributes = this.getAttributes(t);var n = this.getComputedStyle(t, null == e ? void 0 : e.computedStyle);this.isAbsolute = "absolute" == n.position, this.isFixed = "fixed" == n.position, Object.keys(n).forEach(function (t) {Object.defineProperty(r.style, t, { configurable: !0, enumerable: !0, get: function get() {return n[t];}, set: function set(e) {n[t] = e;} });});var s = { contentSize: v({}, this.contentSize), clientSize: v({}, this.clientSize), borderSize: v({}, this.borderSize), offsetSize: v({}, this.offsetSize) };Object.keys(s).forEach(function (t) {Object.keys(r[t]).forEach(function (e) {Object.defineProperty(r[t], e, { configurable: !0, enumerable: !0, get: function get() {return s[t][e];}, set: function set(i) {s[t][e] = i;} });});}), this.computedStyle = this.style;}var e = t.prototype;return e.add = function (t) {t.parent = this, this.children[t.id] = t;}, e.getChildren = function () {var t = this;return Object.keys(this.children).map(function (e) {return t.children[e];});}, e.getComputedStyle = function (t, e) {var i = ["color", "fontSize", "lineHeight", "verticalAlign", "fontWeight", "textAlign"],o = t.css,r = void 0 === o ? {} : o,n = t.type,s = void 0 === n ? "view" : n,a = {};if (e) for (var l = 0; l < i.length; l++) {var u = i[l];(r[u] || e[u]) && (r[u] = r[u] || e[u]);}for (var c = function c() {var t = g[f],e = r[t];if (/^(box)?shadow$/i.test(t)) {var i = e.split(" ").map(function (t) {return /^\d/.test(t) ? d(t) : t;});return a.boxShadow = i, "continue";}if (/^border/i.test(t) && !/radius$/i.test(t)) {var o,n = t.match(/^border([BTRLa-z]+)?/)[0],l = t.match(/[W|S|C][a-z]+/),u = e.replace(/([\(,])\s+|\s+([\),])/g, "$1$2").split(" ").map(function (t) {return /^\d/.test(t) ? d(t, "", !0) : t;});return a[n] = ((o = {})[n + "Width"] = h(u[0]) ? u[0] : 0, o[n + "Style"] = u[1] || "solid", o[n + "Color"] = u[2] || "black", o), 1 == u.length && l && (a[n][n + l[0]] = u[0]), "continue";}if (/^background(color)?$/i.test(t)) return a.backgroundColor = e, "continue";if (/^objectPosition$/i.test(t)) return a[t] = e.split(" "), "continue";if (/padding|margin|radius/i.test(t)) {var c = /radius$/i.test(t),v = c ? "borderRadius" : t.match(/[a-z]+/)[0],p = [0, 0, 0, 0].map(function (t, e) {return c ? ["borderTopLeftRadius", "borderTopRightRadius", "borderBottomRightRadius", "borderBottomLeftRadius"][e] : [v + "Top", v + "Right", v + "Bottom", v + "Left"][e];});if ("padding" === t || "margin" === t || /^(border)?radius$/i.test(t)) {var b,m = (null == e ? void 0 : e.split(" ").map(function (e) {return /^\d+(rpx|px)?$/.test(e) ? d(e) : "margin" != t && /auto/.test(e) ? 0 : e;}, [])) || [0],w = c ? "borderRadius" : t,x = m[0],y = m[1],S = m[2],z = m[3];a[w] = ((b = {})[p[0]] = "auto" == x ? 0 : x, b[p[1]] = h(y) ? y : x, b[p[2]] = "auto" == (h(S) ? S : x) ? 0 : h(S) ? S : x, b[p[3]] = h(z) ? z : y || x, b);} else {var B;if ("object" == typeof a[v]) a[v][t] = "margin" == v && "auto" == e || /%$/.test(e) ? e : d(e);else a[v] = ((B = {})[p[0]] = a[v] || 0, B[p[1]] = a[v] || 0, B[p[2]] = a[v] || 0, B[p[3]] = a[v] || 0, B), a[v][t] = "margin" == v && "auto" == e || /%$/.test(e) ? e : d(e);}return "continue";}if (/^transform$/i.test(t)) return a[t] = {}, e.replace(/([a-zA-Z]+)\(([0-9,-\.%rpxdeg\s]+)\)/g, function (e, i, o) {var n = o.split(",").map(function (t) {return t.replace(/(^\s*)|(\s*$)/g, "");}),s = function s(t, e) {return t.includes("deg") ? 1 * t : e && !/%$/.test(e) ? d(t, e) : t;};i.includes("matrix") ? a[t][i] = n.map(function (t) {return 1 * t;}) : i.includes("rotate") ? a[t][i] = 1 * o.match(/^-?\d+(\.\d+)?/)[0] : /[X, Y]/.test(i) ? a[t][i] = /[X]/.test(i) ? s(n[0], r.width) : s(n[0], r.height) : (a[t][i + "X"] = s(n[0], r.width), a[t][i + "Y"] = s(n[1] || n[0], r.height));}), "continue";/^left|top$/i.test(t) && !["absolute", "fixed"].includes(r.position) ? a[t] = 0 : a[t] = /^[\d\.]+(px|rpx)?$/.test(e) ? d(e) : /em$/.test(e) && "text" == s ? d(e, r.fontSize) : e;}, f = 0, g = Object.keys(r); f < g.length; f++) {c();}return a;}, e.setPosition = function (t, e) {var i = { left: "width", top: "height", right: "width", bottom: "height" };Object.keys(i).forEach(function (o) {["right", "bottom"].includes(o) && void 0 !== t.style[o] ? t.style["right" == o ? "left" : "top"] = e[i[o]] - t.offsetSize[i[o]] - d(t.style[o], e[i[o]]) : t.style[o] = d(t.style[o], e[i[o]]);});}, e.getAttributes = function (t) {var e = t.attributes || {};return (null != t && t.url || null != t && t.src) && (e.src = e.src || t.url || (null == t ? void 0 : t.src)), t.replace && (e.replace = t.replace), null != t && t.text && (e.text = t.text), e;}, e.getOffsetSize = function (t, e, i) {void 0 === i && (i = "offsetSize");var o = e || {},r = o.margin,n = (r = void 0 === r ? {} : r).marginLeft,s = void 0 === n ? 0 : n,a = r.marginTop,h = void 0 === a ? 0 : a,d = r.marginRight,l = void 0 === d ? 0 : d,u = r.marginBottom,c = void 0 === u ? 0 : u,f = o.padding,g = (f = void 0 === f ? {} : f).paddingLeft,v = void 0 === g ? 0 : g,p = f.paddingTop,b = void 0 === p ? 0 : p,m = f.paddingRight,w = void 0 === m ? 0 : m,x = f.paddingBottom,y = void 0 === x ? 0 : x,S = o.border,z = (S = void 0 === S ? {} : S).borderWidth,B = void 0 === z ? 0 : z,M = o.borderTop,R = (M = void 0 === M ? {} : M).borderTopWidth,k = void 0 === R ? B : R,L = o.borderBottom,W = (L = void 0 === L ? {} : L).borderBottomWidth,O = void 0 === W ? B : W,P = o.borderRight,T = (P = void 0 === P ? {} : P).borderRightWidth,I = void 0 === T ? B : T,C = o.borderLeft,j = (C = void 0 === C ? {} : C).borderLeftWidth,F = void 0 === j ? B : j;return "contentSize" == i && (this[i].left = t.left + s + v + F, this[i].top = t.top + h + b + k, this[i].width = t.width, this[i].height = t.height), "clientSize" == i && (this[i].left = t.left + s + F, this[i].top = t.top + h + k, this[i].width = t.width + v + w, this[i].height = t.height + b + y), "borderSize" == i && (this[i].left = t.left + s + F / 2, this[i].top = t.top + h + k / 2, this[i].width = t.width + v + w + F / 2 + I / 2, this[i].height = t.height + b + y + O / 2 + k / 2), "offsetSize" == i && (this[i].left = t.left, this[i].top = t.top, this[i].width = t.width + v + w + F + I + s + l, this[i].height = t.height + b + y + O + k + c + h), this[i];}, e.layoutBoxUpdate = function (t, e, i, o) {if (void 0 === i && (i = ""), "border-box" == (null == e ? void 0 : e.boxSizing)) {var r = e || {},n = r.border,s = (n = void 0 === n ? {} : n).borderWidth,a = void 0 === s ? 0 : s,h = r.borderTop,d = (h = void 0 === h ? {} : h).borderTopWidth,l = void 0 === d ? a : d,u = r.borderBottom,c = (u = void 0 === u ? {} : u).borderBottomWidth,f = void 0 === c ? a : c,g = r.borderRight,v = (g = void 0 === g ? {} : g).borderRightWidth,p = void 0 === v ? a : v,b = r.borderLeft,m = (b = void 0 === b ? {} : b).borderLeftWidth,w = void 0 === m ? a : m,x = r.padding,y = (x = void 0 === x ? {} : x).paddingTop,S = void 0 === y ? 0 : y,z = x.paddingRight,B = void 0 === z ? 0 : z,M = x.paddingBottom,R = void 0 === M ? 0 : M,k = x.paddingLeft,L = void 0 === k ? 0 : k;"width" == i && (t.width -= L + B + p + w), "height" != i || o || (t.height -= S + R + l + f);}null != this && this.layoutBox && (this.layoutBox.contentSize = this.getOffsetSize(t, e, "contentSize"), this.layoutBox.clientSize = this.getOffsetSize(t, e, "clientSize"), this.layoutBox.borderSize = this.getOffsetSize(t, e, "borderSize"), this.layoutBox.offsetSize = this.getOffsetSize(t, e, "offsetSize"), this.layoutBox = Object.assign({}, this.layoutBox, this.layoutBox.borderSize));}, e.getBoxPosition = function (t) {var e = this.computedStyle,i = this.getChildren(),o = e.verticalAlign,r = e.left,n = void 0 === r ? 0 : r,s = e.top,a = void 0 === s ? 0 : s,h = e.textAlign,d = v({}, this.contentSize, { left: n, top: a }),l = this.contentSize.top - this.offsetSize.top,u = this.contentSize.left - this.offsetSize.left,c = 0;if ("bottom" == o && this.contentSize.maxLineHeight ? c = this.contentSize.maxLineHeight - this.contentSize.height : "middle" == o && this.contentSize.maxLineHeight && (c = (this.contentSize.maxLineHeight - this.contentSize.height) / 2), d.top += c, i.length) {n += u, a += l;for (var f = null, g = null, p = !1, b = 0, m = 0; m < i.length; m++) {var w = i[m];if (w.isAbsolute || w.isFixed) b++, w.isAbsolute ? (w.setPosition(w, d), w.style.left += n, w.style.top += a, w.getBoxPosition()) : (w.setPosition(w, this.root), w.getBoxPosition());else {var x = m - b,y = 0;if (h && this.isInline(w)) {var S = this.contentSize.width - w.contentSize.maxLineWidth || 0;"center" == h && S > 1 && (y = S / 2), "right" == h && S > 1 && (y = S);}if (0 == x) w.style.left += n + y, w.style.top += a, w.getBoxPosition(), f = w, g = w;else {var z, B, M, R;(null == (z = g) ? void 0 : z.offsetSize.height) < (null == (B = f) ? void 0 : B.offsetSize.height) && (g = f);var k = (null == (M = f) ? void 0 : M.offsetSize.left) + (null == (R = f) ? void 0 : R.offsetSize.width) + w.offsetSize.width > d.left + d.width + u;if (this.getBoxState(f, w) || k) {var L, W, O, P, T, I;if (w.style.left += n + y, (null == (L = f) ? void 0 : L.offsetSize.height) >= (null == (W = g) ? void 0 : W.offsetSize.height)) w.style.top += (null == (O = f) ? void 0 : O.offsetSize.top) + (null == (P = f) ? void 0 : P.offsetSize.height) || 0;else w.style.top += (null == (T = g) ? void 0 : T.offsetSize.top) + (null == (I = g) ? void 0 : I.offsetSize.height) || 0;w.getBoxPosition(), f = w, g = w, p = !0;} else {var C, j, F;if (w.style.left += (null == (C = f) ? void 0 : C.offsetSize.left) + (null == (j = f) ? void 0 : j.offsetSize.width) || 0, p) w.style.top += null == (F = f) ? void 0 : F.offsetSize.top;else w.style.top += a;w.getBoxPosition(), f = w;}}}}this.layoutBoxUpdate(d, e);} else this.layoutBoxUpdate(d, e);return this.layoutBox;}, e.setMaxLineHeight = function (t, e, i) {for (var o = t; o >= 0 && !e[o].contentSize.maxLineHeight;) {e[o].contentSize.maxLineHeight = i, o--;}}, e.setMaxLineWidth = function (t, e, i) {for (var o = t; o >= 0 && (null == (r = e[o]) || null == (n = r.contentSize) || !n.maxLineWidth);) {var r, n;e[o].contentSize.maxLineWidth = i, o--;}}, e.getBoxState = function (t, e) {return this.isBlock(t) || this.isBlock(e);}, e.isBlock = function (t) {var e,i = null == t ? void 0 : t.name,o = null == t || null == (e = t.style) ? void 0 : e.display;return "view" == i && "inline-block" != o || "block" == o;}, e.isInline = function (t) {var e, i, o;void 0 === t && (t = {});var r = null == (e = t) ? void 0 : e.name;return "inline-block" == (null == (i = t) || null == (o = i.style) ? void 0 : o.display) || "view" !== r;}, e.getBoxHieght = function () {var t,e = this,i = this.name,o = this.computedStyle,r = this.attributes,n = this.parent,s = this.getChildren(),a = o.top,h = o.bottom,l = o.height,u = void 0 === l ? 0 : l,c = o.fontSize,f = void 0 === c ? 14 : c,g = o.position,p = o.lineHeight,b = void 0 === p ? "1.4em" : p,m = v({}, this.contentSize);if ("image" == i && null == u) {var w = r.width,x = r.height;r.mode, m.height = Math.round(m.width * x / w) || 0, this.layoutBoxUpdate(m, o, "height");} else if (u) {if (s.length) {var y = null,S = 0,z = 0;s.forEach(function (t, i) {var o = i == s.length - 1;if (t.getBoxHieght(), t.isAbsolute || t.isFixed) ;else {var r = S + t.offsetSize.width > m.left + m.width,n = e.getBoxState(y, t);if (r || n) {if (r) {for (var a = i - 1; a >= 0 && !s[a].contentSize.maxLineHeight;) {z < s[a].contentSize.height && (z = s[a].contentSize.height), a--;}e.setMaxLineHeight(i - 1, s, z), e.setMaxLineWidth(i - 1, s, S), z = 0, S = t.offsetSize.width;}o && e.setMaxLineWidth(i, s, t.offsetSize.width);} else {if (S += t.offsetSize.width, o) {for (var h = i; h >= 0 && !s[h].contentSize.maxLineHeight;) {z < s[h].contentSize.height && (z = s[h].contentSize.height), h--;}e.setMaxLineHeight(i, s, z), e.setMaxLineWidth(i, s, S), z = 0, S = t.offsetSize.width;}y = t;}}});} else this.layoutBoxUpdate(m, o, "height");} else {var B = 0;if (null !== a && (this.isAbsolute || this.isFixed && n.contentSize.height)) {var M = "absolute" == g ? n.contentSize.height : this.root.height;B = M - (/%$/.test(a) ? d(a, M) : a) - (/%$/.test(h) ? d(h, M) : h);}if ("text" == i) b = d(b, f), m.height = B || this.attributes.lines * b, this.layoutBoxUpdate(m, o, "height", !0);else if (s.length) {var R = 0,k = null,L = 0;m.height = s.reduce(function (t, i, o) {var r = o == s.length - 1;if (i.isAbsolute || i.isFixed) return i.getBoxHieght(), r ? t + R : t;i.getBoxHieght();var n = e.getBoxState(k, i),a = L + i.offsetSize.width > m.width;if (a || n) {var h = 0;return a || k && e.isInline(k) ? (e.setMaxLineHeight(o - 1, s, R), e.setMaxLineWidth(o - 1, s, L), r && (e.setMaxLineHeight(o, s, R), e.setMaxLineWidth(o, s, i.offsetSize.width), R += i.offsetSize.height), h = t + R, R = i.offsetSize.height, L = i.offsetSize.width, k = i, h) : (L = 0, R = 0, t + i.offsetSize.height);}return L += i.offsetSize.width, R = Math.max(R, i.offsetSize.height) || 0, r ? (e.setMaxLineHeight(o, s, R), e.setMaxLineWidth(o, s, L), t + R) : (k = i, t);}, 0), B && (m.height = B), this.layoutBoxUpdate(m, o);} else B && (m.height = B), this.layoutBoxUpdate(m, o, "height");}if (o.borderRadius && null != (t = this.borderSize) && t.width) for (var W in o.borderRadius) {Object.hasOwnProperty.call(o.borderRadius, W) && (o.borderRadius[W] = d(o.borderRadius[W], this.borderSize.width));}return this.layoutBox;}, e.contrastSize = function (t, e, i) {var o = t;return i && (o = Math.min(o, i)), e && (o = Math.max(o, e)), o;}, e.measureText = function (t, e) {var i = this.ctx.measureText(t);return { width: i.width, fontHeight: (i.actualBoundingBoxAscent || .7 * e) + 1 };}, e.getBoxWidth = function () {var t,e = this,i = this.name,o = this.computedStyle,r = this.attributes,n = this.parent,s = void 0 === n ? {} : n,a = this.ctx,h = this.getChildren(),l = o.left,u = void 0 === l ? 0 : l,c = o.top,f = void 0 === c ? 0 : c,g = o.right,v = o.width,p = void 0 === v ? 0 : v,b = o.minWidth,m = o.maxWidth,w = o.height,x = void 0 === w ? 0 : w,y = o.fontSize,S = void 0 === y ? 14 : y,z = o.fontWeight,B = o.fontFamily,M = o.textStyle,R = o.position,k = o.display,L = o.lineClamp,W = o.padding,O = void 0 === W ? {} : W,P = o.margin,T = void 0 === P ? {} : P,I = o.border,C = (I = void 0 === I ? {} : I).borderWidth,j = void 0 === C ? 0 : C,F = o.borderRight,A = (F = void 0 === F ? {} : F).borderRightWidth,H = void 0 === A ? j : A,$ = o.borderLeft,E = ($ = void 0 === $ ? {} : $).borderLeftWidth,U = void 0 === E ? j : E;if (/%$/.test(p) && s.contentSize.width && (p = d(p, s.contentSize.width, !0)), /%$/.test(x) && s.contentSize.height && (x = d(x, s.contentSize.height)), /%$/.test(b) && s.contentSize.width && (b = d(b, s.contentSize.width, !0)), /%$/.test(m) && s.contentSize.width && (m = d(m, s.contentSize.width, !0)), o.padding && null != (t = s.contentSize) && t.width) for (var _ in o.padding) {Object.hasOwnProperty.call(o.padding, _) && (o.padding[_] = d(o.padding[_], s.contentSize.width));}var D = O.paddingRight,N = void 0 === D ? 0 : D,q = O.paddingLeft,V = void 0 === q ? 0 : q;if (o.margin && [o.margin.marginLeft, o.margin.marginRight].includes("auto")) if (p) {var X = s.contentSize.width - p - N - V - U - H || 0;o.margin.marginLeft == o.margin.marginRight ? o.margin.marginLeft = o.margin.marginRight = X / 2 : "auto" == o.margin.marginLeft ? o.margin.marginLeft = X : o.margin.marginRight = X;} else o.margin.marginLeft = o.margin.marginRight = 0;var G = T.marginRight,J = void 0 === G ? 0 : G,Y = T.marginLeft,Q = { width: p, height: x, left: 0, top: 0 },Z = V + N + U + H + (void 0 === Y ? 0 : Y) + J;if ("text" == i && !this.attributes.widths) {var K = r.text || "";a.save(), a.setFonts({ fontFamily: B, fontSize: S, fontWeight: z, textStyle: M }), K.split("\n").map(function (t) {var i = t.split("").map(function (t) {return e.measureText(t, S).width;});e.attributes.fontHeight = e.measureText(t, S).fontHeight, e.attributes.widths || (e.attributes.widths = []), e.attributes.widths.push({ widths: i, total: i.reduce(function (t, e) {return t + e;}, 0) });}), a.restore();}if ("image" == i && null == p) {var tt = r.width,et = r.height;Q.width = this.contrastSize(Math.round(tt * x / et) || 0, b, m), this.layoutBoxUpdate(Q, o, "width");} else if (p) h.length ? (this.layoutBoxUpdate(Q, o, "width"), h.forEach(function (t) {t.getBoxWidth();})) : this.layoutBoxUpdate(Q, o, "width");else {var it = 0;if ((this.isAbsolute || this.isFixed) && s.contentSize.width) {var ot = "absolute" == R ? s.contentSize.width : this.root.width;it = ot - (/%$/.test(u) ? d(u, ot) : u) - (/%$/.test(g) ? d(g, ot) : g);}if ("text" == i) {var rt = this.attributes.widths,nt = Math.max.apply(Math, rt.map(function (t) {return t.total;}));if (s && s.contentSize.width > 0 && (nt > s.contentSize.width || "block" == k) && !this.isAbsolute && !this.isFixed) nt = s.contentSize.width - Z;Q.width = it || this.contrastSize(nt, b, m), this.layoutBoxUpdate(Q, o, "width");} else if ("view" != i || !s || "inline-block" === k || this.isAbsolute || this.isFixed) {if (h.length) {for (var st = 0, at = null, ht = 0; h.length > ht;) {var dt = h[ht],lt = ht == h.length - 1,ut = this.getBoxState(at, dt);if (dt.isFixed || dt.isAbsolute) dt.getBoxWidth();else if (!at || ut) {var ct = dt.getBoxWidth();st = Math.max(st, ct.width) || 0, at = dt;} else if (at.offsetSize.left + at.offsetSize.width + dt.offsetSize.width < s.contentSize.width && ht !== h.length - 1) {st += dt.getBoxWidth().width, at = dt;} else {var ft = dt.getBoxWidth();lt ? st += ft.width : st = s.contentSize.width, at = null;}ht++;}Q.width = it && f ? it : this.contrastSize(Math.ceil(st), b, m), h.forEach(function (t) {"block" != t.style.display || "text" != t.name || t.isFixed || t.isAbsolute || t.style.width || (t.style.width = Q.width, t.getBoxWidth());}), this.layoutBoxUpdate(Q, o, "width");} else Q.width = it, this.layoutBoxUpdate(Q, o, "width");} else Q.width = this.contrastSize(s.contentSize.width - Z, b, m), this.layoutBoxUpdate(Q, o), h.length && h.forEach(function (t) {t.getBoxWidth();});}if ("text" == i && !this.attributes.lines) {var gt = this.attributes.widths.length;this.attributes.widths.forEach(function (t) {return t.widths.reduce(function (t, e, i) {return t + e > Q.width ? (gt++, e) : t + e;}, 0);}), gt = L && gt > L ? L : gt, this.attributes.lines = gt;}return this.layoutBox;}, e.layout = function () {return this.getBoxWidth(), this.getBoxHieght(), this.getBoxPosition(), this.offsetSize;}, t;}(),w = function () {var t,e,i,o,r,n,s = [0, 11, 15, 19, 23, 27, 31, 16, 18, 20, 22, 24, 26, 28, 20, 22, 24, 24, 26, 28, 28, 22, 24, 24, 26, 26, 28, 28, 24, 24, 26, 26, 26, 28, 28, 24, 26, 26, 26, 28, 28],a = [3220, 1468, 2713, 1235, 3062, 1890, 2119, 1549, 2344, 2936, 1117, 2583, 1330, 2470, 1667, 2249, 2028, 3780, 481, 4011, 142, 3098, 831, 3445, 592, 2517, 1776, 2234, 1951, 2827, 1070, 2660, 1345, 3177],h = [30660, 29427, 32170, 30877, 26159, 25368, 27713, 26998, 21522, 20773, 24188, 23371, 17913, 16590, 20375, 19104, 13663, 12392, 16177, 14854, 9396, 8579, 11994, 11245, 5769, 5054, 7399, 6608, 1890, 597, 3340, 2107],d = [1, 0, 19, 7, 1, 0, 16, 10, 1, 0, 13, 13, 1, 0, 9, 17, 1, 0, 34, 10, 1, 0, 28, 16, 1, 0, 22, 22, 1, 0, 16, 28, 1, 0, 55, 15, 1, 0, 44, 26, 2, 0, 17, 18, 2, 0, 13, 22, 1, 0, 80, 20, 2, 0, 32, 18, 2, 0, 24, 26, 4, 0, 9, 16, 1, 0, 108, 26, 2, 0, 43, 24, 2, 2, 15, 18, 2, 2, 11, 22, 2, 0, 68, 18, 4, 0, 27, 16, 4, 0, 19, 24, 4, 0, 15, 28, 2, 0, 78, 20, 4, 0, 31, 18, 2, 4, 14, 18, 4, 1, 13, 26, 2, 0, 97, 24, 2, 2, 38, 22, 4, 2, 18, 22, 4, 2, 14, 26, 2, 0, 116, 30, 3, 2, 36, 22, 4, 4, 16, 20, 4, 4, 12, 24, 2, 2, 68, 18, 4, 1, 43, 26, 6, 2, 19, 24, 6, 2, 15, 28, 4, 0, 81, 20, 1, 4, 50, 30, 4, 4, 22, 28, 3, 8, 12, 24, 2, 2, 92, 24, 6, 2, 36, 22, 4, 6, 20, 26, 7, 4, 14, 28, 4, 0, 107, 26, 8, 1, 37, 22, 8, 4, 20, 24, 12, 4, 11, 22, 3, 1, 115, 30, 4, 5, 40, 24, 11, 5, 16, 20, 11, 5, 12, 24, 5, 1, 87, 22, 5, 5, 41, 24, 5, 7, 24, 30, 11, 7, 12, 24, 5, 1, 98, 24, 7, 3, 45, 28, 15, 2, 19, 24, 3, 13, 15, 30, 1, 5, 107, 28, 10, 1, 46, 28, 1, 15, 22, 28, 2, 17, 14, 28, 5, 1, 120, 30, 9, 4, 43, 26, 17, 1, 22, 28, 2, 19, 14, 28, 3, 4, 113, 28, 3, 11, 44, 26, 17, 4, 21, 26, 9, 16, 13, 26, 3, 5, 107, 28, 3, 13, 41, 26, 15, 5, 24, 30, 15, 10, 15, 28, 4, 4, 116, 28, 17, 0, 42, 26, 17, 6, 22, 28, 19, 6, 16, 30, 2, 7, 111, 28, 17, 0, 46, 28, 7, 16, 24, 30, 34, 0, 13, 24, 4, 5, 121, 30, 4, 14, 47, 28, 11, 14, 24, 30, 16, 14, 15, 30, 6, 4, 117, 30, 6, 14, 45, 28, 11, 16, 24, 30, 30, 2, 16, 30, 8, 4, 106, 26, 8, 13, 47, 28, 7, 22, 24, 30, 22, 13, 15, 30, 10, 2, 114, 28, 19, 4, 46, 28, 28, 6, 22, 28, 33, 4, 16, 30, 8, 4, 122, 30, 22, 3, 45, 28, 8, 26, 23, 30, 12, 28, 15, 30, 3, 10, 117, 30, 3, 23, 45, 28, 4, 31, 24, 30, 11, 31, 15, 30, 7, 7, 116, 30, 21, 7, 45, 28, 1, 37, 23, 30, 19, 26, 15, 30, 5, 10, 115, 30, 19, 10, 47, 28, 15, 25, 24, 30, 23, 25, 15, 30, 13, 3, 115, 30, 2, 29, 46, 28, 42, 1, 24, 30, 23, 28, 15, 30, 17, 0, 115, 30, 10, 23, 46, 28, 10, 35, 24, 30, 19, 35, 15, 30, 17, 1, 115, 30, 14, 21, 46, 28, 29, 19, 24, 30, 11, 46, 15, 30, 13, 6, 115, 30, 14, 23, 46, 28, 44, 7, 24, 30, 59, 1, 16, 30, 12, 7, 121, 30, 12, 26, 47, 28, 39, 14, 24, 30, 22, 41, 15, 30, 6, 14, 121, 30, 6, 34, 47, 28, 46, 10, 24, 30, 2, 64, 15, 30, 17, 4, 122, 30, 29, 14, 46, 28, 49, 10, 24, 30, 24, 46, 15, 30, 4, 18, 122, 30, 13, 32, 46, 28, 48, 14, 24, 30, 42, 32, 15, 30, 20, 4, 117, 30, 40, 7, 47, 28, 43, 22, 24, 30, 10, 67, 15, 30, 19, 6, 118, 30, 18, 31, 47, 28, 34, 34, 24, 30, 20, 61, 15, 30],l = [255, 0, 1, 25, 2, 50, 26, 198, 3, 223, 51, 238, 27, 104, 199, 75, 4, 100, 224, 14, 52, 141, 239, 129, 28, 193, 105, 248, 200, 8, 76, 113, 5, 138, 101, 47, 225, 36, 15, 33, 53, 147, 142, 218, 240, 18, 130, 69, 29, 181, 194, 125, 106, 39, 249, 185, 201, 154, 9, 120, 77, 228, 114, 166, 6, 191, 139, 98, 102, 221, 48, 253, 226, 152, 37, 179, 16, 145, 34, 136, 54, 208, 148, 206, 143, 150, 219, 189, 241, 210, 19, 92, 131, 56, 70, 64, 30, 66, 182, 163, 195, 72, 126, 110, 107, 58, 40, 84, 250, 133, 186, 61, 202, 94, 155, 159, 10, 21, 121, 43, 78, 212, 229, 172, 115, 243, 167, 87, 7, 112, 192, 247, 140, 128, 99, 13, 103, 74, 222, 237, 49, 197, 254, 24, 227, 165, 153, 119, 38, 184, 180, 124, 17, 68, 146, 217, 35, 32, 137, 46, 55, 63, 209, 91, 149, 188, 207, 205, 144, 135, 151, 178, 220, 252, 190, 97, 242, 86, 211, 171, 20, 42, 93, 158, 132, 60, 57, 83, 71, 109, 65, 162, 31, 45, 67, 216, 183, 123, 164, 118, 196, 23, 73, 236, 127, 12, 111, 246, 108, 161, 59, 82, 41, 157, 85, 170, 251, 96, 134, 177, 187, 204, 62, 90, 203, 89, 95, 176, 156, 169, 160, 81, 11, 245, 22, 235, 122, 117, 44, 215, 79, 174, 213, 233, 230, 231, 173, 232, 116, 214, 244, 234, 168, 80, 88, 175],u = [1, 2, 4, 8, 16, 32, 64, 128, 29, 58, 116, 232, 205, 135, 19, 38, 76, 152, 45, 90, 180, 117, 234, 201, 143, 3, 6, 12, 24, 48, 96, 192, 157, 39, 78, 156, 37, 74, 148, 53, 106, 212, 181, 119, 238, 193, 159, 35, 70, 140, 5, 10, 20, 40, 80, 160, 93, 186, 105, 210, 185, 111, 222, 161, 95, 190, 97, 194, 153, 47, 94, 188, 101, 202, 137, 15, 30, 60, 120, 240, 253, 231, 211, 187, 107, 214, 177, 127, 254, 225, 223, 163, 91, 182, 113, 226, 217, 175, 67, 134, 17, 34, 68, 136, 13, 26, 52, 104, 208, 189, 103, 206, 129, 31, 62, 124, 248, 237, 199, 147, 59, 118, 236, 197, 151, 51, 102, 204, 133, 23, 46, 92, 184, 109, 218, 169, 79, 158, 33, 66, 132, 21, 42, 84, 168, 77, 154, 41, 82, 164, 85, 170, 73, 146, 57, 114, 228, 213, 183, 115, 230, 209, 191, 99, 198, 145, 63, 126, 252, 229, 215, 179, 123, 246, 241, 255, 227, 219, 171, 75, 150, 49, 98, 196, 149, 55, 110, 220, 165, 87, 174, 65, 130, 25, 50, 100, 200, 141, 7, 14, 28, 56, 112, 224, 221, 167, 83, 166, 81, 162, 89, 178, 121, 242, 249, 239, 195, 155, 43, 86, 172, 69, 138, 9, 18, 36, 72, 144, 61, 122, 244, 245, 247, 243, 251, 235, 203, 139, 11, 22, 44, 88, 176, 125, 250, 233, 207, 131, 27, 54, 108, 216, 173, 71, 142, 0],c = [],f = [],g = [],v = [],p = [],b = 2;function m(t, e) {var i;t > e && (i = t, t = e, e = i), i = e, i *= e, i += e, i >>= 1, v[i += t] = 1;}function w(t, i) {var o;for (g[t + e * i] = 1, o = -2; o < 2; o++) {g[t + o + e * (i - 2)] = 1, g[t - 2 + e * (i + o + 1)] = 1, g[t + 2 + e * (i + o)] = 1, g[t + o + 1 + e * (i + 2)] = 1;}for (o = 0; o < 2; o++) {m(t - 1, i + o), m(t + 1, i - o), m(t - o, i - 1), m(t + o, i + 1);}}function x(t) {for (; t >= 255;) {t = ((t -= 255) >> 8) + (255 & t);}return t;}var y = [];function S(t, e, i, o) {var r, n, s;for (r = 0; r < o; r++) {c[i + r] = 0;}for (r = 0; r < e; r++) {if (255 != (s = l[c[t + r] ^ c[i]])) for (n = 1; n < o; n++) {c[i + n - 1] = c[i + n] ^ u[x(s + y[o - n])];} else for (n = i; n < i + o; n++) {c[n] = c[n + 1];}c[i + o - 1] = 255 == s ? 0 : u[x(s + y[0])];}}function z(t, e) {var i;return t > e && (i = t, t = e, e = i), i = e, i += e * e, i >>= 1, v[i += t];}function B(t) {var i, o, r, n;switch (t) {case 0:for (o = 0; o < e; o++) {for (i = 0; i < e; i++) {i + o & 1 || z(i, o) || (g[i + o * e] ^= 1);}}break;case 1:for (o = 0; o < e; o++) {for (i = 0; i < e; i++) {1 & o || z(i, o) || (g[i + o * e] ^= 1);}}break;case 2:for (o = 0; o < e; o++) {for (r = 0, i = 0; i < e; i++, r++) {3 == r && (r = 0), r || z(i, o) || (g[i + o * e] ^= 1);}}break;case 3:for (n = 0, o = 0; o < e; o++, n++) {for (3 == n && (n = 0), r = n, i = 0; i < e; i++, r++) {3 == r && (r = 0), r || z(i, o) || (g[i + o * e] ^= 1);}}break;case 4:for (o = 0; o < e; o++) {for (r = 0, n = o >> 1 & 1, i = 0; i < e; i++, r++) {3 == r && (r = 0, n = !n), n || z(i, o) || (g[i + o * e] ^= 1);}}break;case 5:for (n = 0, o = 0; o < e; o++, n++) {for (3 == n && (n = 0), r = 0, i = 0; i < e; i++, r++) {3 == r && (r = 0), (i & o & 1) + !(!r | !n) || z(i, o) || (g[i + o * e] ^= 1);}}break;case 6:for (n = 0, o = 0; o < e; o++, n++) {for (3 == n && (n = 0), r = 0, i = 0; i < e; i++, r++) {3 == r && (r = 0), (i & o & 1) + (r && r == n) & 1 || z(i, o) || (g[i + o * e] ^= 1);}}break;case 7:for (n = 0, o = 0; o < e; o++, n++) {for (3 == n && (n = 0), r = 0, i = 0; i < e; i++, r++) {3 == r && (r = 0), (r && r == n) + (i + o & 1) & 1 || z(i, o) || (g[i + o * e] ^= 1);}}}}function M(t) {var e,i = 0;for (e = 0; e <= t; e++) {p[e] >= 5 && (i += 3 + p[e] - 5);}for (e = 3; e < t - 1; e += 2) {p[e - 2] == p[e + 2] && p[e + 2] == p[e - 1] && p[e - 1] == p[e + 1] && 3 * p[e - 1] == p[e] && (0 == p[e - 3] || e + 3 > t || 3 * p[e - 3] >= 4 * p[e] || 3 * p[e + 3] >= 4 * p[e]) && (i += 40);}return i;}function R() {var t,i,o,r,n,s = 0,a = 0;for (i = 0; i < e - 1; i++) {for (t = 0; t < e - 1; t++) {(g[t + e * i] && g[t + 1 + e * i] && g[t + e * (i + 1)] && g[t + 1 + e * (i + 1)] || !(g[t + e * i] || g[t + 1 + e * i] || g[t + e * (i + 1)] || g[t + 1 + e * (i + 1)])) && (s += 3);}}for (i = 0; i < e; i++) {for (p[0] = 0, o = r = t = 0; t < e; t++) {(n = g[t + e * i]) == r ? p[o]++ : p[++o] = 1, a += (r = n) ? 1 : -1;}s += M(o);}a < 0 && (a = -a);var h = a,d = 0;for (h += h << 2, h <<= 1; h > e * e;) {h -= e * e, d++;}for (s += 10 * d, t = 0; t < e; t++) {for (p[0] = 0, o = r = i = 0; i < e; i++) {(n = g[t + e * i]) == r ? p[o]++ : p[++o] = 1, r = n;}s += M(o);}return s;}var k = null;return { api: { get ecclevel() {return b;}, set ecclevel(t) {b = t;}, get size() {return _size;}, set size(t) {_size = t;}, get canvas() {return k;}, set canvas(t) {k = t;}, getFrame: function getFrame(p) {return function (p) {var M, k, L, W, O, P, T, I;W = p.length, t = 0;do {if (t++, L = 4 * (b - 1) + 16 * (t - 1), i = d[L++], o = d[L++], r = d[L++], n = d[L], W <= (L = r * (i + o) + o - 3 + (t <= 9))) break;} while (t < 40);for (e = 17 + 4 * t, O = r + (r + n) * (i + o) + o, W = 0; W < O; W++) {f[W] = 0;}for (c = p.slice(0), W = 0; W < e * e; W++) {g[W] = 0;}for (W = 0; W < (e * (e + 1) + 1) / 2; W++) {v[W] = 0;}for (W = 0; W < 3; W++) {for (L = 0, k = 0, 1 == W && (L = e - 7), 2 == W && (k = e - 7), g[k + 3 + e * (L + 3)] = 1, M = 0; M < 6; M++) {g[k + M + e * L] = 1, g[k + e * (L + M + 1)] = 1, g[k + 6 + e * (L + M)] = 1, g[k + M + 1 + e * (L + 6)] = 1;}for (M = 1; M < 5; M++) {m(k + M, L + 1), m(k + 1, L + M + 1), m(k + 5, L + M), m(k + M + 1, L + 5);}for (M = 2; M < 4; M++) {g[k + M + e * (L + 2)] = 1, g[k + 2 + e * (L + M + 1)] = 1, g[k + 4 + e * (L + M)] = 1, g[k + M + 1 + e * (L + 4)] = 1;}}if (t > 1) for (W = s[t], k = e - 7;;) {for (M = e - 7; M > W - 3 && (w(M, k), !(M < W));) {M -= W;}if (k <= W + 9) break;w(6, k -= W), w(k, 6);}for (g[8 + e * (e - 8)] = 1, k = 0; k < 7; k++) {m(7, k), m(e - 8, k), m(7, k + e - 7);}for (M = 0; M < 8; M++) {m(M, 7), m(M + e - 8, 7), m(M, e - 8);}for (M = 0; M < 9; M++) {m(M, 8);}for (M = 0; M < 8; M++) {m(M + e - 8, 8), m(8, M);}for (k = 0; k < 7; k++) {m(8, k + e - 7);}for (M = 0; M < e - 14; M++) {1 & M ? (m(8 + M, 6), m(6, 8 + M)) : (g[8 + M + 6 * e] = 1, g[6 + e * (8 + M)] = 1);}if (t > 6) for (W = a[t - 7], L = 17, M = 0; M < 6; M++) {for (k = 0; k < 3; k++, L--) {1 & (L > 11 ? t >> L - 12 : W >> L) ? (g[5 - M + e * (2 - k + e - 11)] = 1, g[2 - k + e - 11 + e * (5 - M)] = 1) : (m(5 - M, 2 - k + e - 11), m(2 - k + e - 11, 5 - M));}}for (k = 0; k < e; k++) {for (M = 0; M <= k; M++) {g[M + e * k] && m(M, k);}}for (O = c.length, P = 0; P < O; P++) {f[P] = c.charCodeAt(P);}if (c = f.slice(0), O >= (M = r * (i + o) + o) - 2 && (O = M - 2, t > 9 && O--), P = O, t > 9) {for (c[P + 2] = 0, c[P + 3] = 0; P--;) {W = c[P], c[P + 3] |= 255 & W << 4, c[P + 2] = W >> 4;}c[2] |= 255 & O << 4, c[1] = O >> 4, c[0] = 64 | O >> 12;} else {for (c[P + 1] = 0, c[P + 2] = 0; P--;) {W = c[P], c[P + 2] |= 255 & W << 4, c[P + 1] = W >> 4;}c[1] |= 255 & O << 4, c[0] = 64 | O >> 4;}for (P = O + 3 - (t < 10); P < M;) {c[P++] = 236, c[P++] = 17;}for (y[0] = 1, P = 0; P < n; P++) {for (y[P + 1] = 1, T = P; T > 0; T--) {y[T] = y[T] ? y[T - 1] ^ u[x(l[y[T]] + P)] : y[T - 1];}y[0] = u[x(l[y[0]] + P)];}for (P = 0; P <= n; P++) {y[P] = l[y[P]];}for (L = M, k = 0, P = 0; P < i; P++) {S(k, r, L, n), k += r, L += n;}for (P = 0; P < o; P++) {S(k, r + 1, L, n), k += r + 1, L += n;}for (k = 0, P = 0; P < r; P++) {for (T = 0; T < i; T++) {f[k++] = c[P + T * r];}for (T = 0; T < o; T++) {f[k++] = c[i * r + P + T * (r + 1)];}}for (T = 0; T < o; T++) {f[k++] = c[i * r + P + T * (r + 1)];}for (P = 0; P < n; P++) {for (T = 0; T < i + o; T++) {f[k++] = c[M + P + T * n];}}for (c = f, M = k = e - 1, L = O = 1, I = (r + n) * (i + o) + o, P = 0; P < I; P++) {for (W = c[P], T = 0; T < 8; T++, W <<= 1) {128 & W && (g[M + e * k] = 1);do {O ? M-- : (M++, L ? 0 != k ? k-- : (L = !L, 6 == (M -= 2) && (M--, k = 9)) : k != e - 1 ? k++ : (L = !L, 6 == (M -= 2) && (M--, k -= 8))), O = !O;} while (z(M, k));}}for (c = g.slice(0), W = 0, k = 3e4, L = 0; L < 8 && (B(L), (M = R()) < k && (k = M, W = L), 7 != W); L++) {g = c.slice(0);}for (W != L && B(W), k = h[W + (b - 1 << 3)], L = 0; L < 8; L++, k >>= 1) {1 & k && (g[e - 1 - L + 8 * e] = 1, L < 6 ? g[8 + e * L] = 1 : g[8 + e * (L + 1)] = 1);}for (L = 0; L < 7; L++, k >>= 1) {1 & k && (g[8 + e * (e - 7 + L)] = 1, L ? g[6 - L + 8 * e] = 1 : g[7 + 8 * e] = 1);}return g;}(p);}, utf16to8: function utf16to8(t) {var e, i, o, r;for (e = "", o = t.length, i = 0; i < o; i++) {(r = t.charCodeAt(i)) >= 1 && r <= 127 ? e += t.charAt(i) : r > 2047 ? (e += String.fromCharCode(224 | r >> 12 & 15), e += String.fromCharCode(128 | r >> 6 & 63), e += String.fromCharCode(128 | r >> 0 & 63)) : (e += String.fromCharCode(192 | r >> 6 & 31), e += String.fromCharCode(128 | r >> 0 & 63));}return e;}, draw: function draw(t, i, o, r, n) {i.drawView(o, r);var s = i.ctx,a = o.contentSize,h = a.width,d = a.height,l = a.left,u = a.top;r.borderRadius, r.backgroundColor;var c = r.color,f = void 0 === c ? "#000000" : c;r.border;var g = o.contentSize.left - o.borderSize.left,v = o.contentSize.top - o.borderSize.top;if (b = n || b, s) {s.save(), i.setOpacity(r), i.setTransform(o, r), l += g, u += v;var p = Math.min(h, d);t = this.utf16to8(t);var m = this.getFrame(t),w = p / e;s.setFillStyle(f);for (var x = 0; x < e; x++) {for (var y = 0; y < e; y++) {m[y * e + x] && s.fillRect(l + w * x, u + w * y, w, w);}}s.restore(), i.setBorder(o, r);} else console.warn("No canvas provided to draw QR code in!");} } };}(),x = function () {function t(t, i) {var o,r,s = this,a = t.id,h = t.context,d = t.canvas,l = t.pixelRatio,u = t.width,c = t.height;this.count = 0, this.isDraw = !0, this.id = a, this.canvas = d, this.pixelRatio = 1 * l.toFixed(2), this.width = u, this.height = c, this.platform = n, this.isRate = !1, this.component = i, this.ctx = (r = this, (o = h).setFonts = function (t) {var e = t.fontFamily,i = void 0 === e ? "sans-serif" : e,n = t.fontSize,s = void 0 === n ? 14 : n,a = t.fontWeight,h = void 0 === a ? "normal" : a,d = t.textStyle,l = void 0 === d ? "normal" : d;"mp-toutao" == r.platform && (h = "bold" == h ? "bold" : "", l = "italic" == l ? "italic" : ""), o.font = l + " " + h + " " + s + "px " + i;}, o.draw ? o : Object.assign(o, { setStrokeStyle: function setStrokeStyle(t) {o.strokeStyle = t;}, setLineWidth: function setLineWidth(t) {o.lineWidth = t;}, setLineCap: function setLineCap(t) {o.lineCap = t;}, setFillStyle: function setFillStyle(t) {o.fillStyle = t;}, setFontSize: function setFontSize(t) {o.font = String(t) + "px sans-serif";}, setGlobalAlpha: function setGlobalAlpha(t) {o.globalAlpha = t;}, setLineJoin: function setLineJoin(t) {o.lineJoin = t;}, setTextAlign: function setTextAlign(t) {o.textAlign = t;}, setMiterLimit: function setMiterLimit(t) {o.miterLimit = t;}, setShadow: function setShadow(t, e, i, r) {o.shadowOffsetX = t, o.shadowOffsetY = e, o.shadowBlur = i, o.shadowColor = r;}, setTextBaseline: function setTextBaseline(t) {o.textBaseline = t;}, createCircularGradient: function createCircularGradient() {}, draw: function draw() {} })), this.sleep = 1e3 / 30, this.progress = 0, this.root = { width: u, height: c, fontSizeRate: 1 };var f = _e({}, this.size);Object.defineProperty(this, "size", { configurable: !0, set: function set(t) {Object.keys(t).forEach(function (e) {f[e] = t[e], s.root[e] = t[e];});}, get: function get() {return f;} }), this.init();}return t.prototype.init = function () {this.canvas.height && (this.canvas.height = this.root.height * this.pixelRatio, this.canvas.width = this.root.width * this.pixelRatio, this.ctx.scale(this.pixelRatio, this.pixelRatio));}, t.prototype.clear = function () {this.ctx.clearRect(0, 0, this.root.width, this.root.height);}, t.prototype.roundRect = function (t, e, i, o, r, n, s) {if (void 0 === n && (n = !1), void 0 === s && (s = !1), !(r < 0)) {var a = this.ctx;if (a.beginPath(), r) {var h = r || {},d = h.borderTopLeftRadius,l = void 0 === d ? r || 0 : d,u = h.borderTopRightRadius,c = void 0 === u ? r || 0 : u,f = h.borderBottomRightRadius,g = void 0 === f ? r || 0 : f,v = h.borderBottomLeftRadius,p = void 0 === v ? r || 0 : v;a.arc(t + i - g, e + o - g, g, 0, .5 * Math.PI), a.lineTo(t + p, e + o), a.arc(t + p, e + o - p, p, .5 * Math.PI, Math.PI), a.lineTo(t, e + l), a.arc(t + l, e + l, l, Math.PI, 1.5 * Math.PI), a.lineTo(t + i - c, e), a.arc(t + i - c, e + c, c, 1.5 * Math.PI, 2 * Math.PI), a.lineTo(t + i, e + o - g);} else a.rect(t, e, i, o);a.closePath(), s && a.stroke(), n && a.fill();}}, t.prototype.setTransform = function (t, e) {var i = e.transform,o = e.transformOrigin,r = void 0 === o ? "center center" : o;e.position;var n = this.ctx,s = i || {},a = s.scaleX,l = void 0 === a ? 1 : a,u = s.scaleY,c = void 0 === u ? 1 : u,f = s.translateX,g = void 0 === f ? 0 : f,v = s.translateY,p = void 0 === v ? 0 : v,b = s.rotate,m = void 0 === b ? 0 : b,w = s.skewX,x = void 0 === w ? 0 : w,y = s.skewY,S = void 0 === y ? 0 : y;t.left, t.top;var z = t.width,B = t.height;g = d(g, z) || 0, p = d(p, B) || 0;var M = { top: d("0%", 1), center: d("50%", 1, !0), bottom: d("100%", 1) },R = { left: d("0%", 1), center: d("50%", 1, !0), right: d("100%", 1) };r = r.split(" ").filter(function (t, e) {return e < 2;}).reduce(function (t, e) {if (/\d+/.test(e)) {var i = d(e, 1, !0) / (/px|rpx$/.test(e) ? h(t.x) ? B : z : 1);return h(t.x) ? Object.assign(t, { y: i }) : Object.assign(t, { x: i });}return h(R[e]) && !h(t.x) ? Object.assign(t, { x: R[e] }) : Object.assign(t, { y: M[e] || .5 });}, {}), (g || p) && n.translate(g, p), (l || c) && n.scale(l, c), m && n.rotate(m * Math.PI / 180), (x || S) && n.transform(1, Math.tan(S * Math.PI / 180), Math.tan(x * Math.PI / 180), 1, 0, 0);}, t.prototype.setBackground = function (t, e, i, o, r) {var n = this.ctx;t && "transparent" != t ? u(t) ? c(t, e, i, o, r, n) : n.setFillStyle(t) : ["mp-toutiao", "mp-baidu"].includes(this.platform) ? n.setFillStyle("transparent") : n.setFillStyle("rgba(0,0,0,0)");}, t.prototype.setShadow = function (t) {var e = t.boxShadow,i = void 0 === e ? [] : e,o = this.ctx;if (i.length) {var r = i[0],n = i[1],s = i[2],a = i[3];o.setShadow(r, n, s, a);}}, t.prototype.setBorder = function (t, e) {var i = this,o = this.ctx,r = t.width,n = t.height,s = t.left,a = t.top,h = e.border,d = e.borderBottom,l = e.borderTop,u = e.borderRight,c = e.borderLeft,f = e.borderRadius,g = e.lineCap,v = void 0 === g ? "butt" : g,p = h || {},b = p.borderWidth,m = void 0 === b ? 0 : b,w = p.borderStyle,x = p.borderColor,y = d || {},S = y.borderBottomWidth,z = void 0 === S ? m : S,B = y.borderBottomStyle,M = void 0 === B ? w : B,R = y.borderBottomColor,k = void 0 === R ? x : R,L = l || {},W = L.borderTopWidth,O = void 0 === W ? m : W,P = L.borderTopStyle,T = void 0 === P ? w : P,I = L.borderTopColor,C = void 0 === I ? x : I,j = u || {},F = j.borderRightWidth,A = void 0 === F ? m : F,H = j.borderRightStyle,$ = void 0 === H ? w : H,E = j.borderRightColor,U = void 0 === E ? x : E,_ = c || {},D = _.borderLeftWidth,N = void 0 === D ? m : D,q = _.borderLeftStyle,V = void 0 === q ? w : q,X = _.borderLeftColor,G = void 0 === X ? x : X,J = f || {},Y = J.borderTopLeftRadius,Q = void 0 === Y ? f || 0 : Y,Z = J.borderTopRightRadius,K = void 0 === Z ? f || 0 : Z,tt = J.borderBottomRightRadius,et = void 0 === tt ? f || 0 : tt,it = J.borderBottomLeftRadius,ot = void 0 === it ? f || 0 : it;if (d || c || l || u || h) {var rt = function rt(t, e, r) {"dashed" == e ? /mp/.test(i.platform) ? o.setLineDash([Math.ceil(4 * t / 3), Math.ceil(4 * t / 3)]) : o.setLineDash([Math.ceil(6 * t), Math.ceil(6 * t)]) : "dotted" == e && o.setLineDash([t, t]), o.setStrokeStyle(r);},nt = function nt(t, e, i, r, n, s, a, h, d, l, u, c, f, g, p) {o.save(), o.setLineCap(p ? "square" : v), o.setLineWidth(c), rt(c, f, g), o.beginPath(), o.arc(t, e, a, Math.PI * d, Math.PI * l), o.lineTo(i, r), o.arc(n, s, h, Math.PI * l, Math.PI * u), o.stroke(), o.restore();};if (o.save(), this.setOpacity(e), this.setTransform(t, e), h && !d && !c && !l && !u) return o.setLineWidth(m), rt(m, w, x), this.roundRect(s, a, r, n, f, !1, !!x), void o.restore();z && nt(s + r - et, a + n - et, s + ot, a + n, s + ot, a + n - ot, et, ot, .25, .5, .75, z, M, k, N && A), N && nt(s + ot, a + n - ot, s, a + Q, s + Q, a + Q, ot, Q, .75, 1, 1.25, N, V, G, O && z), O && nt(s + Q, a + Q, s + r - K, a, s + r - K, a + K, Q, K, 1.25, 1.5, 1.75, O, T, C, N && A), A && nt(s + r - K, a + K, s + r, a + n - et, s + r - et, a + n - et, K, et, 1.75, 2, .25, A, $, U, O && z);}}, t.prototype.setOpacity = function (t) {var e = t.opacity,i = void 0 === e ? 1 : e;this.ctx.setGlobalAlpha(i);}, t.prototype.drawPattern = function (t, e, r) {return i(this, void 0, void 0, function () {var n = this;return o(this, function (s) {return [2, new Promise(function (s, a) {var h = n,d = h.ctx,l = h.canvas,u = e.width,c = e.height,f = e.left,g = e.top,v = r || {},p = v.borderRadius,b = void 0 === p ? 0 : p,m = v.backgroundColor,w = void 0 === m ? "transparent" : m,x = v.backgroundImage,y = v.backgroundRepeat,S = void 0 === y ? "repeat" : y;d.save(), n.setOpacity(r), n.setTransform(e, r), n.setShadow(r), n.setBackground(w, u, c, f, g), n.roundRect(f, g, u, c, b, !0, !1);var z = function z(t) {var i = d.createPattern(t.src, S);d.setFillStyle(i), n.roundRect(f, g, u, c, b, !0, !1), n.setBorder(e, r), d.restore(), s();};if (x) if (l.createImage || "web" == n.platform) {var B = null;(B = l.createImage ? l.createImage() : new Image()).onload = function () {t.src = B, z(t);}, B.onerror = function () {return i(n, void 0, void 0, function () {return o(this, function (e) {return console.log("createImage fail: " + JSON.stringify(t)), s(), [2];});});}, B.src = t.path;} else z(t);})];});});}, t.prototype.drawView = function (t, e, i, o, r) {void 0 === i && (i = !0), void 0 === o && (o = !0), void 0 === r && (r = !0), this.ctx;var n = t.width,s = t.height,a = t.left,h = t.top,d = e || {},l = d.borderRadius,u = void 0 === l ? 0 : l,c = d.backgroundColor,f = void 0 === c ? "transparent" : c;this.setOpacity(e), this.setTransform(t, e), r && this.setShadow(e), i && this.setBackground(f, n, s, a, h), this.roundRect(a, h, n, s, u, i, !1), o && this.setBorder(t, e);}, t.prototype.drawImage = function (t, e, r, n) {return void 0 === e && (e = {}), void 0 === r && (r = {}), void 0 === n && (n = !0), i(this, void 0, void 0, function () {var s = this;return o(this, function (a) {switch (a.label) {case 0:return [4, new Promise(function (a, h) {return i(s, void 0, void 0, function () {var s,h,u,c,f,g,v,p,b,m,w,x,y,S,z,B,M,R,k,L,W,O,P,T,I = this;return o(this, function (C) {switch (C.label) {case 0:return r.boxShadow && this.drawView(e, Object.assign(r, { backgroundColor: r.backgroundColor || r.boxShadow && (r.backgroundColor || "#ffffff") }), !0, !1, !0), h = (s = this).ctx, u = s.sleep, c = s.canvas, f = r.borderRadius, g = void 0 === f ? 0 : f, v = r.backgroundColor, p = void 0 === v ? "transparent" : v, b = r.objectFit, m = void 0 === b ? "fill" : b, w = r.objectPosition, x = e.width, y = e.height, S = e.left, z = e.top, h.save(), B = e.contentSize.left - e.borderSize.left, M = e.contentSize.top - e.borderSize.top, n || (this.setOpacity(r), this.setTransform(e, r), this.setBackground(p, x, y, S, z), this.roundRect(S, z, x, y, g, !!g, !1)), S += B, z += M, h.clip(), R = function R(t) {if ("fill" !== m) {var i = function (t, e, i) {var o = t.objectFit,r = t.objectPosition,n = e.width / e.height,s = i.width / i.height,a = 1;"contain" == o && n >= s || "cover" == o && n < s ? a = e.height / i.height : ("contain" == o && n < s || "cover" == o && n >= s) && (a = e.width / i.width);var h = i.width * a,l = i.height * a,u = /^\d+px|rpx$/.test(null == r ? void 0 : r[0]) ? d(null == r ? void 0 : r[0], e.width) : (e.width - h) * (/%$/.test(null == r ? void 0 : r[0]) ? d(null == r ? void 0 : r[0], 1, !0) : { left: 0, center: .5, right: 1 }[(null == r ? void 0 : r[0]) || "center"]),c = /^\d+px|rpx$/.test(null == r ? void 0 : r[1]) ? d(null == r ? void 0 : r[1], e.height) : (e.height - l) * (/%$/.test(null == r ? void 0 : r[1]) ? d(null == r ? void 0 : r[1], 1, !0) : { top: 0, center: .5, bottom: 1 }[(null == r ? void 0 : r[1]) || "center"]),f = function f(t, e) {return [(t - u) / a, (e - c) / a];},g = f(0, 0),v = g[0],p = g[1],b = f(e.width, e.height),m = b[0],w = b[1];return { sx: Math.max(v, 0), sy: Math.max(p, 0), sw: Math.min(m - v, i.width), sh: Math.min(w - p, i.height), dx: Math.max(u, 0), dy: Math.max(c, 0), dw: Math.min(h, e.width), dh: Math.min(l, e.height) };}({ objectFit: m, objectPosition: w }, e.contentSize, t),o = i.sx,r = i.sy,n = i.sh,s = i.sw,a = i.dx,l = i.dy,u = i.dh,c = i.dw;"mp-baidu" == I.platform ? h.drawImage(t.src, a + S, l + z, c, u, o, r, s, n) : h.drawImage(t.src, o, r, s, n, a + S, l + z, c, u);} else h.drawImage(t.src, S, z, x, y);}, k = function k() {h.restore(), I.drawView(e, r, !1, !0, !1), setTimeout(a, u);}, L = function L(t) {if (c.createImage || "web" == I.platform) {var e = null;(e = c.createImage ? c.createImage() : new Image()).onload = function () {t.src = e, R(t), k();}, e.onerror = function () {return i(I, void 0, void 0, function () {return o(this, function (e) {return console.log("createImage fail: " + JSON.stringify(t)), a(!0), [2];});});}, e.src = t.path;} else R(t), k();}, "string" != typeof t ? [3, 2] : [4, l(t)];case 1:return W = C.sent(), O = W.path, P = W.width, T = W.height, L({ path: O, src: O, width: P, height: T }), [3, 3];case 2:L(t), C.label = 3;case 3:return [2];}});});})];case 1:return a.sent(), [2];}});});}, t.prototype.drawText = function (t, e, i, o) {var r, n;this.drawView(e, i);var s = this.ctx,a = e.borderSize,h = e.contentSize,l = e.left,u = e.top,c = h.width,f = h.height,g = h.left - a.left,v = h.top - a.top,p = i.color,b = void 0 === p ? "#000000" : p,m = i.lineHeight,w = void 0 === m ? "1.4em" : m,x = i.fontSize,y = void 0 === x ? 14 : x,S = i.fontWeight,z = i.fontFamily,B = i.textStyle,M = i.textAlign,R = void 0 === M ? "left" : M,k = i.verticalAlign,L = void 0 === k ? "middle" : k;i.backgroundColor;var W = i.lineClamp,O = i.textDecoration;if (w = d(w, y), t) {switch (s.save(), this.setOpacity(i), this.setTransform(e, i), l += g, u += v, s.setFonts({ fontFamily: z, fontSize: y, fontWeight: S, textStyle: B }), s.setTextBaseline("middle"), s.setTextAlign(R), s.setFillStyle(b), u += y / 2, R) {case "left":break;case "center":l += .5 * c;break;case "right":l += c;}var P = o.lines * w,T = Math.ceil((f - P) / 2);switch (T < 0 && (T = 0), L) {case "top":break;case "middle":u += T;break;case "bottom":u += 2 * T;}var I = (w - o.fontHeight) / 2,C = function C(t, e, i) {var r = t;switch (R) {case "left":t = t, r += i;break;case "center":r = (t -= i / 2) + i;break;case "right":r = t, t -= i;}O && (s.setLineWidth(y / 13), s.beginPath(), e -= I, /\bunderline\b/.test(O) && (s.moveTo(t, e - .5 * o.fontHeight), s.lineTo(r, e - .5 * o.fontHeight)), /\boverline\b/.test(O) && (s.moveTo(t, e - 1.5 * o.fontHeight), s.lineTo(r, e - 1.5 * o.fontHeight)), /\bline-through\b/.test(O) && (s.moveTo(t, e - o.fontHeight), s.lineTo(r, e - o.fontHeight)), s.closePath(), s.setStrokeStyle(b), s.stroke());};if (!o.widths || 1 == o.widths.lenght && o.widths[0].total <= h.width) return s.fillText(t, l, u + I), C(l, u += w, (null === (n = null === (r = null == o ? void 0 : o.widths) || void 0 === r ? void 0 : r[0]) || void 0 === n ? void 0 : n.total) || o.text), s.restore(), void this.setBorder(e, i);for (var j = t.split(""), F = u, A = l, H = "", $ = 0, E = 0; E <= j.length; E++) {var U = j[E] || "",_ = "\n" === U,D = "" == U,N = H + (U = _ ? "" : U),q = s.measureText(N).width;if ($ >= W) break;if (A = l, (q = q) > h.width || _ || D) {if ($++, H = D && q <= h.width ? N : H, $ === W && q > c) {for (; s.measureText(H + "...").width > h.width && !(H.length <= 1);) {H = H.substring(0, H.length - 1);}H += "...";}if (s.fillText(H, A, u + I), C(A, u += w, q), H = U, u + w > F + f) break;} else H = N;}s.restore();}}, t.prototype.source = function (t) {var e;return i(this, void 0, void 0, function () {var i, r;return o(this, function (o) {switch (o.label) {case 0:if ("{}" == JSON.stringify(t)) return [2];if (!t.type) for (i in t.type = "view", t.css = t.css || {}, t) {["views", "children", "type", "css"].includes(i) || (t.css[i] = t[i], delete t[i]);}return (null === (e = null == t ? void 0 : t.css) || void 0 === e ? void 0 : e.width) || (t.css ? t.css.width = this.root.width : t.css = { width: this.root.width }), [4, this.create(t)];case 1:return r = o.sent(), this.size = (null == r ? void 0 : r.layout()) || {}, this.node = r, [2, this.size];}});});}, t.prototype.create = function (t, e) {var r, n, s, a;return i(this, void 0, void 0, function () {var i, h, d, u, c, f, g, v, p, b, w;return o(this, function (o) {switch (o.label) {case 0:return ("image" != t.type || t.src || t.url) && ("qrcode" != t.type && "text" != t.type || t.text) ? "none" == (null === (r = null == t ? void 0 : t.css) || void 0 === r ? void 0 : r.display) ? (console.log("element display none"), [2]) : "image" == t.type || "view" == t.type && (null === (n = t.css) || void 0 === n ? void 0 : n.backgroundImage) ? (i = null, h = /url\((.+)\)/, t.css.backgroundImage && (null === (s = h.exec(t.css.backgroundImage)) || void 0 === s ? void 0 : s[1]) && (i = null === (a = h.exec(t.css.backgroundImage)) || void 0 === a ? void 0 : a[1]), [4, l(t.src || i)]) : [3, 2] : [2];case 1:if (d = o.sent(), u = d.width, c = d.height, !(f = d.path) && "image" == t.type) return [2];f && (["mp-weixin", "mp-baidu", "mp-qq", "mp-toutiao"].includes(this.platform) && (f = /^\.|^\/(?=[^\/])/.test(t.src || i) ? "/" + f : f), t.attributes = Object.assign(t.attributes || {}, { width: u, height: c, path: f, src: f, naturalSrc: t.src || i })), o.label = 2;case 2:if (this.count += 1, g = new m(t, e, this.root, this.ctx), !(v = t.views || t.children)) return [3, 6];p = 0, o.label = 3;case 3:return p < v.length ? (b = v[p], [4, this.create(b, g)]) : [3, 6];case 4:(w = o.sent()) && g.add(w), o.label = 5;case 5:return p++, [3, 3];case 6:return [2, g];}});});}, t.prototype.drawNode = function (t) {return i(this, void 0, void 0, function () {var e, i, r, n, s, a, h, d, l, u, c, f;return o(this, function (o) {switch (o.label) {case 0:return e = t.layoutBox, i = t.computedStyle, r = t.attributes, n = t.name, s = t.children, a = t.attributes, h = a.src, d = a.text, "view" !== n ? [3, 4] : h ? [4, this.drawPattern(r, e, i)] : [3, 2];case 1:return o.sent(), [3, 3];case 2:this.drawView(e, i), o.label = 3;case 3:return [3, 7];case 4:return "image" === n && h ? [4, this.drawImage(r, e, i, !1)] : [3, 6];case 5:return o.sent(), [3, 7];case 6:"text" === n ? this.drawText(d, e, i, r) : "qrcode" === n && (null == w ? void 0 : w.api) && w.api.draw(d, this, e, i), o.label = 7;case 7:if (this.progress += 1, !s) return [2];l = Object.values ? Object.values(s) : Object.keys(s).map(function (t) {return s[t];}), i.transform && this.ctx.save(), u = 0, c = l, o.label = 8;case 8:return u < c.length ? (f = c[u], [4, this.drawNode(f)]) : [3, 11];case 9:o.sent(), o.label = 10;case 10:return u++, [3, 8];case 11:return i.transform && this.ctx.restore(), [2];}});});}, t.prototype.render = function () {return i(this, void 0, void 0, function () {return o(this, function (t) {switch (t.label) {case 0:return this.init(), [4, (e = 30, void 0 === e && (e = 0), new Promise(function (t) {return setTimeout(t, e);}))];case 1:return t.sent(), this.node ? [4, this.drawNode(this.node)] : [3, 3];case 2:t.sent(), t.label = 3;case 3:return [2];}var e;});});}, t.prototype.listen = function (t, e) {var i = this;if ("progressChange" == t) {var o = 0;Object.defineProperty(this, "progress", { configurable: !0, set: function set(t) {o = t, e(t / i.count);}, get: function get() {return o || 0;} });}}, t.prototype.save = function (t) {try {var e = t || {},i = e.fileType,o = void 0 === i ? "png" : i,r = e.quality,n = void 0 === r ? 1 : r;return this.canvas.toDataURL("image/" + o, n);} catch (t) {return console.log("image cross domain"), t;}}, t;}();exports.Painter = x;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 621 */,
+/* 622 */,
+/* 623 */,
+/* 624 */,
+/* 625 */,
+/* 626 */,
+/* 627 */,
+/* 628 */,
+/* 629 */,
+/* 630 */,
+/* 631 */,
+/* 632 */,
+/* 633 */,
+/* 634 */,
+/* 635 */,
+/* 636 */,
+/* 637 */,
+/* 638 */,
+/* 639 */,
+/* 640 */,
+/* 641 */,
+/* 642 */,
+/* 643 */
+/*!******************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-avatar/props.js ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 头像图片路径(不能为相对路径)
+    src: {
+      type: String,
+      default: uni.$u.props.avatar.src },
+
+    // 头像形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.avatar.shape },
+
+    // 头像尺寸
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.avatar.size },
+
+    // 裁剪模式
+    mode: {
+      type: String,
+      default: uni.$u.props.avatar.mode },
+
+    // 显示的文字
+    text: {
+      type: String,
+      default: uni.$u.props.avatar.text },
+
+    // 背景色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.avatar.bgColor },
+
+    // 文字颜色
+    color: {
+      type: String,
+      default: uni.$u.props.avatar.color },
+
+    // 文字大小
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.avatar.fontSize },
+
+    // 显示的图标
+    icon: {
+      type: String,
+      default: uni.$u.props.avatar.icon },
+
+    // 显示小程序头像，只对百度，微信，QQ小程序有效
+    mpAvatar: {
+      type: Boolean,
+      default: uni.$u.props.avatar.mpAvatar },
+
+    // 是否使用随机背景色
+    randomBgColor: {
+      type: Boolean,
+      default: uni.$u.props.avatar.randomBgColor },
+
+    // 加载失败的默认头像(组件有内置默认图片)
+    defaultUrl: {
+      type: String,
+      default: uni.$u.props.avatar.defaultUrl },
+
+    // 如果配置了randomBgColor为true，且配置了此值，则从默认的背景色数组中取出对应索引的颜色值，取值0-19之间
+    colorIndex: {
+      type: [String, Number],
+      // 校验参数规则，索引在0-19之间
+      validator: function validator(n) {
+        return uni.$u.test.range(n, [0, 19]) || n === '';
+      },
+      default: uni.$u.props.avatar.colorIndex },
+
+    // 组件标识符
+    name: {
+      type: String,
+      default: uni.$u.props.avatar.name } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 644 */,
+/* 645 */,
+/* 646 */,
+/* 647 */,
+/* 648 */,
+/* 649 */,
+/* 650 */,
+/* 651 */
+/*!****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-text/props.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 主题颜色
+    type: {
+      type: String,
+      default: uni.$u.props.text.type },
+
+    // 是否显示
+    show: {
+      type: Boolean,
+      default: uni.$u.props.text.show },
+
+    // 显示的值
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.text.text },
+
+    // 前置图标
+    prefixIcon: {
+      type: String,
+      default: uni.$u.props.text.prefixIcon },
+
+    // 后置图标
+    suffixIcon: {
+      type: String,
+      default: uni.$u.props.text.suffixIcon },
+
+    // 文本处理的匹配模式
+    // text-普通文本，price-价格，phone-手机号，name-姓名，date-日期，link-超链接
+    mode: {
+      type: String,
+      default: uni.$u.props.text.mode },
+
+    // mode=link下，配置的链接
+    href: {
+      type: String,
+      default: uni.$u.props.text.href },
+
+    // 格式化规则
+    format: {
+      type: [String, Function],
+      default: uni.$u.props.text.format },
+
+    // mode=phone时，点击文本是否拨打电话
+    call: {
+      type: Boolean,
+      default: uni.$u.props.text.call },
+
+    // 小程序的打开方式
+    openType: {
+      type: String,
+      default: uni.$u.props.text.openType },
+
+    // 是否粗体，默认normal
+    bold: {
+      type: Boolean,
+      default: uni.$u.props.text.bold },
+
+    // 是否块状
+    block: {
+      type: Boolean,
+      default: uni.$u.props.text.block },
+
+    // 文本显示的行数，如果设置，超出此行数，将会显示省略号
+    lines: {
+      type: [String, Number],
+      default: uni.$u.props.text.lines },
+
+    // 文本颜色
+    color: {
+      type: String,
+      default: uni.$u.props.text.color },
+
+    // 字体大小
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.text.size },
+
+    // 图标的样式
+    iconStyle: {
+      type: [Object, String],
+      default: uni.$u.props.text.iconStyle },
+
+    // 文字装饰，下划线，中划线等，可选值 none|underline|line-through
+    decoration: {
+      tepe: String,
+      default: uni.$u.props.text.decoration },
+
+    // 外边距，对象、字符串，数值形式均可
+    margin: {
+      type: [Object, String, Number],
+      default: uni.$u.props.text.margin },
+
+    // 文本行高
+    lineHeight: {
+      type: [String, Number],
+      default: uni.$u.props.text.lineHeight },
+
+    // 文本对齐方式，可选值left|center|right
+    align: {
+      type: String,
+      default: uni.$u.props.text.align },
+
+    // 文字换行，可选值break-word|normal|anywhere
+    wordWrap: {
+      type: String,
+      default: uni.$u.props.text.wordWrap } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 652 */,
+/* 653 */,
+/* 654 */,
+/* 655 */,
+/* 656 */,
+/* 657 */
+/*!**********************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-number-box/props.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 步进器标识符，在change回调返回
+    name: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.name },
+
+    // 用于双向绑定的值，初始化时设置设为默认min值(最小值)
+    value: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.value },
+
+    // 最小值
+    min: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.min },
+
+    // 最大值
+    max: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.max },
+
+    // 加减的步长，可为小数
+    step: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.step },
+
+    // 是否只允许输入整数
+    integer: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.integer },
+
+    // 是否禁用，包括输入框，加减按钮
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disabled },
+
+    // 是否禁用输入框
+    disabledInput: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disabledInput },
+
+    // 是否开启异步变更，开启后需要手动控制输入值
+    asyncChange: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.asyncChange },
+
+    // 输入框宽度，单位为px
+    inputWidth: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.inputWidth },
+
+    // 是否显示减少按钮
+    showMinus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.showMinus },
+
+    // 是否显示增加按钮
+    showPlus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.showPlus },
+
+    // 显示的小数位数
+    decimalLength: {
+      type: [String, Number, null],
+      default: uni.$u.props.numberBox.decimalLength },
+
+    // 是否开启长按加减手势
+    longPress: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.longPress },
+
+    // 输入框文字和加减按钮图标的颜色
+    color: {
+      type: String,
+      default: uni.$u.props.numberBox.color },
+
+    // 按钮大小，宽高等于此值，单位px，输入框高度和此值保持一致
+    buttonSize: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.buttonSize },
+
+    // 输入框和按钮的背景颜色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.numberBox.bgColor },
+
+    // 指定光标于键盘的距离，避免键盘遮挡输入框，单位px
+    cursorSpacing: {
+      type: [String, Number],
+      default: uni.$u.props.numberBox.cursorSpacing },
+
+    // 是否禁用增加按钮
+    disablePlus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disablePlus },
+
+    // 是否禁用减少按钮
+    disableMinus: {
+      type: Boolean,
+      default: uni.$u.props.numberBox.disableMinus },
+
+    // 加减按钮图标的样式
+    iconStyle: {
+      type: [Object, String],
+      default: uni.$u.props.numberBox.iconStyle } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 658 */,
+/* 659 */,
+/* 660 */,
+/* 661 */,
+/* 662 */,
+/* 663 */,
+/* 664 */,
+/* 665 */
+/*!****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-text/value.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  computed: {
+    // 经处理后需要显示的值
+    value: function value() {var
+
+      text =
+
+
+
+      this.text,mode = this.mode,format = this.format,href = this.href;
+      // 价格类型
+      if (mode === 'price') {
+        // 如果text不为金额进行提示
+        if (!/^\d+(\.\d+)?$/.test(text)) {
+          uni.$u.error('金额模式下，text参数需要为金额格式');
+        }
+        // 进行格式化，判断用户传入的format参数为正则，或者函数，如果没有传入format，则使用默认的金额格式化处理
+        if (uni.$u.test.func(format)) {
+          // 如果用户传入的是函数，使用函数格式化
+          return format(text);
+        }
+        // 如果format非正则，非函数，则使用默认的金额格式化方法进行操作
+        return uni.$u.priceFormat(text, 2);
+      }if (mode === 'date') {
+        // 判断是否合法的日期或者时间戳
+        !uni.$u.test.date(text) && uni.$u.error('日期模式下，text参数需要为日期或时间戳格式');
+        // 进行格式化，判断用户传入的format参数为正则，或者函数，如果没有传入format，则使用默认的格式化处理
+        if (uni.$u.test.func(format)) {
+          // 如果用户传入的是函数，使用函数格式化
+          return format(text);
+        }if (format) {
+          // 如果format非正则，非函数，则使用默认的时间格式化方法进行操作
+          return uni.$u.timeFormat(text, format);
+        }
+        // 如果没有设置format，则设置为默认的时间格式化形式
+        return uni.$u.timeFormat(text, 'yyyy-mm-dd');
+      }if (mode === 'phone') {
+        // 判断是否合法的手机号
+        // !uni.$u.test.mobile(text) && uni.$u.error('手机号模式下，text参数需要为手机号码格式')
+        if (uni.$u.test.func(format)) {
+          // 如果用户传入的是函数，使用函数格式化
+          return format(text);
+        }if (format === 'encrypt') {
+          // 如果format为encrypt，则将手机号进行星号加密处理
+          return "".concat(text.substr(0, 3), "****").concat(text.substr(7));
+        }
+        return text;
+      }if (mode === 'name') {
+        // 判断是否合法的字符粗
+        !(typeof text === 'string') && uni.$u.error('姓名模式下，text参数需要为字符串格式');
+        if (uni.$u.test.func(format)) {
+          // 如果用户传入的是函数，使用函数格式化
+          return format(text);
+        }if (format === 'encrypt') {
+          // 如果format为encrypt，则将姓名进行星号加密处理
+          return this.formatName(text);
+        }
+        return text;
+      }if (mode === 'link') {
+        // 判断是否合法的字符粗
+        !uni.$u.test.url(href) && uni.$u.error('超链接模式下，href参数需要为URL格式');
+        return text;
+      }
+      return text;
+    } },
+
+  methods: {
+    // 默认的姓名脱敏规则
+    formatName: function formatName(name) {
+      var value = '';
+      if (name.length === 2) {
+        value = name.substr(0, 1) + '*';
+      } else if (name.length > 2) {
+        var char = '';
+        for (var i = 0, len = name.length - 2; i < len; i++) {
+          char += '*';
+        }
+        value = name.substr(0, 1) + char + name.substr(-1, 1);
+      } else {
+        value = name;
+      }
+      return value;
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 666 */
+/*!**********************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/mixin/button.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    lang: String,
+    sessionFrom: String,
+    sendMessageTitle: String,
+    sendMessagePath: String,
+    sendMessageImg: String,
+    showMessageCard: Boolean,
+    appParameter: String,
+    formType: String,
+    openType: String } };exports.default = _default;
+
+/***/ }),
+/* 667 */
+/*!************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/libs/mixin/openType.js ***!
+  \************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    openType: String },
+
+  methods: {
+    onGetUserInfo: function onGetUserInfo(event) {
+      this.$emit('getuserinfo', event.detail);
+    },
+    onContact: function onContact(event) {
+      this.$emit('contact', event.detail);
+    },
+    onGetPhoneNumber: function onGetPhoneNumber(event) {
+      this.$emit('getphonenumber', event.detail);
+    },
+    onError: function onError(event) {
+      this.$emit('error', event.detail);
+    },
+    onLaunchApp: function onLaunchApp(event) {
+      this.$emit('launchapp', event.detail);
+    },
+    onOpenSetting: function onOpenSetting(event) {
+      this.$emit('opensetting', event.detail);
+    } } };exports.default = _default;
+
+/***/ }),
+/* 668 */,
+/* 669 */,
+/* 670 */,
+/* 671 */,
+/* 672 */,
+/* 673 */,
+/* 674 */,
+/* 675 */
+/*!****************************************************************************************************!*\
+  !*** /Users/wanzikun/Desktop/UNIAPP/客户模版/汇园水果2.0/node_modules/uview-ui/components/u-link/props.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 文字颜色
+    color: {
+      type: String,
+      default: uni.$u.props.link.color },
+
+    // 字体大小，单位px
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.link.fontSize },
+
+    // 是否显示下划线
+    underLine: {
+      type: Boolean,
+      default: uni.$u.props.link.underLine },
+
+    // 要跳转的链接
+    href: {
+      type: String,
+      default: uni.$u.props.link.href },
+
+    // 小程序中复制到粘贴板的提示语
+    mpTips: {
+      type: String,
+      default: uni.$u.props.link.mpTips },
+
+    // 下划线颜色
+    lineColor: {
+      type: String,
+      default: uni.$u.props.link.lineColor },
+
+    // 超链接的问题，不使用slot形式传入，是因为nvue下无法修改颜色
+    text: {
+      type: String,
+      default: uni.$u.props.link.text } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 ]]);

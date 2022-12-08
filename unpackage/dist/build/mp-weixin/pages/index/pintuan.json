@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "拼团详情",
+  "usingComponents": {
+    "u-avatar-group": "/node-modules/uview-ui/components/u-avatar-group/u-avatar-group",
+    "u-count-down": "/node-modules/uview-ui/components/u-count-down/u-count-down",
+    "u-parse": "/node-modules/uview-ui/components/u-parse/u-parse",
+    "u-divider": "/node-modules/uview-ui/components/u-divider/u-divider",
+    "aicon": "/components/aicon/aicon",
+    "spec-picker": "/components/specPicker/specPicker"
+  }
+}

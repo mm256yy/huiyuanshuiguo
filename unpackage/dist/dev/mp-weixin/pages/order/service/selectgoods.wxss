@@ -1,0 +1,401 @@
+.orderBox {
+  width: 100%;
+  background-color: #fff;
+}
+.orderBox .order {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+}
+.orderBox .order .label {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  position: relative;
+}
+.orderBox .order .label .title {
+  font-size: 28rpx;
+  color: #999;
+}
+.orderBox .order .label .title text {
+  font-size: 28rpx;
+  padding-left: 10rpx;
+}
+.orderBox .order .label .number {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28rpx;
+  color: #1c1c1c;
+}
+.goodsBox {
+  border-top: 1px solid #efefef;
+}
+.goodsBox .goods {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 30rpx 0;
+}
+.goodsBox .goods .icons {
+  width: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.goodsBox .goods .image {
+  width: 200rpx;
+}
+.goodsBox .goods .image image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+}
+.goodsBox .goods .info {
+  flex: 1;
+  min-width: 0;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goodsBox .goods .info .title {
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+.goodsBox .goods .info .label {
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 26rpx;
+  color: #1c1c1c;
+}
+.goodsBox .goods .info .price {
+  color: #F54319;
+  font-size: 30rpx;
+}
+.goodsBox .goods .info .foobox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+.goodsBox .goods .info .foobox .nums {
+  font-size: 24rpx;
+  color: #999;
+}
+.goodsBox .goods .info .foobox .numbox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.goodsBox .goods .info .foobox .numbox .buy {
+  display: flex;
+  align-items: center;
+}
+.goodsBox .goods .info .foobox .numbox .buy .btn {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goodsBox .goods .info .foobox .numbox .buy .btn aicon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goodsBox .goods .info .foobox .numbox .buy .input {
+  width: 100rpx;
+  height: 50rpx;
+  background-color: #eee;
+  margin: 0 6rpx;
+  border-radius: 100rpx;
+}
+.goodsBox .goods .info .foobox .numbox .buy .input input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #1c1c1c;
+}
+.goodsBox .goods .info .foobox .numbox .none {
+  color: #999;
+  font-size: 26rpx;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+  padding-bottom: env(safe-area-inset-bottom);
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.footer .label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120rpx;
+  width: 100%;
+}
+.footer .label .button {
+  width: 92%;
+  margin: 0 auto;
+  height: 80rpx;
+  border-radius: 100rpx;
+  color: #fff;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F54319;
+}
+.tuikuan_form_box .head {
+  color: #1c1c1c;
+  font-size: 32rpx;
+  font-weight: bold;
+  height: 110rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tuikuan_form_box .form_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+}
+.tuikuan_form_box .form_box .label {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+.tuikuan_form_box .form_box .label .title {
+  width: 160rpx;
+  color: #1c1c1c;
+  font-size: 28rpx;
+  position: relative;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.tuikuan_form_box .form_box .label .title ._span {
+  color: #F54319;
+  font-size: 26rpx;
+  position: absolute;
+  left: -20rpx;
+  top: 26rpx;
+}
+.tuikuan_form_box .form_box .label .input {
+  flex: 1;
+  min-width: 0;
+  min-height: 80rpx;
+  border: 1px solid #eee;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tuikuan_form_box .form_box .label .input input {
+  width: 90%;
+  font-size: 30rpx;
+  color: #1c1c1c;
+  height: 100%;
+}
+.tuikuan_form_box .form_box .label .input textarea {
+  width: 92%;
+  padding: 16rpx 0;
+  height: 150rpx;
+  color: #1c1c1c;
+  font-size: 30rpx;
+}
+.tuikuan_form_box .form_box .label .image {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+.tuikuan_form_box .form_box .label .image .img {
+  width: 92rpx;
+  height: 92rpx;
+  position: relative;
+  margin-right: 20rpx;
+}
+.tuikuan_form_box .form_box .label .image .img image {
+  border-radius: 10rpx;
+}
+.tuikuan_form_box .form_box .label .image .img aicon {
+  position: absolute;
+  top: -12rpx;
+  right: -12rpx;
+}
+.tuikuan_form_box .form_box .label .image .add {
+  width: 92rpx;
+  height: 92rpx;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tuikuan_form_box .form_box .button_box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 40rpx 0 20rpx;
+  display: flex;
+  justify-content: center;
+}
+.tuikuan_form_box .form_box .button_box .button {
+  width: 100%;
+  height: 80rpx;
+  color: #fff;
+  background-color: #F54319;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rpx;
+  font-size: 30rpx;
+}
+.showGoodsBox {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.showGoodsBox .bg {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.showGoodsBox .showGoods {
+  width: 85%;
+  overflow: hidden;
+  min-height: 300rpx;
+  position: absolute;
+  z-index: 1002;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.08);
+  margin-top: -5%;
+}
+.showGoodsBox .showGoods .sheader {
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100rpx;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 20rpx;
+}
+.showGoodsBox .showGoods .label {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20rpx;
+}
+.showGoodsBox .showGoods .label .title {
+  font-size: 26rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.showGoodsBox .showGoods .label .title ._span {
+  color: #ed4014;
+  margin-right: 4rpx;
+}
+.showGoodsBox .showGoods .label .input {
+  width: 100%;
+  height: 70rpx;
+  border: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+.showGoodsBox .showGoods .label .input input {
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 26rpx;
+}
+.showGoodsBox .showGoods .label .textarea {
+  width: 100%;
+  height: 200rpx;
+  border: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showGoodsBox .showGoods .label .textarea textarea {
+  width: 95%;
+  height: 90%;
+  font-size: 26rpx;
+}
+.showGoodsBox .showGoods .label .image {
+  display: flex;
+  align-items: center;
+}
+.showGoodsBox .showGoods .label .image .add {
+  width: 130rpx;
+  height: 130rpx;
+  border: 1px solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showGoodsBox .showGoods .label .image .img {
+  width: 130rpx;
+  height: 130rpx;
+  border: 1px solid #f5f5f5;
+  margin-right: 10rpx;
+  position: relative;
+}
+.showGoodsBox .showGoods .label .image .img icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.showGoodsBox .showGoods .label .image .img:nth-child(4) {
+  margin-right: 0;
+}
+.showGoodsBox .showGoods .sfooter {
+  width: 100%;
+  padding: 20rpx 0 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showGoodsBox .showGoods .sfooter .button {
+  width: 90%;
+  height: 70rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  border-radius: 8rpx;
+}
+
