@@ -70,10 +70,6 @@
     "chooseAddress",
     "getLocation"
   ],
-  "permission": {
-    "scope.userLocation": {
-      "desc": "获取您的收货位置信息，用于快速填写地址"
-    }
-  },
+  "permission": {},
   "usingComponents": {}
 }

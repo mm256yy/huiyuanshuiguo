@@ -1,0 +1,38 @@
+.head_box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100rpx;
+  border-bottom: 1px solid #efefef;
+  z-index: 100;
+}
+.head_box .label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1c1c1c;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.list_box .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  height: 100rpx;
+  border-bottom: 1px dashed #efefef;
+  color: #1c1c1c;
+  font-size: 24rpx;
+}
+.list_box .list .label:nth-child(3) {
+  width: 250rpx;
+  text-align: right;
+}
+

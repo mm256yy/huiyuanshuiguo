@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "登录",
+  "disableScroll": true,
+  "usingComponents": {
+    "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup"
+  }
+}

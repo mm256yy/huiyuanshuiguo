@@ -101,9 +101,9 @@
 				]
 				let test = tabbar.filter(itm => path.indexOf(itm)>=0);
 				if(test.length===0){
-					if(!getApp().globalData.user){
-						return uni.navigateTo({url: '/pages/user/login'});
-					}
+					// if(!getApp().globalData.user){
+					// 	return uni.navigateTo({url: '/pages/user/login'});
+					// }
 					uni.navigateTo({url: path});
 				}else{
 					uni.switchTab({url: path});

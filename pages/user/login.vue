@@ -7,7 +7,6 @@
 	        <button class="userlogin" @click="getUserInfoTap" :style="{backgroundColor: template.color.temp_color}">授权登录</button>
 	        <button class="userlogin navigateBack" :style="{backgroundColor: template.color.temp_color+'20'}" @click="navigateBack()">暂不登陆</button>
 	    </view>
-		
 		<u-popup :safeAreaInsetBottom="false" :show="editInfoShow" :round="10" :closeOnClickOverlay="false" mode="center" @close="editInfoShow=false">
 			<view class="edit_info_box">
 				<view class="head">

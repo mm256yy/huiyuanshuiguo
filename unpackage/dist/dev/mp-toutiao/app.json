@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/menu",
+    "pages/index/coupons",
+    "pages/index/goturntable",
+    "pages/index/store",
+    "pages/index/category",
+    "pages/index/details",
+    "pages/index/pintuan",
+    "pages/index/pintuanList",
+    "pages/index/miaoshaList",
+    "pages/index/score",
+    "pages/index/search",
+    "pages/order/cart",
+    "pages/order/paypal",
+    "pages/order/list",
+    "pages/order/details",
+    "pages/order/service/index",
+    "pages/order/service/selectgoods",
+    "pages/order/invoice_list",
+    "pages/order/invoice_order",
+    "pages/user/index",
+    "pages/user/profit",
+    "pages/user/addressList",
+    "pages/user/addressEdit",
+    "pages/user/coupons",
+    "pages/user/favorite",
+    "pages/user/money",
+    "pages/user/member",
+    "pages/user/record",
+    "pages/user/pintuan",
+    "pages/user/score_list",
+    "pages/user/login",
+    "pages/about"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "汇园水果",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#898C9D",
+    "selectedColor": "#3CBDC5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/index/menu",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/order/cart",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "component2": true,
+  "usingComponents": {}
+}

@@ -2,7 +2,7 @@
 	<view class="content">
 		<view class="card_goods_list">
 			<u-swipe-action>
-				<u-swipe-action-item ref="action" :options="options" v-for="(item, index) in cartList" @click="delGoodsTap(index)" :key="index">
+				<u-swipe-action-item ref="action" :options="options" autoClose="true" v-for="(item, index) in cartList" @click="delGoodsTap(index)" :key="index">
 					<view class="goods" @click="selectGoodsTap(index)">
 						<view class="left">
 							<aicon v-if="item.select" type="roundcheckfill" color="#F54319" size="25"></aicon>
@@ -61,8 +61,6 @@
 			</view>
 			<view class="hover_label"></view>
 		</view>
-		
-		
 		<view v-if="hotGoodsList.length>0" class="hot_goods_list">
 			<view class="hot_head">
 				<u-divider text="为您推荐以下商品"></u-divider>
@@ -123,15 +121,18 @@
 			self.getUserInfo();
 		},
 		methods: {
+			// 获取会员信息
 			getUserInfo(){
 				let self = this;
 				self.Get(self.Url.userInfo).then(res => {
 					if(res.code === 0){
 						self.userInfoData = res.data;
+						console.log(self.userInfoData,'2222');
 					}
 					self.getGoodsList();
 				})
 			},
+			// 获取购物车商品列表
 			getCartList(){
 				let self = this;
 				self.Get(self.Url.cartList).then(res => {
@@ -233,7 +234,7 @@
 				}
 				self.Get(self.Url.cartEdit, postData).then(res => {
 					if(res.code === 0){
-						console.log('购物车修改成功')
+						// console.log('购物车修改成功')
 						if(data.dIndex!=undefined){
 							self.cartList.splice(data.dIndex, 1);
 							self.getCheckCartNumber();

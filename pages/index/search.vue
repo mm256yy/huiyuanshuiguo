@@ -24,9 +24,9 @@
 		<view class="goods_list">
 			<view class="goods" v-for="(item, index) in goodsList" :key="index" @click="getPathTap('/pages/index/details?id='+item.id)">
 				<view class="image">
-					<image :src="item.pic" mode="aspectFill"></image>
+					<image :src="item.productDetailsImg" mode="aspectFill"></image>
 				</view>
-				<view class="info">
+				<!-- <view class="info">
 					<view class="title"><span v-if="item.pintuan_id">团</span>{{item.title}}</view>
 					<view class="box">
 						<view class="left">
@@ -42,7 +42,7 @@
 							<aicon v-else type="cartfill" :color="template.color.temp_color" size="20"></aicon>
 						</view>
 					</view>
-				</view>
+				</view> -->
 			</view>
 		</view>
 		<view class="none_list_box" v-if="goodsList.length===0">
@@ -51,7 +51,6 @@
 		</view>
 	</view>
 </template>
-
 <script>
 	const app = getApp();
 	export default {

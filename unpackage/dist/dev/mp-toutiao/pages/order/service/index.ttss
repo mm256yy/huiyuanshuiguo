@@ -1,0 +1,228 @@
+.head_box {
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.head_box .label {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head_box .label .tit {
+  color: #666;
+  transition: all 0.2s;
+  padding-top: 6rpx;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 10rpx;
+  font-size: 30rpx;
+}
+.head_box .alabel .tit {
+  color: #1c1c1c;
+  font-weight: bold;
+  border-color: #00d389;
+}
+.orderList {
+  padding-top: 30rpx;
+}
+.orderList .list {
+  width: 92%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}
+.orderList .list .oheader {
+  display: flex;
+  align-items: center;
+  width: 92%;
+  margin: 0 auto;
+  height: 80rpx;
+  justify-content: space-between;
+}
+.orderList .list .oheader .left {
+  flex: 1;
+}
+.orderList .list .oheader .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.orderList .list .oheader .right .status {
+  font-size: 30rpx;
+  color: #19be6b;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderList .list .goodsOne {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 30rpx 0;
+}
+.orderList .list .goodsOne .goods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+.orderList .list .goodsOne .goods .left {
+  width: 170rpx;
+}
+.orderList .list .goodsOne .goods .left image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+}
+.orderList .list .goodsOne .goods .right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140rpx;
+}
+.orderList .list .goodsOne .goods .right .title {
+  width: 100%;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1c1c1c;
+}
+.orderList .list .goodsOne .goods .right .label {
+  width: 100%;
+  font-size: 26rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999;
+}
+.orderList .list .goodsOne .goods .right .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orderList .list .goodsOne .goods .right .box .price {
+  flex: 1;
+  color: #1c1c1c;
+  font-size: 28rpx;
+}
+.orderList .list .goodsOne .goods .right .box .number {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #1c1c1c;
+  font-size: 30rpx;
+}
+.orderList .list .goodsTwo {
+  background-color: #f8f8f8;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  white-space: nowrap;
+  width: 100%;
+  height: 110rpx;
+  padding: 20rpx 0;
+}
+.orderList .list .goodsTwo .goods {
+  width: 110rpx;
+  height: 110rpx;
+  display: inline-block;
+  margin-left: 20rpx;
+}
+.orderList .list .infoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx 0;
+}
+.orderList .list .infoBox .left {
+  flex: 1;
+  min-width: 0;
+}
+.orderList .list .infoBox .left .label {
+  font-size: 26rpx;
+  line-height: 50rpx;
+  color: #1c1c1c;
+}
+.orderList .list .infoBox .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30rpx;
+  color: #F54319;
+  font-weight: bold;
+}
+.orderList .list .tinfoBox {
+  padding: 20rpx 0;
+}
+.orderList .list .tinfoBox .text {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 24rpx;
+}
+.orderList .list .ofooter {
+  width: 100%;
+  height: 86rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.orderList .list .ofooter .button {
+  font-size: 26rpx;
+  margin-right: 30rpx;
+  border-radius: 100rpx;
+  height: 52rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24rpx;
+  border: 1px solid #bbb;
+  color: #999;
+}
+.orderList .list .tfooter {
+  width: 100%;
+  border-top: 1px dashed #f5f5f5;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderList .list .tfooter .left {
+  flex: 0 0 50%;
+}
+.orderList .list .tfooter .left .text {
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.orderList .list .tfooter .right {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.orderList .list .tfooter .right .button {
+  font-size: 24rpx;
+  padding: 6rpx 20rpx;
+  margin-right: 20rpx;
+  border: 1px solid;
+  border-radius: 6rpx;
+}
+.orderList .list .tfooter .right .text {
+  font-size: 26rpx;
+  margin-right: 20rpx;
+}
+

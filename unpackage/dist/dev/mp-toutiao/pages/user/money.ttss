@@ -1,0 +1,152 @@
+page {
+  background-color: #FFFFFF;
+}
+.headerBox {
+  width: 100%;
+  height: 300rpx;
+  background-color: #FF633D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  justify-content: center;
+}
+.headerBox .title {
+  font-size: 28rpx;
+}
+.headerBox .money {
+  font-size: 80rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20rpx;
+}
+.headerBox .money text {
+  font-size: 40rpx;
+  padding-right: 8rpx;
+  padding-bottom: 20rpx;
+}
+.headerBox .tips {
+  color: #fff;
+  font-size: 26rpx;
+  position: absolute;
+  bottom: 30rpx;
+  opacity: 0.6;
+}
+.moneyBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.moneyBox .header {
+  color: #1f1f1f;
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.moneyBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  width: 85%;
+  justify-content: space-between;
+}
+.moneyBox .listBox .list {
+  width: 280rpx;
+  display: flex;
+  flex-direction: column;
+  border: 2rpx solid #efefef;
+  margin-bottom: 30rpx;
+  justify-content: center;
+  padding-left: 20rpx;
+  position: relative;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+.moneyBox .listBox .list .title {
+  font-size: 36rpx;
+  color: #F54319;
+  font-weight: bold;
+}
+.moneyBox .listBox .list .info {
+  color: #999;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+.moneyBox .listBox .list .info text {
+  font-size: 26rpx;
+  padding-right: 4rpx;
+}
+.moneyBox .listBox .list radio {
+  position: absolute;
+  right: 20rpx;
+  zoom: 0.8;
+}
+.moneyBox .other {
+  width: 85%;
+  display: flex;
+  border: 2rpx solid #efefef;
+  height: 80rpx;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+.moneyBox .other .title {
+  width: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f1f1f;
+  height: 100%;
+  background-color: #efefef;
+}
+.moneyBox .other input {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  padding-left: 20rpx;
+  color: #1f1f1f;
+}
+.moneyBox .other .info {
+  width: 100rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f1f1f;
+  background-color: #efefef;
+}
+.moneyBox .button {
+  width: 85%;
+  height: 90rpx;
+  margin: 0 auto;
+  background-color: #F54319;
+  color: #fff;
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  font-weight: bold;
+  position: relative;
+  border-radius: 10rpx;
+}
+.moneyBox .button button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+

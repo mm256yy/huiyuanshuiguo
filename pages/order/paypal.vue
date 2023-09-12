@@ -298,8 +298,8 @@
 			},
 			paypalOrderTap(e){
 				let self = this;
-				let fzid = uni.getStorageSync('__ddminiFenzUid');
-				let store = uni.getStorageSync('__ddminiStoreInfo');
+				// let fzid = uni.getStorageSync('__ddminiFenzUid');
+				// let store = uni.getStorageSync('__ddminiStoreInfo');
 				uni.showLoading({title: '订单准备中',mask: true});
 				if(self.deliveryType===1 && !self.addressData){
 					uni.showModal({
@@ -326,7 +326,7 @@
 					goods: self.goodsOrderList,
 					delivery_type: self.deliveryType,
 					yprint: true,
-					store: store.id
+					bonds:true
 					// remark: self.remarkText
 				}
 				if(e!='form'){
@@ -337,18 +337,18 @@
 				}else{
 					postData.user_phone = self.userPhoneNumber;
 				}
-				if(self.couponsIndex>=0){
-					postData.coupons_id = self.couponsList[self.couponsIndex].id;
-				}
-				if(fzid){
-					postData.profitsharing = fzid;
-				} 
-				if(self.orderType==='pintuan'){
-					postData.pintuan_order = true;
-					if(self.pintuanId){
-						postData.pintuan_id = self.pintuanId;
-					}
-				}
+				// if(self.couponsIndex>=0){
+				// 	postData.coupons_id = self.couponsList[self.couponsIndex].id;
+				// }
+				// if(fzid){
+				// 	postData.profitsharing = fzid;
+				// } 
+				// if(self.orderType==='pintuan'){
+				// 	postData.pintuan_order = true;
+				// 	if(self.pintuanId){
+				// 		postData.pintuan_id = self.pintuanId;
+				// 	}
+				// }
 				self.Post(self.Url.orderCreate, postData).then(res => {
 					uni.hideLoading();
 					if(res.code === 0){
@@ -365,7 +365,7 @@
 								}, 600);
 							}
 						}else{
-							self.orderData = data;
+							self.orderData = data;//订单
 						}
 					}else{
 						uni.showModal({

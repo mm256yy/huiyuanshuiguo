@@ -1,5 +1,5 @@
-// const templateKey = 'RZ2209302026391794806';
-const templateKey = uni.getExtConfigSync().templateKey;
+const templateKey = 'RV221202130659442517';
+// const templateKey = uni.getExtConfigSync().templateKey;
 const domainLinks = uni.getSystemInfoSync().platform==='devtools'?'https://push.yjyzj.cn':'https://sh.api.dccf.top';//API后台地址，这个不用修改
 // const domainLinks = 'https://push.yjyzj.cn';//API后台地址，这个不用修改
 
@@ -8,7 +8,7 @@ function serverGet(url, data) {
 		let token = uni.getStorageSync('__ddminiUserInfo').token;
 		let headers = {
 			'template-key': templateKey, //模版服务码
-			'miniapps-key': uni.getAccountInfoSync().miniProgram.appId, //小程序AppID
+			'miniapps-key':'hypertextmark', //小程序AppID
 		};
 		if(token){
 			headers.authorization = token;

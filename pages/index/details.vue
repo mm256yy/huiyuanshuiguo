@@ -237,6 +237,7 @@
 			let self = this;
 			self.goodsId = e.id;
 			self.getGoodsDetail();
+			// console.log(self.goodsDetail,'222222')
 			self.getCartList();
 			self.getUserInfo();
 		},
@@ -244,7 +245,7 @@
 			let self = this;
 			let goods = self.goodsDetail;
 			let user = self.userInfoData;
-			self.shareShow = false;
+			// self.shareShow = false;
 			let path = `/pages/index/index?goods=${goods.id}`;
 			if(user.profitsharing){
 				path = `/pages/index/index?goods=${goods.id}&fenz=${user.id}`;
@@ -262,6 +263,7 @@
 				self.Get(self.Url.userInfo).then(res => {
 					if(res.code === 0){
 						self.userInfoData = res.data;
+						console.log(self.userInfoData,'userInfoData')
 					}
 				})
 			},
@@ -302,8 +304,9 @@
 				uni.showLoading({title: '商品加载中', mask: true});
 				self.Get(self.Url.goodsDetail, {id: self.goodsId}).then(res => {
 					if(res.code === 0){
-						uni.hideLoading();
+						uni.hideLoading();					
 						let data = res.data;
+						console.log(data,'00000000');
 						if(data.shelf_down_time_stamp){
 							let time = new Date().getTime();
 							data.buyEndTime = data.shelf_down_time_stamp - time;
@@ -313,6 +316,8 @@
 							self.buyNumber = 1;
 						}
 						self.goodsDetail = data;
+						// 商品详情
+						console.log(self.goodsDetail,'goodsDetail');
 						if(data.specs_list){
 							self.getSpecsImage();
 						}

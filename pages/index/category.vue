@@ -29,10 +29,8 @@
 				<span>商品正在上新中</span>
 			</view>
 		</view>
-		
 	</view>
 </template>
-
 <script>
 	const app = getApp();
 	export default {
